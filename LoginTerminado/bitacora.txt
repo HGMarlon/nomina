@@ -27,3 +27,16 @@ Codigo: 1    Accion: Sueldo Consultado             Dia: 10   Mes: 4    Año: 2022
 Codigo: 1    Accion: Ingreso al sistema            Dia: 10   Mes: 4    Año: 2022  Hora: 21   Minuto: 47   Segundo: 47   
 Codigo: 1    Accion: Sueldo Consultado             Dia: 10   Mes: 4    Año: 2022  Hora: 21   Minuto: 47   Segundo: 47   
 Codigo: 1    Accion: Ingreso al sistema            Dia: 10   Mes: 4    Año: 2022  Hora: 21   Minuto: 48   Segundo: 26   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 42   Segundo: 43   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 55   Segundo: 20   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 55   Segundo: 48   
+Codigo: 1    Accion: Puesto Creado                 Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 55   Segundo: 48   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 59   Segundo: 40   
+Codigo: 1    Accion: Modificacion Puestos          Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 59   Segundo: 40   
+Codigo: 1    Accion: Eliminar Puestos              Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 59   Segundo: 40   
+Codigo: 1    Accion: Puesto Creado                 Dia: 4    Mes: 5    Año: 2022  Hora: 15   Minuto: 59   Segundo: 40   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 16   Minuto: 14   Segundo: 32   
+Codigo: 1    Accion: Puesto Creado                 Dia: 4    Mes: 5    Año: 2022  Hora: 16   Minuto: 14   Segundo: 32   
+Codigo: 1    Accion: Ingreso al sistema            Dia: 4    Mes: 5    Año: 2022  Hora: 16   Minuto: 18   Segundo: 14   
+Codigo: 1    Accion: Consulta puestos              Dia: 4    Mes: 5    Año: 2022  Hora: 16   Minuto: 18   Segundo: 14   
+Codigo: 1    Accion: Puesto Creado                 Dia: 4    Mes: 5    Año: 2022  Hora: 16   Minuto: 18   Segundo: 14   

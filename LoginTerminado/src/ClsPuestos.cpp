@@ -11,7 +11,7 @@
 using namespace std;
 
 
-ClsPuestos::ClsPuestos(int ivalorNumero, string svalorNombrePuesto, string svalorDepartamento, int ivalorSalario, string svalorNivel, string svalorHoraEntrada, string svalorHoraSalida)
+ClsPuestos::ClsPuestos(int ivalorNumero, string svalorNombrePuesto, string svalorDepartamento, double ivalorSalario, string svalorNivel, string svalorHoraEntrada, string svalorHoraSalida)
 {
     mestablecerNumero(ivalorNumero);
     mestablecerNombreP(svalorNombrePuesto);
@@ -72,12 +72,12 @@ void ClsPuestos::mestablecerDepartamento( string sdepa )
    m_sNombrePuesto[ ilongitud ] = '\0';
 }
 
-int ClsPuestos::mobtenerSalario() const
+double ClsPuestos::mobtenerSalario() const
 {
     return m_iSalario;
 }
 
-void ClsPuestos::mestablecerSalario (int ivalorSalario)
+void ClsPuestos::mestablecerSalario (double ivalorSalario)
 {
     m_iSalario = ivalorSalario;
 }
