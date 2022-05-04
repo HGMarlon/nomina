@@ -1,0 +1,550 @@
+# depslib dependency file v1.0
+1649272150 source:c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\main.cpp
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+
+1649276639 c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\include\procesos.h
+	<cstring>
+
+1649277868 source:c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\src\procesos.cpp
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+
+1649622947 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"Clslogin.h"
+
+1649374899 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\procesos.h
+
+1649374899 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\procesos.cpp
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+	"ClsEmpleados.h"
+
+1649609044 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649609044 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649520215 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clsmenus.h
+
+1649603568 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649603568 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clspuestos.h
+	<string>
+
+1649603568 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clspuestos.cpp
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649562666 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+
+1649561646 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649560270 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\include\clspuestos.h
+	<string>
+
+1649561645 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649560270 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649560270 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\menu_nominasprototipo\src\clspuestos.cpp
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649617405 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649620430 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clslogin.h
+	<string>
+	<iostream>
+
+1649625305 source:c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649625305 c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649628426 source:c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649628426 c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\include\clslogin.h
+	<string>
+	<iostream>
+
+1649625305 source:c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649625305 c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\include\clspuestos.h
+	<string>
+
+1649625305 source:c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\src\clspuestos.cpp
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649628426 source:c:\users\my computer\proyectos\proyecto_rhh\proyecto2022p1g1\menu_nominasprototipo\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"Clslogin.h"
+
+1649630884 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649630884 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649630884 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649630884 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\include\clslogin.h
+	<string>
+	<iostream>
+
+1649630884 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649630884 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\include\clspuestos.h
+	<string>
+
+1649630884 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\src\clspuestos.cpp
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649638712 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"Clslogin.h"
+	"Clsbitacora.h"
+
+1649636459 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\src\clsbitacora.cpp
+	"Clsbitacora.h"
+
+1649636459 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\loginterminado\include\clsbitacora.h
+
+1649640162 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clsbitacora.cpp
+	"Clsbitacora.h"
+
+1649640162 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\include\clsbitacora.h
+
+1649640162 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649640162 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649640162 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649640162 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\include\clslogin.h
+	<string>
+	<iostream>
+
+1649640162 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649642852 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\include\clspuestos.h
+	<string>
+	<iostream>
+
+1649642852 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649642852 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\include\clsbancos.h
+	<string>
+	<iostream>
+
+1649642852 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\loginterminado\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649644027 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clsbancos.h
+	<string>
+	<iostream>
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clsbitacora.cpp
+	"Clsbitacora.h"
+
+1649644027 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clsbitacora.h
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649644027 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649644027 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clslogin.h
+	<string>
+	<iostream>
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649644027 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clspuestos.h
+	<string>
+	<iostream>
+
+1649644027 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649645771 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"ClsBancos.h"
+	"Clslogin.h"
+	"Clsbitacora.h"
+	"ClsEmpresa.h"
+
+1649645771 c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\include\clsempresa.h
+	<string>
+	<iostream>
+
+1649645771 source:c:\users\dell\progra\proyectofinal\proyecto2022p1g1\loginterminado\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649648864 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"ClsBancos.h"
+	"Clslogin.h"
+	"Clsbitacora.h"
+	"ClsEmpresa.h"
+	"ClsConceptos.h"
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clsempleados.h
+	<string>
+	<iostream>
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clspuestos.h
+	<string>
+	<iostream>
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clsbancos.h
+	<string>
+	<iostream>
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clslogin.h
+	<string>
+	<iostream>
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clsbitacora.h
+
+1649647949 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clsempresa.h
+	<string>
+	<iostream>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsbitacora.cpp
+	"Clsbitacora.h"
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649647949 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649648529 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\include\clsconceptos.h
+	<string>
+	<iostream>
+
+1649648577 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\proyecto2022p1g1\loginterminado\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
