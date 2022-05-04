@@ -1,0 +1,95 @@
+# depslib dependency file v1.0
+1649272150 source:c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\main.cpp
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+
+1649276639 c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\include\procesos.h
+	<cstring>
+
+1649277868 source:c:\users\my computer\desktop\prueba menu\menu_definitivo\menu_nominas\src\procesos.cpp
+	<stdlib.h>
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+
+1649464234 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	"ClsMenus.h"
+	"ClsEmpleados.h"
+
+1649374899 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\procesos.h
+
+1649374899 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\procesos.cpp
+	<cstdlib>
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	"Procesos.h"
+	"ClsEmpleados.h"
+
+1649465941 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649464648 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clsempleados.h
+	<string>
+
+1649464270 c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\include\clsmenus.h
+
+1649464362 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\proyecto2022p1g1\menu_nominasprototipo\src\clsmenus.cpp
+	"ClsMenus.h"
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1649452949 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\menu_nominasprototipo\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	"ClsMenus.h"
+	"ClsEmpleados.h"
+
+1649452949 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\menu_nominasprototipo\include\clsmenus.h
+
+1649452949 c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\menu_nominasprototipo\include\clsempleados.h
+	<string>
+
+1649452949 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\menu_nominasprototipo\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1649452949 source:c:\users\sofia\progra1\proyectos\proyecto\proyecto2022p1g1\menu_nominasprototipo\src\clsmenus.cpp
+	"ClsMenus.h"
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
