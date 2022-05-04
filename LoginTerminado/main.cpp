@@ -1297,7 +1297,7 @@ void nuevoPuesto( fstream &insertarEnArchivoPuesto )
       char m_sNombrePuesto[ 20 ];
       char m_sNombreDepartamento[ 20 ];
       char m_sNivelAcademico[ 20 ];
-      int  m_iSalario;
+      double m_iSalario;
       char m_sHoraEntrada[20];
       char m_sHoraSalida[ 20 ];
 
@@ -1309,7 +1309,7 @@ void nuevoPuesto( fstream &insertarEnArchivoPuesto )
       cout << "Escriba el nivel academico requerido: " << endl;
       cin >> setw( 20 ) >> m_sNivelAcademico;
       cout << "Escriba el total de salario: " << endl;
-      cin >> setw( 9 ) >>m_iSalario ;
+      cin >> setw( 20 ) >>m_iSalario ;
       cout << "Escriba la hora de entrada: " << endl;
       cin >> setw( 20 ) >> m_sHoraEntrada;
       cout << "Escriba la hora de salida: " << endl;

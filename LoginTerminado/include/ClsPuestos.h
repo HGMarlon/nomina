@@ -9,7 +9,7 @@ using std::string;
 class ClsPuestos
 {
     public:
-        ClsPuestos( int = 0, string = "", string = "", int = 0, string = "", string = "", string = "");
+        ClsPuestos( int = 0, string = "", string = "", double = 0, string = "", string = "", string = "");
          /* mIngresarPuestos();
         mAgregarPuestos();
         mMenuPuestos();*/
@@ -23,8 +23,8 @@ class ClsPuestos
         void mestablecerDepartamento ( string );
         string mobtenerDepartamento() const;
 
-        void mestablecerSalario( int );
-        int mobtenerSalario() const;
+        void mestablecerSalario( double );
+        double mobtenerSalario() const;
 
         void mestablecerNivelAcademico( string );
         string mobtenerNivAcademico() const;
@@ -51,7 +51,7 @@ class ClsPuestos
         char m_sNombrePuesto[ 20 ];
         char m_sNombreDepartamento[ 20 ];
         char m_sNivelAcademico[ 20 ];
-        int  m_iSalario;
+        double  m_iSalario;
         char m_sHoraEntrada[20];
         char m_sHoraSalida[ 20 ];
 
