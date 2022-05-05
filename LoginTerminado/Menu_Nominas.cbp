@@ -41,6 +41,7 @@
 		<Unit filename="include/ClsPuestos.h" />
 		<Unit filename="include/Clsbitacora.h" />
 		<Unit filename="include/Clslogin.h" />
+		<Unit filename="include/Clsnominas.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ClsBancos.cpp" />
 		<Unit filename="src/ClsConceptos.cpp" />
@@ -50,6 +51,7 @@
 		<Unit filename="src/ClsPuestos.cpp" />
 		<Unit filename="src/Clsbitacora.cpp" />
 		<Unit filename="src/Clslogin.cpp" />
+		<Unit filename="src/Clsnominas.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

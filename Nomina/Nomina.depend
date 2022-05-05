@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1651711167 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+
