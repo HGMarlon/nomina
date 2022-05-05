@@ -45,6 +45,41 @@ int main()
                 menuMantenimientos.mmenuMantimientos();
             }
             break;
+        case 2:
+            {
+                cout<<"Usted esta en el apartado Generación nomina";
+                getch();
+            }
+            break;
+        case 3:
+            {
+                cout<<"Usted esta en el apartado informes nomina";
+                getch();
+            }
+            break;
+        case 4:
+            {
+                cout<<"Usted esta en el apartado Transferencia Bancaria";
+                getch();
+            }
+            break;
+        case 5:
+            {
+               cout<<"Usted esta en el apartado Generacion Poliza";
+               getch();
+            }
+            break;
+        case 6:
+            {
+                cout<<"Usted esta en el apartado Impuestos";
+            }
+            break;
+        case 0:
+            break;
+        default:
+            cout<<"Valor ingresado no vádido, intente de nuevo";
+            getch();
+            break;
         }
     }while(imenuPrincipal!=0);
 

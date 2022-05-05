@@ -32,6 +32,10 @@ class Clsempleados
 
         void mimprimirRegistroEmpleados(fstream &archivoEmpleado);
 
+        void meliminarRegistroEmpleados(fstream &archivoEmpleados);
+
+        void mbuscarEmpleados(fstream &archivoEmpleados);
+
         void mestablecerClave( int ) ;
         int mobtenerClave() const;
 

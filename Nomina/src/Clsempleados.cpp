@@ -120,7 +120,7 @@ void Clsempleados::mnuevoEmpleado(fstream &archivoEmpleados)
    // mostrar error si la cuenta ya existe
    else
    {
-       cerr << "La cuenta #" << m_iclaveEmpleado << " ya contiene informacion." << endl;
+       cerr << "La clave #" << m_iclaveEmpleado << " ya contiene informacion." << endl;
        getch();
    }
 }
@@ -208,7 +208,7 @@ void Clsempleados::mmodificarRegistroEmpleados( fstream &archivoEmpleados )
 
    // mostrar error si la cuenta no existe
    else
-      cerr << "La cuenta #" << m_iclaveEmpleado
+      cerr << "La clave #" << m_iclaveEmpleado
          << " no tiene informacion." << endl;
 }
 
@@ -246,6 +246,72 @@ void Clsempleados::mimprimirRegistroEmpleados(fstream &archivoEmpleado)
 
    }
    cout << "archivo creado con éxito con el nombre de: regisrodeempleados";
+}
+
+void Clsempleados::meliminarRegistroEmpleados(fstream &archivoEmpleados)
+{
+    int iindicador= mobtenerIndicador( "Escriba la clave a eliminar" );
+
+   // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+   archivoEmpleados.seekg(
+      ( iindicador - 1 ) * sizeof( Clsempleados ) );
+
+   // leer el registro del archivo
+   Clsempleados empleado;
+   archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Clsempleados ) );
+
+   // eliminar el registro, si es que existe en el archivo
+   if ( empleado.mobtenerClave() != 0 ) {
+      Clsempleados empleadoEnBlanco;
+
+      // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+      archivoEmpleados.seekp( ( iindicador - 1 ) *
+         sizeof( Clsempleados ) );
+
+      // reemplazar el registro existente con un registro en blanco
+      archivoEmpleados.write(
+         reinterpret_cast< const char * >( &empleadoEnBlanco ),
+         sizeof( Clsempleados ) );
+
+      cout << "Empleado clave #" << iindicador << " eliminado correctamente.\n";
+
+   }
+
+   // mostrar error si el registro no existe
+   else
+   {
+       cerr << "Empleado clave #" << iindicador << " esta vacia.\n";
+   }
+   getch();
+}
+
+void Clsempleados::mbuscarEmpleados(fstream &archivoEmpleados)
+{
+    int iindicador = mobtenerIndicador( "Escriba la clave que desea actualizar" );
+
+   // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+   archivoEmpleados.seekg(
+      ( iindicador - 1 ) * sizeof( Clsempleados ) );
+
+   // leer el primer registro del archivo
+   Clsempleados empleado;
+   archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Clsempleados ) );
+    //cout<<empleado.mobtenerClave();
+
+   // actualizar el registro
+   if ( empleado.mobtenerClave() != 0 ) {
+      mmostrarLineaRegistroEmpleados( cout, empleado );
+   }
+
+   // mostrar error si la cuenta no existe
+   else
+   {
+       cerr << "La clave #" << iindicador
+         << " no tiene informacion." << endl;
+   }
+   getch();
 }
 
 Clsempleados::mmenuEmpleados()
@@ -310,6 +376,24 @@ Clsempleados::mmenuEmpleados()
                 mimprimirRegistroEmpleados(archivoEmpleados);
                 getch();
             }
+            break;
+        case 5:
+            {
+                system("cls");
+                meliminarRegistroEmpleados(archivoEmpleados);
+            }
+            break;
+        case 6:
+            {
+                system("cls");
+                mbuscarEmpleados(archivoEmpleados);
+            }
+            break;
+        case 0:
+            break;
+        default:
+            cout<<"Opción invalida, intenta de nuevo";
+            getch();
             break;
         }
     }while(iseleccionMenuEmpleados!=0);
