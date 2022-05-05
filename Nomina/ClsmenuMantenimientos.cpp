@@ -31,12 +31,11 @@ ClsmenuMantenimientos::mmenuMantimientos()
         cout<<"1. CRUD empleados"<<endl;
         cout<<"2. CRUD empresa"<<endl;
         cout<<"3. CRUD puestos"<<endl;
-        cout<<"4. CRUD conceptos"<<endl;
-        cout<<"5. CRUD departamentos"<<endl;
-        cout<<"6. CRUD bancos"<<endl;
+        cout<<"4. CRUD departamentos"<<endl;
+        cout<<"5. CRUD bancos"<<endl;
         cout<<"0. Volver al menu principal"<<endl;
         cout<<"-------------------------------"<<endl;
-        cout<<"Opcion a escoger:[1/2/3/4/5/6/0]"<<endl;
+        cout<<"Opcion a escoger:[1/2/3/4/5/0]"<<endl;
         cout<<"-------------------------------"<<endl;
         cout<<"Ingresa tu Opcion: ";
         cin>>choice2;
@@ -62,17 +61,11 @@ ClsmenuMantenimientos::mmenuMantimientos()
             break;
         case 4:
             {
-                cout<<"Usted esta en el apartado conceptos";
-                getch();
-            }
-            break;
-        case 5:
-            {
                 cout<<"Usted esta en el apartado departamentos";
                 getch();
             }
             break;
-        case 6:
+        case 5:
             {
                 cout<<"Usted esta en el apartado bancos";
                 getch();
