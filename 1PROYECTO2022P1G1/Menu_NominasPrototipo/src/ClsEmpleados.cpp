@@ -17,10 +17,10 @@ ClsEmpleados::ClsEmpleados(int ivalorClave, string svalorNombre, string svalorDp
 {
     mestablecerClave(ivalorClave);
     mestablecerNombre(svalorNombre);
-    mestablecerDpi(svalorDpi);
+    /*mestablecerDpi(svalorDpi);
     mestablecerDireccion(svalorDireccion);
     mestablecerTelefono(svalorTelefono);
-    mestablecerCorreo(svalorCorreo);
+    mestablecerCorreo(svalorCorreo);*/
 }
 
 //Funciones de la clave del empleado
@@ -52,7 +52,7 @@ void ClsEmpleados::mestablecerNombre( string scadenaNombre )
    m_snombreEmpleado[ ilongitud ] = '\0';
 
 }
-
+/*
 //Funciones del Dpi del empleado
 string ClsEmpleados::mobtenerDpi() const
 {
@@ -125,7 +125,7 @@ void ClsEmpleados::mestablecerCorreo ( string scadenaCorreo )
    m_scorreoEmpleado[ ilongitud ] = '\0';
 }
 
-
+*/
 //Ingreso de datos de un nuevo empleado
 ClsEmpleados::magregarEmpleado()
 {
@@ -145,19 +145,19 @@ ClsEmpleados::magregarEmpleado()
         cout<<"Ingresa el nombre del empleado: " << endl;
         cin>> m_snombreEmpleado;
         cout<<"Ingresa el numero de DPI del empleado: ";
-        cin>>m_sdpiEmpleado;
+        /*cin>>m_sdpiEmpleado;
         cout<<"Ingresa la dirección de residencia del empleado: ";
         cin>>m_sdireccionEmpleado;
         cout<<"Ingresa el número de telefono del empleado: ";
         cin>>m_stelefonoEmpleado;
         cout<<"Ingresa el correo electronico del empleado: ";
-        cin>>m_scorreoEmpleado;
+        cin>>m_scorreoEmpleado;*/
         empleado.mestablecerClave(m_iclaveEmpleado);
         empleado.mestablecerNombre(m_snombreEmpleado);
-        empleado.mestablecerDpi(m_sdpiEmpleado);
+        /*empleado.mestablecerDpi(m_sdpiEmpleado);
         empleado.mestablecerDireccion(m_sdireccionEmpleado);
         empleado.mestablecerTelefono(m_stelefonoEmpleado);
-        empleado.mestablecerCorreo(m_scorreoEmpleado);
+        empleado.mestablecerCorreo(m_scorreoEmpleado);*/
         archivoEmpleados.seekp((empleado.mobtenerClave() - 1 ) * sizeof(ClsEmpleados));
         archivoEmpleados.write(reinterpret_cast<const char * > (&empleado), sizeof (ClsEmpleados));
         cout<<"Datos almacenados con éxito";
@@ -170,35 +170,37 @@ ClsEmpleados::magregarEmpleado()
 ClsEmpleados::mdespliegueEmpleado()
 {
 	system("cls");
-	ifstream archivoEmpleados("registrosempleados.dat", ios::in | ios:: binary);
-	int iinformacion=0;
-	cout<<"Tabla de Detalles de Personas:"<<endl;
-	if(!archivoEmpleados)
-	{
-		cerr << "No se pudo abrir el archivo registro empleados." << endl;
+	ofstream leerDeArchivo("registrosempleados.dat", ios::app | ios::out | ios::binary);
+	if( !leerDeArchivo )
+    {
+        cerr << "No se pudo abrir el archivo registro empleados." << endl;
         exit( EXIT_FAILURE );
-	}
-	else
-	{
-		ClsEmpleados empleado;
-		while(!archivoEmpleados.eof())
-		{
-			iinformacion++;
-			cout<<"Clave: "<<empleado.mobtenerClave() <<endl;
-			cout<<"Nombre: "<<empleado.mobtenerNombre() <<endl;
-			cout<<"DPI: "<<empleado.mobtenerDpi() <<endl;
-			cout<<"Direccion: "<<empleado.mobtenerDireccion() <<endl;
-			cout<<"Telefono: "<<empleado.mobtenerTelefono() <<endl;
-			cout<<"Correo: "<<empleado.mobtenerCorreo() <<endl;
-		}
-		if(iinformacion==0)
-		{
-			cout<<"No hay informacion...";
-		}
-		cout<<"Fin del archivo.";
-	}
-	archivoEmpleados.close();
+    }
+	cout << left << setw( 10 ) << "Clave" << setw( 20 )
+       << "Nombre" << endl;
+
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   leerDeArchivo.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   ClsEmpleados empleado;
+   leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( ClsEmpleados ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !leerDeArchivo.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.mobtenerClave() != 0 )
+         mostrarLineaPantalla(empleado);
+
+      // leer siguiente registro del archivo de registros
+      leerDeArchivo.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( ClsEmpleados ) );
+        }
+
 }
+
 ClsEmpleados::mmodificarEmpleado()
 {
 	system("cls");

@@ -29,7 +29,7 @@ class ClsEmpleados
         //Funciones del nombre del empleado
         void mestablecerNombre( string );
         string mobtenerNombre() const;
-
+/*
         //Funciones del dpi del empleado
         void mestablecerDpi ( string );
         string mobtenerDpi() const;
@@ -45,7 +45,7 @@ class ClsEmpleados
         //Funciones del correo electronico del empleado
         void mestablecerCorreo ( string );
         string mobtenerCorreo() const;
-
+*/
         //Destructor
         virtual ~ClsEmpleados();
 
@@ -56,10 +56,10 @@ class ClsEmpleados
         //Atributos
         int m_iclaveEmpleado;
         char m_snombreEmpleado[ 20 ];
-        char m_sdpiEmpleado[ 20 ];
+        /*char m_sdpiEmpleado[ 20 ];
         char m_sdireccionEmpleado[ 20 ];
         char m_stelefonoEmpleado[ 20 ];
-        char m_scorreoEmpleado[ 20 ];
+        char m_scorreoEmpleado[ 20 ];*/
 };
 
 #endif // CLSEMPLEADOS_H
