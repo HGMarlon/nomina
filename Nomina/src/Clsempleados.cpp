@@ -1,12 +1,13 @@
 #include "Clsempleados.h"
 
 #include<conio.h>
-#include<iomanip>
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<iomanip>
 #include<cstdlib>
-#include<cstring>
+#include<ctime>
+#include<string.h>
 
 #include "ClsmenuMantenimientos.h"
 
@@ -64,20 +65,6 @@ Clsempleados::mcrearEmpleados()
 }
 
 int Clsempleados::mobtenerIndicador(const char * const iindicador)
-{
-    int m_iclaveEmpleado;
-
-   // obtener el valor del número de cuenta
-   do {
-      cout << iindicador << " (1 - 100): ";
-      cin >> m_iclaveEmpleado;
-
-   } while ( m_iclaveEmpleado < 1 || m_iclaveEmpleado > 100 );
-
-   return m_iclaveEmpleado;
-}
-
-int Clsempleados::mobtenerIndicadorA(const char * const iindicador)
 {
     int m_iclaveEmpleado;
 
@@ -172,7 +159,7 @@ void Clsempleados::mconsultarRegistroEmpleados(fstream &archivoEmpleados)
    }
 }
 
-void mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro )
+void Clsempleados::mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro )
 {
        salida << left << setw( 10 ) << registro.mobtenerClave()
           << setw( 20 ) << registro.mobtenerNombre().data()
@@ -181,30 +168,30 @@ void mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &regist
 
 
 
-void mmodificarRegistroEmpleados( fstream &archivoEmpleados )
+void Clsempleados::mmodificarRegistroEmpleados( fstream &archivoEmpleados )
 {
 
-   Clsempleados empleada;
-   int m_iclaveEmpleado = mobtenerIndicadorA("Ingrese el nombre del empleado");
+   Clsempleados empleado;
+   int m_iclaveEmpleado = mobtenerIndicador("Ingrese el nombre del empleado");
 
    archivoEmpleados.seekg(
       ( m_iclaveEmpleado - 1 ) * sizeof( Clsempleados ) );
 
    // leer el primer registro del archivo
-   archivoEmpleados.read( reinterpret_cast< char * >( &empleada ),
+   archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
       sizeof( Clsempleados ) );
 
    // actualizar el registro
-   if ( empleada.mobtenerClave() != 0 ) {
-      mmostrarLineaRegistroEmpleados( cout, empleada );
+   if ( empleado.mobtenerClave() != 0 ) {
+      mmostrarLineaRegistroEmpleados( cout, empleado );
 
       cout << "\nEscriba el nombre: ";
       char m_snombreEmpleado [ 20 ];
       cin >> m_snombreEmpleado;
 
       // actualizar el saldo del registro
-      empleada.mestablecerNombre( m_snombreEmpleado );
-      mmostrarLineaRegistroEmpleados( cout, empleada );
+      empleado.mestablecerNombre( m_snombreEmpleado );
+      mmostrarLineaRegistroEmpleados( cout, empleado );
 
       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
       archivoEmpleados.seekp(
@@ -212,7 +199,7 @@ void mmodificarRegistroEmpleados( fstream &archivoEmpleados )
 
       // escribir el registro actualizado sobre el registro anterior en el archivo
       archivoEmpleados.write(
-         reinterpret_cast< const char * >( &empleada ),
+         reinterpret_cast< const char * >( &empleado ),
          sizeof( Clsempleados ) );
 
         cout << "Empleado modificado con éxito.";
@@ -223,6 +210,42 @@ void mmodificarRegistroEmpleados( fstream &archivoEmpleados )
    else
       cerr << "La cuenta #" << m_iclaveEmpleado
          << " no tiene informacion." << endl;
+}
+
+void Clsempleados::mimprimirRegistroEmpleados(fstream &archivoEmpleado)
+{
+    Clsempleados empleado;
+    ofstream imprimir("registrodeempleados.txt", ios::out);
+
+   // salir del programa si ofstream no puede crear el archivo
+   if ( !imprimir ) {
+      cerr << "No se pudo crear el archivo." << endl;
+      exit( 1 );
+
+   } // fin de instrucción if
+
+   imprimir << left << setw( 10 ) << "Clave" << setw( 20 )
+       << "nombre: "<< endl;
+   // colocar el apuntador de posición de archivo al principio del archivo de registros
+   archivoEmpleado.seekg( 0 );
+
+   // leer el primer registro del archivo de registros
+   archivoEmpleado.read( reinterpret_cast< char * >( &empleado ),
+      sizeof( Clsempleados ) );
+
+   // copiar todos los registros del archivo de registros en el archivo de texto
+   while ( !archivoEmpleado.eof() ) {
+
+      // escribir un registro individual en el archivo de texto
+      if ( empleado.mobtenerClave() != 0 )
+         mmostrarLineaRegistroEmpleados( imprimir, empleado );
+
+      // leer siguiente registro del archivo de registros
+      archivoEmpleado.read( reinterpret_cast< char * >( &empleado ),
+         sizeof( Clsempleados ) );
+
+   }
+   cout << "archivo creado con éxito con el nombre de: regisrodeempleados";
 }
 
 Clsempleados::mmenuEmpleados()
@@ -278,6 +301,13 @@ Clsempleados::mmenuEmpleados()
             {
                 system("cls");
                 mmodificarRegistroEmpleados(archivoEmpleados);
+                getch();
+            }
+            break;
+        case 4:
+            {
+                system("cls");
+                mimprimirRegistroEmpleados(archivoEmpleados);
                 getch();
             }
             break;

@@ -20,8 +20,6 @@ class Clsempleados
 
         int mobtenerIndicador( const char * const );
 
-        int mobtenerIndicadorA( const char * const );
-
         void mnuevoEmpleado(fstream &archivoEmpleados);
 
         void mconsultarRegistroEmpleados(fstream &archivoEmpleados);
@@ -31,6 +29,8 @@ class Clsempleados
         void mmodificarRegistroEmpleados( fstream &archivoEmpleados );
 
         void mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro );
+
+        void mimprimirRegistroEmpleados(fstream &archivoEmpleado);
 
         void mestablecerClave( int ) ;
         int mobtenerClave() const;

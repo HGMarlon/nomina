@@ -10,7 +10,7 @@
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 
-1651712560 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
+1651760622 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
 	"ClsmenuMantenimientos.h"
 	<conio.h>
 	<iostream>
@@ -18,11 +18,12 @@
 	<string>
 	<iomanip>
 	<cstdlib>
+	<cstring>
 	"Clsempleados.h"
 
 1651712521 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.h
 
-1651716133 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
+1651761234 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
 	<conio.h>
 	<iostream>
 	<fstream>
