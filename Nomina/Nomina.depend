@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1651711167 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
+1651712521 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -7,4 +7,36 @@
 	<iomanip>
 	<cstdlib>
 	<ctime>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1651712560 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	"Clsempleados.h"
+
+1651712521 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.h
+
+1651716133 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1651714294 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
 

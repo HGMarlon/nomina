@@ -6,6 +6,7 @@ class ClsmenuMantenimientos
 {
     public:
         ClsmenuMantenimientos();
+        mmenuMantimientos();
         virtual ~ClsmenuMantenimientos();
 
     protected:

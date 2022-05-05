@@ -9,6 +9,7 @@
 
 //Clases
 #include "ClsmenuMantenimientos.h"
+#include "Clsempleados.h"
 
 using namespace std;
 
@@ -41,6 +42,7 @@ int main()
         case 1:
             {
                 ClsmenuMantenimientos menuMantenimientos;
+                menuMantenimientos.mmenuMantimientos();
             }
             break;
         }
