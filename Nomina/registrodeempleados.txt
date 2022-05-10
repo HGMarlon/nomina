@@ -1,4 +1,3 @@
-Clave     nombre:             
-1         Alyson              
-2         Angel               
-3         Karla               
+Clave     Nombre              Nombres             Apellido            Apellidos           Edad Direccion           Telefono            Correo              Sexo      Nacionalidad        Fecha de nacimiento 
+1         Josue               Ernesto             Rivas               De_Leon             18   10av10-1z1mixco     10203040            josuegamil.com      maculino  guatemalteco        12/06/2003          
+2         Maria               Algo                Lopez               otro_Algo           22   15av56-56z7Jalapa   57585956            maria@gmail.com     Femenino  peruana             01/01/200           
