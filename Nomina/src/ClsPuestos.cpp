@@ -483,3 +483,94 @@ void ClsPuestos::mbuscarPuestos(fstream &archivoPuestos)
    }
    getch();
 }
+
+ClsPuestos::mmenuPuestos()
+{
+    int iseleccionMenuPuestos;
+    do
+    {
+        system("cls");
+        // abrir el archivo en modo de lectura y escritura
+        fstream archivoPuestos("registrospuestos.dat", ios::in | ios::out | ios::binary);
+        // salir del programa si fstream no puede abrir el archivo
+        if ( !archivoPuestos )
+            {
+                cerr << "No se pudo abrir el archivo." << endl;
+                mcrearPuestos();
+                cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                exit ( 1 );
+
+            }
+        cout<<"-------------------------------"<<endl;
+        cout<<"|   SISTEMA GESTION PUESTOS   |"<<endl;
+        cout<<"-------------------------------"<<endl;
+        cout<<"1. Ingreso de Puestos"<<endl;
+        cout<<"2. Despliegue de Puestos"<<endl;
+        cout<<"3. Modifica Puestos"<<endl;
+        cout<<"4. Imprimir Regisro de Puestos"<<endl;
+        cout<<"5. Borra Puestos"<<endl;
+        cout<<"6. Buscar Puestos"<<endl;
+        cout<<"0. Volver al menu superior"<<endl;
+        cout<<"-------------------------------"<<endl;
+        cout<<"Opcion a escoger:[1/2/3/4/5/6/0]"<<endl;
+        cout<<"------------------------------"<<endl;
+        cout<<"Ingresa tu Opcion: ";
+        cin>>iseleccionMenuPuestos;
+        switch(iseleccionMenuPuestos)
+        {
+        case 1:
+            {
+                system("cls");
+                mnuevoPuestos(archivoPuestos);
+                getch();
+            }
+            break;
+        case 2:
+            {
+                system("cls");
+                mconsultarRegistroPuestos(archivoPuestos);
+                cout << "Fin del archivo.";
+                getch();
+            }
+            break;
+        case 3:
+            {
+                system("cls");
+                mmodificarRegistroPuestos(archivoPuestos);
+                getch();
+            }
+            break;
+        case 4:
+            {
+                system("cls");
+                mimprimirRegistroPuestos(archivoPuestos);
+                getch();
+            }
+            break;
+        case 5:
+            {
+                system("cls");
+                meliminarRegistroPuestos(archivoPuestos);
+            }
+            break;
+        case 6:
+            {
+                system("cls");
+                mbuscarPuestos(archivoPuestos);
+            }
+            break;
+        case 0:
+            break;
+        default:
+            cout<<"Opción invalida, intenta de nuevo";
+            getch();
+            break;
+        }
+    }while(iseleccionMenuPuestos!=0);
+}
+
+
+ClsPuestos::~ClsPuestos()
+{
+    //dtor
+}
