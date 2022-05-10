@@ -10,6 +10,7 @@
 
 //Clases auxiliares
 #include "Clsempleados.h"
+#include "ClsBancos.h"
 
 using namespace std;
 
