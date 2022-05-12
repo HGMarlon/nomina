@@ -39,9 +39,11 @@
 		<Unit filename="ClsmenuMantenimientos.cpp" />
 		<Unit filename="ClsmenuMantenimientos.h" />
 		<Unit filename="include/ClsPuestos.h" />
+		<Unit filename="include/Clsdepartamentos.h" />
 		<Unit filename="include/Clsempleados.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ClsPuestos.cpp" />
+		<Unit filename="src/Clsdepartamentos.cpp" />
 		<Unit filename="src/Clsempleados.cpp" />
 		<Extensions />
 	</Project>
