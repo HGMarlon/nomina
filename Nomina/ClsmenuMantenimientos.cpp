@@ -11,6 +11,7 @@
 //Clases auxiliares
 #include "Clsempleados.h"
 #include "ClsBancos.h"
+#include "ClsDepartamentos.h"
 
 using namespace std;
 
