@@ -10,6 +10,7 @@
 //Clases
 #include "ClsmenuMantenimientos.h"
 #include "Clsempleados.h"
+#include "ClsDepartamentos.h"
 
 using namespace std;
 

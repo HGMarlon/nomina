@@ -1,0 +1,2 @@
+Codigo   Nombre:             Departamento:       Puesto:             
+1        Hernandez           Marketing           Gerente             
