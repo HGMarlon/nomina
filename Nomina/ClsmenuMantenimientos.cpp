@@ -10,7 +10,7 @@
 
 //Clases auxiliares
 #include "Clsempleados.h"
-#include "ClsDepartamentos.h"
+/*#include "ClsDepartamentos.h"*/
 
 using namespace std;
 
@@ -62,8 +62,8 @@ ClsmenuMantenimientos::mmenuMantimientos()
             break;
         case 4:
             {
-                ClsDepartamentos departamentos;
-                departamentos.mmenuDepartamentos();
+                /*ClsDepartamentos departamentos;
+                departamentos.mmenuDepartamentos();*/
             }
             break;
         case 5:
