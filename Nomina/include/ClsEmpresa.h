@@ -1,66 +1,81 @@
-/*
-//librerias
-#include<string>
-#include<iostream>
-
-//C++
 #ifndef CLSEMPRESA_H
 #define CLSEMPRESA_H
 
-using std::string;
+#include<conio.h>
+#include<iostream>
+#include<fstream>
+#include<string>
+#include<iomanip>
+#include<cstdlib>
+
+using namespace std;
 
 class ClsEmpresa
 {
     public:
-         //metodos
-        ClsEmpresa(string = "", string = "", string = "", string = "",string = "",string = "",string = "",string = "",int = 0);
+        ClsEmpresa(int=0, string = "", string = "", string = "", string = "", string = "", string = "", string = "");
 
         mmenuEmpresa();
-        //virtual ~ClsEmpresa();
+        mcrearEmpresa();
 
-        //metodos empresa
+        int mobtenerIndicadorE( const char * const );
 
-         void mestablecerNombreE(string);
-         string mobtenerNombreE()const;
+        void mnuevaEmpresa(fstream &archivoEmpresa);
 
-         void mestablecerCorreoE(string);
-         string mobtenerCorreoE()const;
+        void mconsultarRegistroEmpresa(fstream &archivoEmpresa);
 
-         void mestablecerDirectorE(string);
-         string mobtenerDirectorE()const;
+        void mostrarLineaEmpresa( const ClsEmpresa &registro );
 
-         void mestablecerActividadE(string);
-         string mobtenerActividadE()const;
+        void mmodificarRegistroEmpresa( fstream &archivoEmpresa );
 
-         void mestablecerNitE(string);
-         string mobtenerNitE()const;
+        void mmostrarLineaRegistroEmpresa( ostream &salida, const ClsEmpresa &registro );
 
-         void mestablecerDireccionE(string);
-         string mobtenerDireccionE()const;
+        void mimprimirRegistroEmpresa(fstream &archivoEmpresa);
 
-         void mestablecerTelefonoE(int);
-         string mobtenerTelefonoE()const;
+        void meliminarRegistroEmpresa(fstream &archivoEmpresa);
 
-         void mestablecerNumeroEmpleadosE(int);
-         string mobtenerNumeroEmpleadosE()const;
+        void mbuscarEmpresa(fstream &archivoEmpresa);
 
-         void mestablecerNumeroEmpresa(int);
-         int mobtenerNumeroEmpresa()const;
+        void mestablecerClaveEmpresa( int ) ;
+        int mobtenerClaveE() const;
+
+        void mestablecerNombreEmpresa( string );
+        string mobtenerNombreE() const;
+
+        void mestablecerCorreoE(string);
+        string mobtenerCorreoE()const;
+
+        void mestablecerActividadE(string);
+        string mobtenerActividadE()const;
+
+        void mestablecerNitE(string);
+        string mobtenerNitE()const;
+
+        void mestablecerDireccionE(string);
+        string mobtenerDireccionE()const;
+
+        void mestablecerTelefonoE(string);
+        string mobtenerTelefonoE()const;
+
+        void mestablecerNumeroEmpleadosE(string);
+        string mobtenerNumeroEmpleadosE()const;
+
+        virtual ~ClsEmpresa();
 
     protected:
 
     private:
-        //atributos
-        char m_sNombreEmpresa[20];
+        int m_iclaveEmpresa;
+        char m_snombreEmpresa[20];
         char m_sCorreoEmpresa[20];
-        char m_sNombreDirector[20];
         char m_sActividadEconomica[20];
-        char m_iNitEmpresa[14];
-        char m_iDireccionEmpresa[20];
-        char m_iTelefonoEmpresa[20];
-        char m_iNumeroEmpleados[20];
-        int m_iNumeroDeEmpresa;
+        char m_sNitEmpresa[14];
+        char m_sDireccionEmpresa[20];
+        char m_sTelefonoEmpresa[9];
+        char m_sNumeroEmpleados[20];
+
+
+
 };
 
 #endif // CLSEMPRESA_H
-*/
