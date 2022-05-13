@@ -54,8 +54,8 @@ ClsmenuMantenimientos::mmenuMantimientos()
             break;
         case 2:
             {
-                /*ClsEmpresa empresa;
-                empresa.mmenuEmpresa();*/
+                ClsEmpresa empresa;
+                empresa.mmenuEmpresa();
             }
             break;
         case 3:
