@@ -56,7 +56,7 @@ void Clsempleados::mestablecerNombre( string scadenaNombre )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorNombre = scadenaNombre.data();
    int ilongitud = strlen( svalorNombre );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
    strncpy( m_snombreEmpleado, svalorNombre, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_snombreEmpleado[ ilongitud ] = '\0';
@@ -90,7 +90,7 @@ void Clsempleados::mestablecerApellido( string scadenaApellido )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorApellido = scadenaApellido.data();
    int ilongitud = strlen( svalorApellido );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
    strncpy( m_sapellidoEmpleado, svalorApellido, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_sapellidoEmpleado[ ilongitud ] = '\0';
@@ -158,7 +158,7 @@ void Clsempleados::mestablecerTelefono( string scadenaTelefono )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorTelefono = scadenaTelefono.data();
    int ilongitud = strlen( svalorTelefono );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
    strncpy( m_stelefonoEmpleado, svalorTelefono, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_stelefonoEmpleado[ ilongitud ] = '\0';
@@ -175,7 +175,7 @@ void Clsempleados::mestablecerCorreo( string scadenaCorreo )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorCorreo = scadenaCorreo.data();
    int ilongitud = strlen( svalorCorreo );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 30 ? ilongitud : 29 );
    strncpy( m_scorreoEmpleado, svalorCorreo, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_scorreoEmpleado[ ilongitud ] = '\0';
@@ -209,7 +209,7 @@ void Clsempleados::mestablecerNacionalidad( string scadenaNacionalidad )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorNacionalidad = scadenaNacionalidad.data();
    int ilongitud = strlen( svalorNacionalidad );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 15 ? ilongitud : 14 );
    strncpy( m_snacionalidadEmpleado, svalorNacionalidad, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_snacionalidadEmpleado[ ilongitud ] = '\0';
@@ -226,7 +226,7 @@ void Clsempleados::mestablecerNacimiento( string scadenaNacimiento )
    // copiar a lo más 20 caracteres de la cadena
    const char *svalorNacimiento = scadenaNacimiento.data();
    int ilongitud = strlen( svalorNacimiento );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
+   ilongitud = ( ilongitud < 15 ? ilongitud : 14 );
    strncpy( m_snacimientoEmpleado, svalorNacimiento, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_snacimientoEmpleado[ ilongitud ] = '\0';
@@ -274,24 +274,24 @@ void Clsempleados::mnuevoEmpleado(fstream &archivoEmpleados)
    if ( empleado.mobtenerClave() == 0 )
    {
         //Atributos a ingresar
-        char m_snombreEmpleado[ 20 ];
-        char m_sotrosNombresEmpleado[20];
-        char m_sprimerApellidoEmpleado[20];
-        char m_sotrosApellidosEmpleado[20];
+        char m_snombreEmpleado[10];
+        char m_snombresEmpleado[20];
+        char m_sapellidoEmpleado[10];
+        char m_sapellidosEmpleado[20];
         char m_sedadEmpleado[5];
         char m_sdireccionEmpleado[20];
         char m_stelefonoEmpleado[10];
-        char m_scorreoEmpleado[20];
+        char m_scorreoEmpleado[30];
         char m_ssexoEmpleado[10];
-        char m_snacionalidadEmpleado[20];
-        char m_snacimientoEmpleado[20];
+        char m_snacionalidadEmpleado[15];
+        char m_snacimientoEmpleado[15];
         //Solicitud al usuario de llenar los atributos
         cout << "Escriba el primer nombre del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snombreEmpleado;
+        cin >> setw( 10 ) >> m_snombreEmpleado;
         cout << "Escriba segundo y/o tercer nombre del empleado: " << endl;
         cin >> setw( 20 ) >> m_snombresEmpleado;
         cout << "Escriba el primer apellido del empleado: " << endl;
-        cin >> setw( 20 ) >> m_sapellidoEmpleado;
+        cin >> setw( 10 ) >> m_sapellidoEmpleado;
         cout << "Escriba segundo y/o tercer apellido del empleado: " << endl;
         cin >> setw( 20 ) >> m_sapellidosEmpleado;
         cout << "Escriba la edad del empleado: " << endl;
@@ -299,15 +299,15 @@ void Clsempleados::mnuevoEmpleado(fstream &archivoEmpleados)
         cout << "Escriba la direccion del empleado: " << endl;
         cin >> setw( 20 ) >> m_sdireccionEmpleado;
         cout << "Escriba el telefono del empleado: " << endl;
-        cin >> setw( 20 ) >> m_stelefonoEmpleado;
+        cin >> setw( 10 ) >> m_stelefonoEmpleado;
         cout << "Escriba el correo del empleado: " << endl;
-        cin >> setw( 20 ) >> m_scorreoEmpleado;
+        cin >> setw( 30 ) >> m_scorreoEmpleado;
         cout << "Escriba el sexo del empleado: " << endl;
         cin >> setw( 10 ) >> m_ssexoEmpleado;
         cout << "Escriba la nacionalidad del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snacionalidadEmpleado;
+        cin >> setw( 15 ) >> m_snacionalidadEmpleado;
         cout << "Escriba la fecha de nacimiento del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snacimientoEmpleado;
+        cin >> setw( 15 ) >> m_snacimientoEmpleado;
         // usar valores para llenar los valores de la clave
         empleado.mestablecerClave( m_iclaveEmpleado );
         empleado.mestablecerNombre( m_snombreEmpleado );
@@ -341,17 +341,17 @@ void Clsempleados::mnuevoEmpleado(fstream &archivoEmpleados)
 void Clsempleados::mostrarLineaEmpleado( const Clsempleados &registro )
 {
        cout << left << setw( 10 ) << registro.mobtenerClave()
-          << setw( 20 ) << registro.mobtenerNombre().data()
+          << setw( 10 ) << registro.mobtenerNombre().data()
           << setw( 20 ) << registro.mobtenerNombres().data()
-          << setw( 20 ) << registro.mobtenerApellido().data()
+          << setw( 10 ) << registro.mobtenerApellido().data()
           << setw( 20 ) << registro.mobtenerApellidos().data()
           << setw( 5 ) << registro.mobtenerEdad().data()
           << setw( 20 ) << registro.mobtenerDireccion().data()
-          << setw( 20 ) << registro.mobtenerTelefono().data()
-          << setw( 20 ) << registro.mobtenerCorreo().data()
+          << setw( 10 ) << registro.mobtenerTelefono().data()
+          << setw( 30 ) << registro.mobtenerCorreo().data()
           << setw( 10 ) << registro.mobtenerSexo().data()
-          << setw( 20 ) << registro.mobtenerNacionalidad().data()
-          << setw( 20 ) << registro.mobtenerNacimiento().data()
+          << setw( 15 ) << registro.mobtenerNacionalidad().data()
+          << setw( 15 ) << registro.mobtenerNacimiento().data()
           << endl;
 }
 
@@ -359,17 +359,17 @@ void Clsempleados::mconsultarRegistroEmpleados(fstream &archivoEmpleados)
 {
     //Creando encabezado de la tabla
     cout << left << setw( 10 ) << "Clave"
-    << setw( 20 ) << "Nombre"
+    << setw( 10 ) << "Nombre"
     << setw( 20 ) << "Nombres"
-    << setw( 20 ) << "Apellido"
+    << setw( 10 ) << "Apellido"
     << setw( 20 ) << "Apellidos"
     << setw( 5 ) << "Edad"
     << setw( 20 ) << "Direccion"
-    << setw( 20 ) << "Telefono"
-    << setw( 20 ) << "Correo"
+    << setw( 10 ) << "Telefono"
+    << setw( 30 ) << "Correo"
     << setw( 10 ) << "Sexo"
-    << setw( 20 ) << "Nacionalidad"
-    << setw( 20 ) << "Fecha de nacimiento"
+    << setw( 15 ) << "Nacionalidad"
+    << setw( 15 ) << "Fecha de nacimiento"
     << endl;
     // colocar el apuntador de posición de archivo al principio del archivo de registros
     archivoEmpleados.seekg( 0 );
@@ -392,17 +392,17 @@ void Clsempleados::mconsultarRegistroEmpleados(fstream &archivoEmpleados)
 void Clsempleados::mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro )
 {
        salida << left << setw( 10 ) << registro.mobtenerClave()
-          << setw( 20 ) << registro.mobtenerNombre().data()
+          << setw( 10 ) << registro.mobtenerNombre().data()
           << setw( 20 ) << registro.mobtenerNombres().data()
-          << setw( 20 ) << registro.mobtenerApellido().data()
+          << setw( 10 ) << registro.mobtenerApellido().data()
           << setw( 20 ) << registro.mobtenerApellidos().data()
           << setw( 5 ) << registro.mobtenerEdad().data()
           << setw( 20 ) << registro.mobtenerDireccion().data()
-          << setw( 20 ) << registro.mobtenerTelefono().data()
-          << setw( 20 ) << registro.mobtenerCorreo().data()
+          << setw( 10 ) << registro.mobtenerTelefono().data()
+          << setw( 30 ) << registro.mobtenerCorreo().data()
           << setw( 10 ) << registro.mobtenerSexo().data()
-          << setw( 20 ) << registro.mobtenerNacionalidad().data()
-          << setw( 20 ) << registro.mobtenerNacimiento().data()
+          << setw( 15 ) << registro.mobtenerNacionalidad().data()
+          << setw( 15 ) << registro.mobtenerNacimiento().data()
           << endl;
 }
 
@@ -421,17 +421,17 @@ void Clsempleados::mmodificarRegistroEmpleados( fstream &archivoEmpleados )
         mmostrarLineaRegistroEmpleados( cout, empleado );
         cout << endl    ;
         //Atributos a ingresar
-        char m_snombreEmpleado[ 20 ];
-        char m_sotrosNombresEmpleado[20];
-        char m_sprimerApellidoEmpleado[20];
-        char m_sotrosApellidosEmpleado[20];
+        char m_snombreEmpleado[10];
+        char m_snombresEmpleado[20];
+        char m_sapellidoEmpleado[10];
+        char m_sapellidosEmpleado[20];
         char m_sedadEmpleado[5];
         char m_sdireccionEmpleado[20];
         char m_stelefonoEmpleado[10];
-        char m_scorreoEmpleado[20];
+        char m_scorreoEmpleado[30];
         char m_ssexoEmpleado[10];
-        char m_snacionalidadEmpleado[20];
-        char m_snacimientoEmpleado[20];
+        char m_snacionalidadEmpleado[15];
+        char m_snacimientoEmpleado[15];
         //Solicitud al usuario de llenar los atributos
         cout << "Escriba el primer nombre del empleado: " << endl;
         cin >> setw( 20 ) >> m_snombreEmpleado;
@@ -496,17 +496,17 @@ void Clsempleados::mimprimirRegistroEmpleados(fstream &archivoEmpleado)
 
     }
     imprimir << left << setw( 10 ) << "Clave"
-    << setw( 20 ) << "Nombre"
+    << setw( 10 ) << "Nombre"
     << setw( 20 ) << "Nombres"
-    << setw( 20 ) << "Apellido"
+    << setw( 10 ) << "Apellido"
     << setw( 20 ) << "Apellidos"
     << setw( 5 ) << "Edad"
     << setw( 20 ) << "Direccion"
-    << setw( 20 ) << "Telefono"
-    << setw( 20 ) << "Correo"
+    << setw( 10 ) << "Telefono"
+    << setw( 30 ) << "Correo"
     << setw( 10 ) << "Sexo"
-    << setw( 20 ) << "Nacionalidad"
-    << setw( 20 ) << "Fecha de nacimiento"
+    << setw( 15 ) << "Nacionalidad"
+    << setw( 15 ) << "Fecha de nacimiento"
     << endl;
     // colocar el apuntador de posición de archivo al principio del archivo de registros
     archivoEmpleado.seekg( 0 );

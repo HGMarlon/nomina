@@ -1,3 +1,4 @@
+/*
 //librerias
 #include<string>
 #include<iostream>
@@ -12,8 +13,9 @@ class ClsEmpresa
 {
     public:
          //metodos
-        ClsEmpresa(string = "", string = "", string = "", string = "",string = "",string = "",int = 0,int = 0,int = 0);
+        ClsEmpresa(string = "", string = "", string = "", string = "",string = "",string = "",string = "",string = "",int = 0);
 
+        mmenuEmpresa();
         //virtual ~ClsEmpresa();
 
         //metodos empresa
@@ -37,10 +39,10 @@ class ClsEmpresa
          string mobtenerDireccionE()const;
 
          void mestablecerTelefonoE(int);
-         int mobtenerTelefonoE()const;
+         string mobtenerTelefonoE()const;
 
          void mestablecerNumeroEmpleadosE(int);
-         int mobtenerNumeroEmpleadosE()const;
+         string mobtenerNumeroEmpleadosE()const;
 
          void mestablecerNumeroEmpresa(int);
          int mobtenerNumeroEmpresa()const;
@@ -55,9 +57,10 @@ class ClsEmpresa
         char m_sActividadEconomica[20];
         char m_iNitEmpresa[14];
         char m_iDireccionEmpresa[20];
-        int m_iTelefonoEmpresa;
-        int m_iNumeroEmpleados;
+        char m_iTelefonoEmpresa[20];
+        char m_iNumeroEmpleados[20];
         int m_iNumeroDeEmpresa;
 };
 
 #endif // CLSEMPRESA_H
+*/

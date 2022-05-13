@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
+1652400398 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -10,7 +10,7 @@
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 
-1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
+1652400492 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.cpp
 	"ClsmenuMantenimientos.h"
 	<conio.h>
 	<iostream>
@@ -21,6 +21,9 @@
 	<cstring>
 	"Clsempleados.h"
 	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
 
 1652381106 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\clsmenumantenimientos.h
 	<conio.h>
@@ -32,7 +35,7 @@
 	<ctime>
 	<string.h>
 
-1652381106 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
+1652401275 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempleados.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -40,7 +43,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempleados.cpp
+1652401405 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempleados.cpp
 	"Clsempleados.h"
 	<conio.h>
 	<iostream>
@@ -152,4 +155,51 @@
 	<string>
 	<iomanip>
 	<cstdlib>
+
+1652381106 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652399079 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652399079 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652400433 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\include\clsempresa.h
+	<string>
+	<iostream>
+
+1652400433 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\nomina\src\clsempresa.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
 
