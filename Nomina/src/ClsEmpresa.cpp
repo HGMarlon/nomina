@@ -1,4 +1,4 @@
-/*#include "ClsEmpresa.h"
+#include "ClsEmpresa.h"
 
 #include<conio.h>
 #include<iostream>
@@ -477,7 +477,6 @@ void ClsEmpresa::mbuscarEmpresa(fstream &archivoEmpresa)
    getch();
 }
 
-*/
 ClsEmpresa::mmenuEmpresa()
 {
     int iseleccionMenuEmpresa;
