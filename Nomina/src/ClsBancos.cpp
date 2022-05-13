@@ -107,7 +107,7 @@ void ClsBancos::mestablecerTipoCuentaBancos( string scadenaTipoCuentaBancos )
 
 ClsBancos::mcrearBancos()
 {
-    ofstream archivoBancos("registrobancos.dat", ios::out | ios::binary);
+    ofstream archivoBancos("registrosbancos.dat", ios::out | ios::binary);
     if(!archivoBancos)
     {
         cerr<<"No se abrio el archivo"<<endl;

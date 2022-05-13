@@ -72,8 +72,8 @@ ClsmenuMantenimientos::mmenuMantimientos()
             break;
         case 5:
             {
-                /*ClsBancos banco;
-                banco.mmenuBancos();*/
+                ClsBancos banco;
+                banco.mmenuBancos();
             }
             break;
         case 0:

@@ -55,7 +55,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652144140 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.cpp
+1652467816 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.cpp
 	"ClsmenuMantenimientos.h"
 	<conio.h>
 	<iostream>
@@ -66,8 +66,11 @@
 	<cstring>
 	"Clsempleados.h"
 	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
 
-1652138567 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.h
+1652467221 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\clsmenumantenimientos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -77,7 +80,7 @@
 	<ctime>
 	<string.h>
 
-1652129832 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsempleados.h
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsempleados.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -85,7 +88,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652129832 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\main.cpp
+1652467221 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -96,7 +99,7 @@
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 
-1652129832 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsempleados.cpp
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsempleados.cpp
 	"Clsempleados.h"
 	<conio.h>
 	<iostream>
@@ -108,7 +111,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652144035 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsbancos.h
+1652467221 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsbancos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -116,7 +119,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652144470 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsbancos.cpp
+1652467816 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsbancos.cpp
 	"ClsBancos.h"
 	<conio.h>
 	<iostream>
@@ -326,4 +329,64 @@
 	<ctime>
 	<string.h>
 	"ClsmenuMantenimientos.h"
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652467723 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652467723 c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
 
