@@ -477,7 +477,7 @@ void ClsEmpresa::mbuscarEmpresa(fstream &archivoEmpresa)
    getch();
 }
 
-
+*/
 ClsEmpresa::mmenuEmpresa()
 {
     int iseleccionMenuEmpresa;
@@ -567,4 +567,4 @@ ClsEmpresa::~ClsEmpresa()
 {
     //dtor
 }
-*/
+
