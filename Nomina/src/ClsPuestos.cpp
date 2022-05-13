@@ -252,7 +252,7 @@ void ClsPuestos::mnuevoPuestos(fstream &archivoPuestos)
 
 void ClsPuestos::mostrarLineaPuestos( const ClsPuestos &registroP )
 {
-       cout << left << setw( 10 ) << registroP.mobtenerCargo()
+       cout << left << setw( 10 ) << registroP.mobtenerNumero()
           << setw( 20 ) << registroP.mobtenerCargo().data()
           << setw( 20 ) << registroP.mobtenerDepaPuesto().data()
           << setw( 20 ) << registroP.mobtenerSalario().data()
@@ -296,7 +296,7 @@ void ClsPuestos::mconsultarRegistroPuestos(fstream &archivoPuestos)
 
 void ClsPuestos::mmostrarLineaRegistroPuestos( ostream &salida, const ClsPuestos &registropuesto )
 {
-       salida << left << setw( 10 ) << registropuesto.mobtenerCargo()
+       salida << left << setw( 10 ) << registropuesto.mobtenerNumero()
           << setw( 20 ) << registropuesto.mobtenerCargo().data()
           << setw( 20 ) << registropuesto.mobtenerDepaPuesto().data()
           << setw( 20 ) << registropuesto.mobtenerSalario().data()
