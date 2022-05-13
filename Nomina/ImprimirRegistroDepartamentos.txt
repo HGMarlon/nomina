@@ -1,0 +1,4 @@
+Codigo   Nombre:             Departamento:       Puesto:             
+1        Contabilidad        Contabilidad        Contador            
+2        Mercadotecnia       Mercadotecnia       Dise¤ador_Grafico   
+3        Administrar         Administracion      Administrar         

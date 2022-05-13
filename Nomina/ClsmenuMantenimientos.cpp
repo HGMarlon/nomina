@@ -11,6 +11,10 @@
 //Clases auxiliares
 #include "Clsempleados.h"
 #include "ClsBancos.h"
+#include "ClsEmpresa.h"
+#include "ClsPuestos.h"
+#include "Clsdepartamentos.h"
+
 
 using namespace std;
 
@@ -50,26 +54,26 @@ ClsmenuMantenimientos::mmenuMantimientos()
             break;
         case 2:
             {
-                cout<<"Usted esta en el apartado empresa";
-                getch();
+                /*ClsEmpresa empresa;
+                empresa.mmenuEmpresa();*/
             }
             break;
         case 3:
             {
-                cout<<"Usted esta en el apartado puestos";
-                getch();
+                ClsPuestos puesto;
+                puesto.mmenuPuestos();
             }
             break;
         case 4:
             {
-                cout<<"Usted esta en el apartado departamentos";
-                getch();
+                ClsDepartamentos departamento;
+                departamento.mmenuDepartamentos();
             }
             break;
         case 5:
             {
-                cout<<"Usted esta en el apartado bancos";
-                getch();
+                /*ClsBancos banco;
+                banco.mmenuBancos();*/
             }
             break;
         case 0:

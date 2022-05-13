@@ -97,17 +97,17 @@ class Clsempleados
 
     private:
         int m_iclaveEmpleado;
-        char m_snombreEmpleado[20];
+        char m_snombreEmpleado[10];
         char m_snombresEmpleado[20];
-        char m_sapellidoEmpleado[20];
+        char m_sapellidoEmpleado[10];
         char m_sapellidosEmpleado[20];
         char m_sedadEmpleado[5];
         char m_sdireccionEmpleado[20];
         char m_stelefonoEmpleado[10];
-        char m_scorreoEmpleado[20];
+        char m_scorreoEmpleado[30];
         char m_ssexoEmpleado[10];
-        char m_snacionalidadEmpleado[20];
-        char m_snacimientoEmpleado[20];
+        char m_snacionalidadEmpleado[15];
+        char m_snacimientoEmpleado[15];
 };
 
 #endif // CLSEMPLEADOS_H

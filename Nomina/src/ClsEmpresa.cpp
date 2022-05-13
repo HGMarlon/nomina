@@ -1,4 +1,4 @@
-#include "ClsEmpresa.h"
+/*#include "ClsEmpresa.h"
 
 #include<conio.h>
 #include<iostream>
@@ -16,7 +16,7 @@ using namespace std;
 ClsEmpresa::ClsEmpresa(int iclaveEmpresa, string snombreEmpresa, string sCorreoEmpresa, string sActividadEconomica, string sNitEmpresa, string sDireccionEmpresa, string sTelefonoEmpresa, string sNumeroEmpleados)
 {
     //ctor
-    mestablecerClaveEmpresa(iclaveEmpresa);
+    mestablecerNumeroEmpresa(iclaveEmpresa);
     mestablecerNombreEmpresa(snombreEmpresa);
     mestablecerCorreoE(sCorreoEmpresa);
     mestablecerActividadE(sActividadEconomica);
@@ -567,3 +567,4 @@ ClsEmpresa::~ClsEmpresa()
 {
     //dtor
 }
+*/
