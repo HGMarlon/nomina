@@ -16,7 +16,7 @@ using namespace std;
 ClsEmpresa::ClsEmpresa(int iclaveEmpresa, string snombreEmpresa, string sCorreoEmpresa, string sActividadEconomica, string sNitEmpresa, string sDireccionEmpresa, string sTelefonoEmpresa, string sNumeroEmpleados)
 {
     //ctor
-    mestablecerNumeroEmpresa(iclaveEmpresa);
+    mestablecerClaveEmpresa(iclaveEmpresa);
     mestablecerNombreEmpresa(snombreEmpresa);
     mestablecerCorreoE(sCorreoEmpresa);
     mestablecerActividadE(sActividadEconomica);
