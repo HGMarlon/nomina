@@ -40,12 +40,14 @@
 		<Unit filename="ClsmenuMantenimientos.h" />
 		<Unit filename="include/ClsEmpresa.h" />
 		<Unit filename="include/ClsPuestos.h" />
+		<Unit filename="include/Clsbitacora.h" />
 		<Unit filename="include/Clsdepartamentos.h" />
 		<Unit filename="include/Clsempleados.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ClsBancos.cpp" />
 		<Unit filename="src/ClsEmpresa.cpp" />
 		<Unit filename="src/ClsPuestos.cpp" />
+		<Unit filename="src/Clsbitacora.cpp" />
 		<Unit filename="src/Clsdepartamentos.cpp" />
 		<Unit filename="src/Clsempleados.cpp" />
 		<Extensions />
