@@ -7,7 +7,6 @@
 #include<iomanip>
 #include<cstdlib>
 #include<cstring>
-
 //Clases auxiliares
 #include "Clsempleados.h"
 #include "ClsBancos.h"

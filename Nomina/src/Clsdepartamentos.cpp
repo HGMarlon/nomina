@@ -1,5 +1,5 @@
 #include "Clsdepartamentos.h"
-
+#include<ctime>
 #include<conio.h>
 #include<iostream>
 #include<fstream>
@@ -421,6 +421,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 system("cls");
                 nuevoEmpleado(archivoDepartamentos);
                 getch();
+                accion="Departamento creado ";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 2:
@@ -429,6 +443,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 consultarRegistroDepartamentos(archivoDepartamentos);
                 cout << "Fin del archivo.";
                 getch();
+                accion="Consulta de Departamento";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 3:
@@ -436,6 +464,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 system("cls");
                 actualizarRegistroDepartamentos(archivoDepartamentos);
                 getch();
+                accion="Departamento Actualizado";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 4:
@@ -443,6 +485,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 system("cls");
                 imprimirRegistroDepartamentos(archivoDepartamentos);
                 getch();
+                accion="Puesto Impreso";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 5:
@@ -450,6 +506,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 system("cls");
                 eliminarRegistroDepartamento(archivoDepartamentos);
                 getch();
+                accion="Departamento Eliminado";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 6:
@@ -457,6 +527,20 @@ ClsDepartamentos::mmenuDepartamentos()
                 system("cls");
                 buscarEmpleadoDepartamento(archivoDepartamentos);
                 getch();
+                accion="Departamento Buscado";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 0:

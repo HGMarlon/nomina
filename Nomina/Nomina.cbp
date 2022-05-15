@@ -43,6 +43,7 @@
 		<Unit filename="include/Clsdepartamentos.h" />
 		<Unit filename="include/Clsempleados.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/ClsBancos.cpp" />
 		<Unit filename="src/ClsEmpresa.cpp" />
 		<Unit filename="src/ClsPuestos.cpp" />
 		<Unit filename="src/Clsdepartamentos.cpp" />
