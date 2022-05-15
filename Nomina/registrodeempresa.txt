@@ -1,2 +1,2 @@
 Clave     Nombre:             Correo              Actividad           Nit           Direccion           Telefono Empleados           
-1         sarita22@gmail.com  sarita21@gmail.com  heladeria           4587912569748 1av.local103.zona1  12457896 12                  
+46        Gamesa              gamesa@gmail.com    ventas              123           juasjuas            12345678 12                  

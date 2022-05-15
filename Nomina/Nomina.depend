@@ -88,7 +88,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652467221 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\main.cpp
+1652646292 source:c:\users\corei7\onedrive - universidad mariano gálvez\escritorio\reestructuración terminada\nomina\nomina\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -96,6 +96,7 @@
 	<iomanip>
 	<cstdlib>
 	<ctime>
+	<string.h>
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 
