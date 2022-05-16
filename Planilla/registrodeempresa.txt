@@ -1,0 +1,2 @@
+Clave     Nombre:             Correo              Actividad           Nit           Direccion           Telefono Empleados           
+46        Gamesa              gamesa@gmail.com    ventas              123           juasjuas            12345678 12                  
