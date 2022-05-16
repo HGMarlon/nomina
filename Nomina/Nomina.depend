@@ -390,3 +390,160 @@
 	<iomanip>
 	<cstdlib>
 
+1652738715 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652733726 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652736804 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\nomina\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
