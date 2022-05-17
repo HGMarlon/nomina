@@ -11,6 +11,7 @@
 //Clases
 #include "ClsmenuMantenimientos.h"
 #include "Clsempleados.h"
+#include "Clsnomina.h"
 
 #define ENTER 13
 #define BACKSPACE 8
@@ -176,6 +177,8 @@ void login(){
         case 2:
             {
                 cout<<"Usted esta en el apartado Generación nomina";
+                Clsnomina nomina;
+                nomina.mmenuNominas();
                 getch();
             }
             break;
