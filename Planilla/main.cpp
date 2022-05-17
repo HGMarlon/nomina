@@ -18,6 +18,7 @@
 #define BACKSPACE 8
 using namespace std;
 
+void escribirBitacora(int, string);
 
 typedef struct {
     char usuario[10],contrasenia[10];
@@ -76,6 +77,7 @@ void listado(){
 }
 
 void login(){
+    Clsbitacora bitacora;
 
     FILE *arch;
     arch=fopen("login.dat","rb");
@@ -147,11 +149,8 @@ void login(){
         cout<<endl<<endl<<"Realizo login exitoso"<<endl;
         int imenuPrincipal=0;
 
-void escribirBitacora(int, string);
-
-
 Clsbitacora bitacora;
-    string codigo="";
+
     string accion="";
 
 
@@ -161,19 +160,30 @@ Clsbitacora bitacora;
     fecha = localtime(&t);
 
     // todoBitacora
-    codigo = pusuario;
     accion = "Ingreso al sistema";
 
     //escribirBitacora(codigo, accion);
-ofstream bitacora("bitacora.txt", ios::app | ios::out);
+system("cls");
+        // abrir el archivo en modo de lectura y escritura
+        fstream archivoBitacora("bitacora.dat", ios::in | ios::out | ios::binary);
+        // salir del programa si fstream no puede abrir el archivo
+        if ( !archivoBitacora )
+            {
+                cerr << "No se pudo abrir el archivo." << endl;
+                bitacora.mcrearBitacora();
+                cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                exit ( 1 );
+
+            }
+/*iostream bitacora("bitacora.txt", ios::app | ios::out);
     if (!bitacora)
     {
         cerr << "No se pudo abrir el archivo." << endl;
         cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
         exit ( 3 );
-    }
+    }*/
 
-	bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+	bitacora<<left<<setw(10)<< "usuario:" <<left<<setw(10)<< pusuario <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
 	<<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
 	<<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
 	<<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;

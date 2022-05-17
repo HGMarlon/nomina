@@ -6,6 +6,7 @@ class Clsbitacora
 {
     public:
         Clsbitacora( int = 0);
+        mcrearBitacora();
 
         void mestablecerCodigo( int ) ;
         int mobtenerCodigo() const;

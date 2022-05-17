@@ -456,7 +456,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\main.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -466,9 +466,11 @@
 	<ctime>
 	<string.h>
 	"ClsmenuMantenimientos.h"
+	"Clsbitacora.h"
 	"Clsempleados.h"
+	"ClsBancos.h"
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbancos.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbancos.cpp
 	"ClsBancos.h"
 	<conio.h>
 	<iostream>
@@ -490,7 +492,7 @@
 	<ctime>
 	<string.h>
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsdepartamentos.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsdepartamentos.cpp
 	"Clsdepartamentos.h"
 	<conio.h>
 	<iostream>
@@ -502,7 +504,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempleados.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempleados.cpp
 	"Clsempleados.h"
 	<conio.h>
 	<iostream>
@@ -514,7 +516,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempresa.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempresa.cpp
 	"ClsEmpresa.h"
 	<conio.h>
 	<iostream>
@@ -526,7 +528,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652738865 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clspuestos.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clspuestos.cpp
 	"ClsPuestos.h"
 	<conio.h>
 	<iostream>
@@ -538,8 +540,8 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652758537 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbitacora.cpp
+1652824986 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbitacora.cpp
 	"Clsbitacora.h"
 
-1652758537 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsbitacora.h
+1652824986 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsbitacora.h
 
