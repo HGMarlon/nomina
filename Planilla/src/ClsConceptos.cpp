@@ -90,22 +90,22 @@ void ClsConceptos::mestablecerCantidadPorcentaje (int ienteroCantidadPorcentaje)
 
 float ClsConceptos::mobtenerPorcentaje() const
 {
-    return m_sPorcentaje*100;
+    int ent;
+    ent = m_sPorcentaje;
+
+    if(m_sPorcentaje - ent)
+    {
+        return m_sPorcentaje*100;
+    }
+    else
+    {
+        return m_sPorcentaje;
+    }
 }
 
 void ClsConceptos::mestablecerPorcentaje (float fFloatPorcentaje)
 {
     m_sPorcentaje = fFloatPorcentaje;
-}
-
-int ClsConceptos::mobtenerCantidad() const
-{
-    return m_sPorcentaje;
-}
-
-void ClsConceptos::mestablecerCantidad (int ienteroCantidad)
-{
-    m_sPorcentaje = ienteroCantidad;
 }
 
 ////////////////////////////////////////////CREAR/INGRESAR CONCEPTO
@@ -143,10 +143,12 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
           sizeof( ClsConceptos ) );
 
        // crear el registro, si éste no existe ya
-       if ( conceptos.mobtenerCodigo() == 0 ) {
+       if ( conceptos.mobtenerCodigo() == 0 )
+        {
 
           char m_sEmpleado[ 20 ];
           char m_sConcepto[20];
+          int m_iCantidadPorcentaje;
           float m_sPorcentaje;
 
           // el usuario introduce el apellido, primer nombre y saldo
@@ -154,17 +156,31 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
           cin >> setw( 20 ) >> m_sEmpleado;
           cout << "Escriba el Concepto: ";
           cin >> setw( 20 ) >> m_sConcepto;
-          cout << "Escriba el Porcentaje(%): ";
-          cin >> setw( 20 ) >>m_sPorcentaje;
+          cout<<"Cantidad(1) o Porcentaje(0): ";
+          cin>>m_iCantidadPorcentaje;
+          if(m_iCantidadPorcentaje == 1)
+          {
+              cout << "Escriba el Cantidad: ";
+              cin >> setw( 20 ) >>m_sPorcentaje;
 
-          m_sPorcentaje=m_sPorcentaje/100;
+              conceptos.mestablecerPorcentaje( m_sPorcentaje );
+          }
+          else if(m_iCantidadPorcentaje == 0)
+          {
+              cout << "Escriba el Porcentaje: ";
+              cin >> setw( 20 ) >>m_sPorcentaje;
+
+              m_sPorcentaje=m_sPorcentaje/100;
+
+              conceptos.mestablecerPorcentaje( m_sPorcentaje );
+          }
 
           // usar valores para llenar los valores de la cuenta
           conceptos.mestablecerBonoDescuento( m_iBonoDescuento );
           conceptos.mestablecerCodigo( m_icodigoEmpleadoConcepto );
           conceptos.mestablecerNombreEmpleado( m_sEmpleado );
           conceptos.mestablecerConcepto( m_sConcepto );
-          conceptos.mestablecerPorcentaje( m_sPorcentaje );
+          conceptos.mestablecerCantidadPorcentaje( m_iCantidadPorcentaje );
 
 
           // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -205,6 +221,7 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
 
           char m_sEmpleado[ 20 ];
           char m_sConcepto[20];
+          int m_iCantidadPorcentaje;
           float m_sPorcentaje;
 
           // el usuario introduce el apellido, primer nombre y saldo
@@ -212,15 +229,31 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
           cin >> setw( 20 ) >> m_sEmpleado;
           cout << "Escriba el Concepto: ";
           cin >> setw( 20 ) >> m_sConcepto;
-          cout << "Escriba el Porcentaje(%): ";
-          cin >> setw( 20 ) >>m_sPorcentaje;
+          cout<<"Cantidad(1) o Porcentaje(0)";
+          cin>>m_iCantidadPorcentaje;
+          if(m_iCantidadPorcentaje == 1)
+          {
+              cout << "Escriba el Cantidad: ";
+              cin >> setw( 20 ) >>m_sPorcentaje;
+
+              conceptos.mestablecerPorcentaje( m_sPorcentaje );
+          }
+          else if(m_iCantidadPorcentaje == 0)
+          {
+              cout << "Escriba el Porcentaje: ";
+              cin >> setw( 20 ) >>m_sPorcentaje;
+
+              m_sPorcentaje=m_sPorcentaje/100;
+
+              conceptos.mestablecerPorcentaje( m_sPorcentaje );
+          }
 
           // usar valores para llenar los valores de la cuenta
           conceptos.mestablecerBonoDescuento( m_iBonoDescuento );
           conceptos.mestablecerCodigo( m_icodigoEmpleadoConcepto );
           conceptos.mestablecerNombreEmpleado( m_sEmpleado );
           conceptos.mestablecerConcepto( m_sConcepto );
-          conceptos.mestablecerCantidad( m_sPorcentaje );
+          conceptos.mestablecerCantidadPorcentaje( m_iCantidadPorcentaje );
 
 
           // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
@@ -252,8 +285,7 @@ void ClsConceptos::consultarRegistroConcepto( fstream &leerDeArchivoConceptos )
 {
 
    cout << left << setw( 15 ) << "Bono/Des." << setw( 15 ) << "Codigo" << setw( 20 )
-       << "Nombre" << setw( 20 ) << "Concepto"
-       << setw( 20 ) << "Porcentaje(%)" << endl;
+       << "Nombre" << setw( 20 ) << "Concepto" << setw( 20 ) << "Cant/Porcen." << setw( 20 ) << "Monto." << endl;
 
    // colocar el apuntador de posición de archivo al principio del archivo de registros
    leerDeArchivoConceptos.seekg( 0 );
@@ -284,8 +316,8 @@ void ClsConceptos::mostrarLineaPantallaConcepto( const ClsConceptos &registroCon
           << setw( 15 ) << registroConceptos.mobtenerCodigo()
           << setw( 20 ) << registroConceptos.mobtenerNombreEmpleado().data()
           << setw( 20 ) << registroConceptos.mobtenerConcepto().data()
-          <<               registroConceptos.mobtenerPorcentaje()<<"%"<<
-                           registroConceptos.mobtenerCantidad()<<endl;
+          << setw( 20 ) << registroConceptos.mobtenerCantidadPorcentaje()
+          <<               registroConceptos.mobtenerPorcentaje()<<endl;
 
 }
 

@@ -704,7 +704,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652825562 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsconceptos.cpp
+1652830319 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\src\clsconceptos.cpp
 	"ClsConceptos.h"
 	<conio.h>
 	<iostream>
@@ -717,11 +717,27 @@
 	<math.h>
 	"ClsmenuMantenimientos.h"
 
-1652794970 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsconceptos.h
+1652827916 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\include\clsconceptos.h
 	<conio.h>
 	<iostream>
 	<fstream>
 	<string>
 	<iomanip>
 	<cstdlib>
+
+1652827168 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
 

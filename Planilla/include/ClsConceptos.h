@@ -32,9 +32,6 @@ class ClsConceptos
         void mestablecerPorcentaje( float );
         float mobtenerPorcentaje() const;
 
-        void mestablecerCantidad( int );
-        int mobtenerCantidad() const;
-
         mmenuConceptos();
         mcrearConceptos();
 
