@@ -39,6 +39,7 @@
 		<Unit filename="ClsmenuMantenimientos.cpp" />
 		<Unit filename="ClsmenuMantenimientos.h" />
 		<Unit filename="include/ClsBancos.h" />
+		<Unit filename="include/ClsConceptos.h" />
 		<Unit filename="include/ClsEmpresa.h" />
 		<Unit filename="include/ClsPuestos.h" />
 		<Unit filename="include/Clsdepartamentos.h" />
@@ -46,6 +47,7 @@
 		<Unit filename="include/Clsnomina.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/ClsBancos.cpp" />
+		<Unit filename="src/ClsConceptos.cpp" />
 		<Unit filename="src/ClsEmpresa.cpp" />
 		<Unit filename="src/ClsPuestos.cpp" />
 		<Unit filename="src/Clsdepartamentos.cpp" />

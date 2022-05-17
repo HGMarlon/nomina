@@ -14,6 +14,7 @@
 #include "ClsEmpresa.h"
 #include "ClsPuestos.h"
 #include "Clsdepartamentos.h"
+#include "ClsConceptos.h"
 
 
 using namespace std;
@@ -38,6 +39,7 @@ ClsmenuMantenimientos::mmenuMantimientos()
         cout<<"3. CRUD puestos"<<endl;
         cout<<"4. CRUD departamentos"<<endl;
         cout<<"5. CRUD bancos"<<endl;
+        cout<<"6. CRUD concepto"<<endl;
         cout<<"0. Volver al menu principal"<<endl;
         cout<<"-------------------------------"<<endl;
         cout<<"Opcion a escoger:[1/2/3/4/5/0]"<<endl;
@@ -74,6 +76,12 @@ ClsmenuMantenimientos::mmenuMantimientos()
             {
                 ClsBancos banco;
                 banco.mmenuBancos();
+            }
+            break;
+        case 6:
+            {
+                ClsConceptos concepto;
+                concepto.mmenuConceptos();
             }
             break;
         case 0:
