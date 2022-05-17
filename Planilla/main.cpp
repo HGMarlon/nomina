@@ -10,7 +10,9 @@
 
 //Clases
 #include "ClsmenuMantenimientos.h"
+#include "Clsbitacora.h"
 #include "Clsempleados.h"
+#include "ClsBancos.h"
 
 #define ENTER 13
 #define BACKSPACE 8
@@ -144,6 +146,39 @@ void login(){
     if((usuarioExiste)&&(passwordCorrecto)){
         cout<<endl<<endl<<"Realizo login exitoso"<<endl;
         int imenuPrincipal=0;
+
+void escribirBitacora(int, string);
+
+
+Clsbitacora bitacora;
+    string codigo="";
+    string accion="";
+
+
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    // todoBitacora
+    codigo = pusuario;
+    accion = "Ingreso al sistema";
+
+    //escribirBitacora(codigo, accion);
+ofstream bitacora("bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
+	bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+	<<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+	<<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+	<<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+	bitacora.close();
+
     //Menu principal
 	do
     {

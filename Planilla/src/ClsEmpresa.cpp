@@ -516,6 +516,20 @@ ClsEmpresa::mmenuEmpresa()
                 system("cls");
                 mnuevaEmpresa(archivoEmpresa);
                 getch();
+                accion="Empresa creada";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 2:
@@ -524,6 +538,20 @@ ClsEmpresa::mmenuEmpresa()
                 mconsultarRegistroEmpresa(archivoEmpresa);
                 cout << "Fin del archivo.";
                 getch();
+                accion="Consulta de Empresa";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 3:
@@ -531,6 +559,20 @@ ClsEmpresa::mmenuEmpresa()
                 system("cls");
                 mmodificarRegistroEmpresa(archivoEmpresa);
                 getch();
+                accion="Empresa Modificada";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 4:
@@ -538,18 +580,60 @@ ClsEmpresa::mmenuEmpresa()
                 system("cls");
                 mimprimirRegistroEmpresa(archivoEmpresa);
                 getch();
+                accion="Empresa Impresa";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 5:
             {
                 system("cls");
                 meliminarRegistroEmpresa(archivoEmpresa);
+                accion="Empresa Eliminada";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 6:
             {
                 system("cls");
                 mbuscarEmpresa(archivoEmpresa);
+                accion="Empresa Buscada";
+                ofstream bitacora("bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(8)<< "Codigo:" <<left<<setw(5)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
             }
             break;
         case 0:
