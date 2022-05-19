@@ -13,7 +13,7 @@ using namespace std;
 class ClsPuestos
 {
     public:
-        ClsPuestos(int=0, string = "", string = "", string = "", string = "", string = "", string = "");
+        ClsPuestos(int=0, string = "", string = "", float=0, string = "", string = "", string = "");
 
         mmenuPuestos();
         mcrearPuestos();
@@ -42,13 +42,13 @@ class ClsPuestos
         void mestablecerCargo( string );
         string mobtenerCargo() const;
 
-         void mestablecerDepaPuesto( string );
+        void mestablecerDepaPuesto( string );
         string mobtenerDepaPuesto() const;
 
-         void mestablecerSalario( string );
-        string mobtenerSalario() const;
+        void mestablecerSalario( float );
+        float mobtenerSalario() const;
 
-         void mestablecerNivelAc( string );
+        void mestablecerNivelAc( string );
         string mobtenerNivelAc() const;
 
         void mestablecerHoraEntrada( string );
@@ -65,7 +65,7 @@ class ClsPuestos
         int m_inumeroPuesto;
         char m_snombreCargo[20];
         char m_sDepartamento[20];
-        char m_sSalario[20];
+        float m_fSalario;
         char m_sNivelAcademico[20];
         char m_sHoraEntrada[20];
         char m_sHoraSalida[20];

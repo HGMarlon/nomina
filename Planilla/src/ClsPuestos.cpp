@@ -13,13 +13,13 @@
 
 using namespace std;
 
-ClsPuestos::ClsPuestos(int inumeroPuesto, string snombreCargo , string sDepartamento, string sSalario, string sNivelAcademico, string sHoraEntrada, string sHoraSalida )
+ClsPuestos::ClsPuestos(int inumeroPuesto, string snombreCargo , string sDepartamento, float fSalario, string sNivelAcademico, string sHoraEntrada, string sHoraSalida )
 {
     //ctor
     mestablecerNumero(inumeroPuesto);
     mestablecerCargo(snombreCargo);
     mestablecerDepaPuesto(sDepartamento);
-    mestablecerSalario(sSalario);
+    mestablecerSalario(fSalario);
     mestablecerNivelAc(sNivelAcademico);
     mestablecerHoraEntrada(sHoraEntrada);
     mestablecerHoraSalida(sHoraSalida);
@@ -71,23 +71,15 @@ void ClsPuestos::mestablecerDepaPuesto( string scadenaDepartamento )
    m_sDepartamento[ ilongitud ] = '\0';
 
 }
-
-string ClsPuestos::mobtenerSalario() const
+//Alyson Rodríguez 9959-21-829
+float ClsPuestos::mobtenerSalario() const
 {
-    return m_sSalario;
+    return m_fSalario;
 }
 
-void ClsPuestos::mestablecerSalario( string scadenaSalario )
+void ClsPuestos::mestablecerSalario (float fflotanteNumero)
 {
-
-   const char *svalorSalario = scadenaSalario.data();
-   int ilongitud = strlen( svalorSalario );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
-   strncpy( m_sSalario, svalorSalario, ilongitud );
-
-
-   m_sSalario[ ilongitud ] = '\0';
-
+    m_fSalario = fflotanteNumero;
 }
 
 string ClsPuestos::mobtenerNivelAc() const
@@ -224,7 +216,7 @@ void ClsPuestos::mnuevoPuestos(fstream &archivoPuestos)
       puesto.mestablecerCargo( m_snombreCargo );
       puesto.mestablecerNumero( m_inumeroPuesto );
       puesto.mestablecerDepaPuesto(m_sDepartamento);
-      puesto.mestablecerSalario(m_sSalario);
+      puesto.mestablecerSalario(m_fSalario); //Alyson Rodríguez 9959-21-829
       puesto.mestablecerNivelAc(m_sNivelAcademico);
       puesto.mestablecerHoraEntrada(m_sHoraEntrada);
       puesto.mestablecerHoraSalida(m_sHoraSalida);
@@ -255,7 +247,7 @@ void ClsPuestos::mostrarLineaPuestos( const ClsPuestos &registroP )
        cout << left << setw( 10 ) << registroP.mobtenerNumero()
           << setw( 20 ) << registroP.mobtenerCargo().data()
           << setw( 20 ) << registroP.mobtenerDepaPuesto().data()
-          << setw( 20 ) << registroP.mobtenerSalario().data()
+          << setw( 10 ) << registroP.mobtenerSalario()
           << setw( 20 ) << registroP.mobtenerNivelAc().data()
           << setw( 20 ) << registroP.mobtenerHoaraEntrada().data()
           << setw( 20 ) << registroP.mobtenerHoaraSalida().data()
@@ -267,7 +259,7 @@ void ClsPuestos::mconsultarRegistroPuestos(fstream &archivoPuestos)
    cout << left << setw( 10 ) << "Numero" << setw( 20 )
        << "Cargo" << setw( 20 )
        << "Departamento" << setw( 20 )
-       << "Salario" << setw ( 20 )
+       << "Salario" << setw ( 10 )
        << "Nivel academico" << setw ( 20 )
        << "Hora de entrada" << setw ( 20 )
        << "Hora de salida"<< endl;
@@ -299,7 +291,7 @@ void ClsPuestos::mmostrarLineaRegistroPuestos( ostream &salida, const ClsPuestos
        salida << left << setw( 10 ) << registropuesto.mobtenerNumero()
           << setw( 20 ) << registropuesto.mobtenerCargo().data()
           << setw( 20 ) << registropuesto.mobtenerDepaPuesto().data()
-          << setw( 20 ) << registropuesto.mobtenerSalario().data()
+          << setw( 10 ) << registropuesto.mobtenerSalario()
           << setw( 20 ) << registropuesto.mobtenerNivelAc().data()
           << setw( 20 ) << registropuesto.mobtenerHoaraEntrada().data()
           << setw( 20 ) << registropuesto.mobtenerHoaraSalida().data()
@@ -352,7 +344,7 @@ void ClsPuestos::mmodificarRegistroPuestos( fstream &archivoPuestos )
       puesto.mestablecerCargo( m_snombreCargo );
       puesto.mestablecerNumero( m_inumeroPuesto );
       puesto.mestablecerDepaPuesto(m_sDepartamento);
-      puesto.mestablecerSalario(m_sSalario);
+      puesto.mestablecerSalario(m_fSalario);//9959-21-829
       puesto.mestablecerNivelAc(m_sNivelAcademico);
       puesto.mestablecerHoraEntrada(m_sHoraEntrada);
       puesto.mestablecerHoraSalida(m_sHoraSalida);
@@ -392,7 +384,7 @@ void ClsPuestos::mimprimirRegistroPuestos(fstream &archivoPuesto)
    imprimir << left << setw( 10 ) << "Numero" << setw( 20 )
        << "Cargo" << setw( 20 )
        << "Departamento" << setw( 20 )
-       << "Salario" << setw( 20 )
+       << "Salario" << setw( 10 )
        << "Nivel academico" <<setw( 20 )
        << "Hora de entrada" << setw( 20 )
        << "Hora de salida"<< endl;
