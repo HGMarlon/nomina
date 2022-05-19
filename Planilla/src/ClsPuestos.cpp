@@ -384,7 +384,7 @@ void ClsPuestos::mimprimirRegistroPuestos(fstream &archivoPuesto)
    imprimir << left << setw( 10 ) << "Numero" << setw( 20 )
        << "Cargo" << setw( 20 )
        << "Departamento" << setw( 20 )
-       << "Salario" << setw( 20 )
+       << "Salario" << setw( 10 )
        << "Nivel academico" <<setw( 20 )
        << "Hora de entrada" << setw( 20 )
        << "Hora de salida"<< endl;
