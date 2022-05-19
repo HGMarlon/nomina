@@ -57,7 +57,7 @@ class Clsnomina
         void mestablecerNombreENomina( string );
         string mobtenerNombreENomina() const;
 
-//Karla gómez 9959-21-1896
+//Karla Gómez 9959-21-1896
         //Metodos atributo cargo del empleado
         void mestablecerCargoNomina( string );
         string mobtenerCargoNomina() const;
@@ -119,6 +119,20 @@ class Clsnomina
         char m_snombreNomina[10];
         int m_iclaveEmpleadoNomina;
         char m_snombreEmpleadoNomina[10];
+//Karla Gómez 9959-21-1896
+        char m_scargoNomina[10];
+        float m_fsalarioNomina;
+        float m_fdiasTrabNomina;
+        float m_fsueldoOrNomina;
+        float m_fhoraExtraNomina;
+        float m_fsueldoExtraNomina;
+        float m_fbonificacionincNomina;
+        float m_ftotaldevenNomina;
+        float m_fIGGNomina;
+        float m_fISRNomina;
+        float m_fanticipoNomina;
+        float m_ftotaldescuentNomina;
+        float m_fliquidoNomina;
 };
 
 #endif // CLSNOMINA_H
