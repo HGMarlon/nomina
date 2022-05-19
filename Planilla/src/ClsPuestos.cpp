@@ -291,7 +291,7 @@ void ClsPuestos::mmostrarLineaRegistroPuestos( ostream &salida, const ClsPuestos
        salida << left << setw( 10 ) << registropuesto.mobtenerNumero()
           << setw( 20 ) << registropuesto.mobtenerCargo().data()
           << setw( 20 ) << registropuesto.mobtenerDepaPuesto().data()
-          << setw( 10 ) << registroP.mobtenerSalario()
+          << setw( 10 ) << registropuesto.mobtenerSalario()
           << setw( 20 ) << registropuesto.mobtenerNivelAc().data()
           << setw( 20 ) << registropuesto.mobtenerHoaraEntrada().data()
           << setw( 20 ) << registropuesto.mobtenerHoaraSalida().data()
