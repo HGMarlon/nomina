@@ -406,6 +406,20 @@ void Clsnomina::mconsultarRegistroNomina(fstream &archivoNomina)
     << setw( 10 ) << "Nombre nomina"
     << setw( 10 ) << "Clave empleado"
     << setw( 10 ) << "Nombre empleado"
+//Karla Gómez 9959-21-1896
+    << setw( 10 ) << "Nombre Cargo"
+    << setw( 10 ) << "Monto Sueldo Asignado"
+    << setw( 10 ) << "Numero Dias Laborados"
+    << setw( 10 ) << "Monto Sueldo Ordinario"
+    << setw( 10 ) << "Numero Horas Extra"
+    << setw( 10 ) << "Monto Sueldo Extraordinario"
+    << setw( 10 ) << "Monto Bonificacion Incentivo"
+    << setw( 10 ) << "Monto Total Devengado"
+    << setw( 10 ) << "Monto IGSS"
+    << setw( 10 ) << "Monto ISR"
+    << setw( 10 ) << "Monto anticipos"
+    << setw( 10 ) << "Monto Total Descuentos"
+    << setw( 10 ) << "Monto Liquido a Recibir"
     << endl;
     // colocar el apuntador de posición de archivo al principio del archivo de registros
     archivoNomina.seekg( 0 );
