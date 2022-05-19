@@ -283,9 +283,43 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados)
         char m_snombreNomina[10];
         int m_iclaveEmpleado = 0;
         string m_snombreEmpleado = "";
+//karla Gómez 9959-21-1896
+        char m_scargoNomina[10];
+        float m_fsalarioNomina = 0;
+        float m_fdiasTrabNomina = 0;
+        float m_fsueldoOrNomina = 0;
+        float m_fhoraExtraNomina = 0;
+        float m_fsueldoExtraNomina = 0;
+        float m_fbonificacionincNomina = 0;
+        float m_ftotaldevenNomina = 0;
+        float m_fIGGNomina = 0;
+        float m_fISRNomina = 0;
+        float m_fanticipoNomina = 0;
+        float m_ftotaldescuentNomina = 0;
+        float m_fliquidoNomina = 0;
         //Solicitud al usuario de llenar los atributos
         cout << "Escriba el nombre de la nomina: " << endl;
         cin >> setw( 10 ) >> m_snombreNomina;
+
+        cout << "Escriba el nombre del cargo: " << endl;
+        cin >> setw( 10 ) >> m_scargoNomina;
+
+        cout << "Escriba el monto del salario: " << endl;
+        cin >> setw( 10 ) >> m_fsalarioNomina;
+
+        cout << "Escriba el numero de dias trabajados: " << endl;
+        cin >> setw( 10 ) >> m_fdiasTrabNomina;
+
+        cout << "Escriba las horas extra trabajadas: " << endl;
+        cin >> setw( 10 ) >> m_fhoraExtraNomina;
+
+        cout << "Escriba el monto de bono incentivo: " << endl;
+        cin >> setw( 10 ) >> m_fbonificacionincNomina;
+
+        cout << "Escriba el monto del anticipo: " << endl;
+        cin >> setw( 10 ) >> m_fanticipoNomina;
+
+
         //leer empleado
         Clsempleados empleado;
         m_iclaveEmpleado = mobtenerIndicador("Ingrese la clave del empleado a agregar");
