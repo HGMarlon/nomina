@@ -216,7 +216,7 @@ void ClsPuestos::mnuevoPuestos(fstream &archivoPuestos)
       puesto.mestablecerCargo( m_snombreCargo );
       puesto.mestablecerNumero( m_inumeroPuesto );
       puesto.mestablecerDepaPuesto(m_sDepartamento);
-      puesto.mestablecerSalario(m_sSalario);
+      puesto.mestablecerSalario(m_fSalario); //Alyson Rodríguez 9959-21-829
       puesto.mestablecerNivelAc(m_sNivelAcademico);
       puesto.mestablecerHoraEntrada(m_sHoraEntrada);
       puesto.mestablecerHoraSalida(m_sHoraSalida);
