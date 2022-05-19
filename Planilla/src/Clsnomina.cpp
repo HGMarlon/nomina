@@ -90,6 +90,154 @@ void Clsnomina::mestablecerNombreENomina( string scadenaNombre )
    m_snombreEmpleadoNomina[ ilongitud ] = '\0';
 }
 
+//Karla gómez 9959-21-1896
+string Clsnomina::mobtenerCargoNomina() const
+{
+    return m_scargoNomina;
+}
+
+void Clsnomina::mestablecerCargoNomina( string scadenaCargo )
+{
+   // copiar a lo más 20 caracteres de la cadena
+   const char *svalorCargo = scadenaCargo.data();
+   int ilongitud = strlen( svalorCargo );
+   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
+   strncpy( m_scargoNomina, svalorCargo, ilongitud );
+   // anexar caracter nulo al final de la cadena
+   m_scargoNomina[ ilongitud ] = '\0';
+}
+
+float Clsnomina::mobtenerSalarioNomina() const
+{
+    return m_fsalarioNomina;
+}
+
+void Clsnomina::mestablecerSalarioNomina (float fdecimalSalario)
+{
+    m_fsalarioNomina = fdecimalSalario;
+}
+
+
+float Clsnomina::mobtenerDiasTrabNomina() const
+{
+    return m_fdiasTrabNomina;
+}
+
+void Clsnomina::mestablecerDiasTrabNomina (float fdecimaldias)
+{
+    m_fdiasTrabNomina = fdecimaldias;
+}
+
+
+float Clsnomina::mobtenerSueldoOrNomina() const
+{
+    return m_fsueldoOrNomina;
+}
+
+void Clsnomina::mestablecerSueldoOrNomina (float fdecimalSueldoOrd)
+{
+    m_fsueldoOrNomina = fdecimalSueldoOrd;
+}
+
+
+float Clsnomina::mobtenerHoraExtra() const
+{
+    return m_fhoraExtraNomina;
+}
+
+void Clsnomina::mestablecerHoraExtras (float fdecimalhotasEx)
+{
+    m_fhoraExtraNomina = fdecimalhotasEx;
+}
+
+
+float Clsnomina::mobtenersueldoExtraNomina() const
+{
+    return m_fsueldoExtraNomina;
+}
+
+void Clsnomina::mestablecersueldoExtraNomina (float fdecimalsueldoExtrao)
+{
+    m_fsueldoExtraNomina = fdecimalsueldoExtrao;
+}
+
+
+float Clsnomina::mobtenerbonificacionincNomina() const
+{
+    return m_fbonificacionincNomina;
+}
+
+void Clsnomina::mestablecerbonificacionincNomina (float fdecimalboniincent)
+{
+    m_fbonificacionincNomina = fdecimalboniincent;
+}
+
+
+float Clsnomina::mobtenertotaldevenNomina() const
+{
+    return m_ftotaldevenNomina;
+}
+
+void Clsnomina::mestablecertotaldevenNomina (float fdecimaltotaldeven)
+{
+    m_ftotaldevenNomina = fdecimaltotaldeven;
+}
+
+
+float Clsnomina::mobtenerIGGNomina() const
+{
+    return m_fIGGNomina;
+}
+
+void Clsnomina::mestablecerIGGNomina (float fdecimalIGSS)
+{
+    m_fIGGNomina = fdecimalIGSS;
+}
+
+float Clsnomina::mobtenerISRNomina() const
+{
+    return m_fISRNomina;
+}
+
+void Clsnomina::mestablecerISRNomina (float fdecimalISR)
+{
+    m_fISRNomina = fdecimalISR;
+}
+
+
+float Clsnomina::mobteneranticipoNomina() const
+{
+    return m_fanticipoNomina;
+}
+
+void Clsnomina::mestableceranticipoNomina (float fdecimalanticipo)
+{
+    m_fanticipoNomina = fdecimalanticipo;
+}
+
+
+float Clsnomina::mobtenertotaldescuentNomina() const
+{
+    return m_ftotaldescuentNomina;
+}
+
+void Clsnomina::mestablecertotaldescuentNomina (float fdecimalAnticipo)
+{
+    m_ftotaldescuentNomina = fdecimalAnticipo;
+}
+
+
+float Clsnomina::mobtenerliquidoNomina() const
+{
+    return m_fliquidoNomina;
+}
+
+void Clsnomina::mestablecerliquidoNomina (float fdecimalLiquido)
+{
+    m_fliquidoNomina = fdecimalLiquido;
+}
+
+
 //Metodos del CRUD de Nominas
 Clsnomina::mcrearNominas()
 {
