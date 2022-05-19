@@ -13,13 +13,13 @@
 
 using namespace std;
 
-ClsPuestos::ClsPuestos(int inumeroPuesto, string snombreCargo , string sDepartamento, string sSalario, string sNivelAcademico, string sHoraEntrada, string sHoraSalida )
+ClsPuestos::ClsPuestos(int inumeroPuesto, string snombreCargo , string sDepartamento, float fSalario, string sNivelAcademico, string sHoraEntrada, string sHoraSalida )
 {
     //ctor
     mestablecerNumero(inumeroPuesto);
     mestablecerCargo(snombreCargo);
     mestablecerDepaPuesto(sDepartamento);
-    mestablecerSalario(sSalario);
+    mestablecerSalario(fSalario);
     mestablecerNivelAc(sNivelAcademico);
     mestablecerHoraEntrada(sHoraEntrada);
     mestablecerHoraSalida(sHoraSalida);
