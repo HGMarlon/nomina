@@ -71,23 +71,15 @@ void ClsPuestos::mestablecerDepaPuesto( string scadenaDepartamento )
    m_sDepartamento[ ilongitud ] = '\0';
 
 }
-
-string ClsPuestos::mobtenerSalario() const
+//Alyson Rodríguez 9959-21-829
+float ClsPuestos::mobtenerSalario() const
 {
-    return m_sSalario;
+    return m_fSalario;
 }
 
-void ClsPuestos::mestablecerSalario( string scadenaSalario )
+void ClsPuestos::mestablecerSalario (float fflotanteNumero)
 {
-
-   const char *svalorSalario = scadenaSalario.data();
-   int ilongitud = strlen( svalorSalario );
-   ilongitud = ( ilongitud < 20 ? ilongitud : 19 );
-   strncpy( m_sSalario, svalorSalario, ilongitud );
-
-
-   m_sSalario[ ilongitud ] = '\0';
-
+    m_fSalario = fflotanteNumero;
 }
 
 string ClsPuestos::mobtenerNivelAc() const
