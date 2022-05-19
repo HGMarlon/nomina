@@ -382,6 +382,20 @@ void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
           << setw( 10 ) << registro.mobtenerNombreNomina().data()
           << setw( 10 ) << registro.mobtenerClaveEnomina()
           << setw( 10 ) << registro.mobtenerNombreENomina().data()
+    //Karla Gomez 9959-21-1896
+          << setw( 10 ) << registro.mobtenerCargoNomina().data()
+          << setw( 10 ) << registro.mobtenerSalarioNomina()
+          << setw( 10 ) << registro.mobtenerDiasTrabNomina()
+          << setw( 10 ) << registro.mobtenerSueldoOrNomina()
+          << setw( 10 ) << registro.mobtenerHoraExtra()
+          << setw( 10 ) << registro.mobtenersueldoExtraNomina()
+          << setw( 10 ) << registro.mobtenerbonificacionincNomina()
+          << setw( 10 ) << registro.mobtenertotaldevenNomina()
+          << setw( 10 ) << registro.mobtenerIGGNomina()
+          << setw( 10 ) << registro.mobtenerISRNomina()
+          << setw( 10 ) << registro.mobteneranticipoNomina()
+          << setw( 10 ) << registro.mobtenertotaldescuentNomina()
+          << setw( 10 ) << registro.mobtenerliquidoNomina()
           << endl;
 }
 
