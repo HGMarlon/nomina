@@ -327,8 +327,7 @@ void ClsConceptos::mostrarLineaConcepto( ostream &salidaConcepto, const ClsConce
    salidaConcepto << left << setw( 9 ) << registroConcepto.mobtenerCodigo()
           << setw( 20 ) << registroConcepto.mobtenerNombreEmpleado().data()
           << setw( 20 ) << registroConcepto.mobtenerConcepto().data()
-          << registroConcepto.mobtenerPorcentaje()<<"%"
-          << endl;
+          << registroConcepto.mobtenerPorcentaje()<< endl;
 
 }
 
@@ -518,6 +517,35 @@ ClsConceptos::mcrearConceptos()
 
 ClsConceptos::mmenuConceptos()
 {
+    string accion="";
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    string codigo;
+    fstream abrir;
+    int found=0;
+    abrir.open("Usuario.txt", ios::in);
+    if (!abrir)
+    {
+        cerr << "Archivo Usuario no Encontrado" << endl;
+        exit ( 3 );
+    }
+    else
+    {
+        abrir>>codigo;
+    }
+
+    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
     int iseleccionMenuConceptos;
     do
     {
@@ -552,6 +580,14 @@ ClsConceptos::mmenuConceptos()
         {
         case 1:
             {
+                accion = "Ingreso a Agre. Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 nuevoConcepto(archivoConceptos);
                 getch();
@@ -559,6 +595,14 @@ ClsConceptos::mmenuConceptos()
             break;
         case 2:
             {
+                accion = "Ingreso a Cons. Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 consultarRegistroConcepto(archivoConceptos);
                 getch();
@@ -566,6 +610,14 @@ ClsConceptos::mmenuConceptos()
             break;
         case 3:
             {
+                accion = "Ingreso a Mod. Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 actualizarRegistroConcepto(archivoConceptos);
                 getch();
@@ -573,6 +625,14 @@ ClsConceptos::mmenuConceptos()
             break;
         case 4:
             {
+                accion = "Ingreso a Impri. Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 imprimirRegistroConcepto(archivoConceptos);
                 getch();
@@ -580,6 +640,14 @@ ClsConceptos::mmenuConceptos()
             break;
         case 5:
             {
+                accion = "Ingreso a Elim. Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 eliminarRegistroConcepto(archivoConceptos);
                 getch();
@@ -587,12 +655,29 @@ ClsConceptos::mmenuConceptos()
             break;
         case 6:
             {
+                accion = "Ingreso a Buscar Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 buscarEmpleadoConcepto(archivoConceptos);
                 getch();
             }
             break;
         case 0:
+            {
+                accion = "Salio de Gestion Concepto";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+            }
             break;
         default:
             cout<<"Opción invalida, intenta de nuevo";

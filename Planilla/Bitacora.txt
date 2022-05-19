@@ -1,0 +1,77 @@
+Usuario: Angel     Accion: Ingreso al sistema            Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a Mantenimiento       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a CRUD Empleados      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 6    
+Usuario: Angel     Accion: Ingreso a Des. Empleado       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 9    
+Usuario: Angel     Accion: Imprimio Reg. Empleado        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 9    
+Usuario: Angel     Accion: Ingreso a Buscar Empleado     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 9    
+Usuario: Angel     Accion: Salio de Gestion Empleado     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 9    
+Usuario: Angel     Accion: Ingreso a CRUD Empresa        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 9    
+Usuario: Angel     Accion: Ingreso a Cons. Empresa       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 22   
+Usuario: Angel     Accion: Ingreso a Impri. Empresa      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 22   
+Usuario: Angel     Accion: Ingreso a Buscar. Empresa     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 22   
+Usuario: Angel     Accion: Salio de Gestion Empresa      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 22   
+Usuario: Angel     Accion: Ingreso a CRUD Puestos        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 22   
+Usuario: Angel     Accion: Ingreso a Cons. Puestos       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 39   
+Usuario: Angel     Accion: Ingreso a Impri. Puestos      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 39   
+Usuario: Angel     Accion: Ingreso a Bus. Puestos        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 39   
+Usuario: Angel     Accion: Salio de Gestion Puestos      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 39   
+Usuario: Angel     Accion: Ingreso a CRUD Departamento   Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 39   
+Usuario: Angel     Accion: Ingreso a Cons. Departa.      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 49   
+Usuario: Angel     Accion: Ingreso a Impri. Departa.     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 49   
+Usuario: Angel     Accion: Ingreso a Buscar. Departa.    Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 49   
+Usuario: Angel     Accion: Salio de Gestion Departa.     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 49   
+Usuario: Angel     Accion: Ingreso a CRUD Banco          Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 2    Segundo: 49   
+Usuario: Angel     Accion: Ingreso a Cons. Banco         Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a Impri. Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a Buscar Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 1    
+Usuario: Angel     Accion: Salio de Gestion Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a CRUD Concepto       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 1    
+Usuario: Angel     Accion: Ingreso a Cons. Concepto      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Angel     Accion: Ingreso a Impri. Concepto     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Angel     Accion: Ingreso a Buscar Concepto     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Angel     Accion: Salio de Gestion Concepto     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Angel     Accion: Salio de Mantenimiento        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Angel     Accion: Salio del Menu Principal      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 3    Segundo: 16   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 25   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 25   
+Usuario: Josue     Accion: Ingreso a CRUD Departamento   Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 31   
+Usuario: Josue     Accion: Ingreso a Cons. Departa.      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Ingreso a Buscar. Departa.    Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Ingreso a Cons. Departa.      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Ingreso a Buscar. Departa.    Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Salio de Gestion Departa.     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Ingreso a CRUD Puestos        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 36   
+Usuario: Josue     Accion: Ingreso a Cons. Puestos       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 55   
+Usuario: Josue     Accion: Ingreso a Bus. Puestos        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 55   
+Usuario: Josue     Accion: Salio de Gestion Puestos      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 55   
+Usuario: Josue     Accion: Ingreso a CRUD Empresa        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 6    Segundo: 55   
+Usuario: Josue     Accion: Ingreso a Cons. Empresa       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 7    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Buscar. Empresa     Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 7    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Cons. Empresa       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 7    Segundo: 3    
+Usuario: Josue     Accion: Salio de Gestion Empresa      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 7    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a CRUD Banco          Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 7    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Cons. Banco         Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Josue     Accion: Ingreso a Buscar Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Josue     Accion: Ingreso a Buscar Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Josue     Accion: Salio de Gestion Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 10   Segundo: 11   
+Usuario: Marlon    Accion: Ingreso al sistema            Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 5    
+Usuario: Marlon    Accion: Ingreso a Mantenimiento       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 5    
+Usuario: Marlon    Accion: Ingreso a CRUD Empresa        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 16   
+Usuario: Angel     Accion: Ingreso al sistema            Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 25   
+Usuario: Angel     Accion: Ingreso a Mantenimiento       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 25   
+Usuario: Angel     Accion: Ingreso a CRUD Banco          Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 32   
+Usuario: Marlon    Accion: Ingreso al sistema            Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 38   
+Usuario: Marlon    Accion: Ingreso a Mantenimiento       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 38   
+Usuario: Marlon    Accion: Ingreso a CRUD Empresa        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 43   
+Usuario: Marlon    Accion: Ingreso a Agre. Empresa       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 45   
+Usuario: Marlon    Accion: Ingreso a Cons. Empresa       Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 45   
+Usuario: Marlon    Accion: Salio de Gestion Empresa      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 45   
+Usuario: Marlon    Accion: Ingreso a CRUD Banco          Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 14   Segundo: 45   
+Usuario: Marlon    Accion: Ingreso a Agre. Banco         Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Marlon    Accion: Ingreso a Buscar Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Marlon    Accion: Ingreso a Cons. Banco         Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Marlon    Accion: Salio de Gestion Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Marlon    Accion: Salio de Mantenimiento        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Marlon    Accion: Salio del Menu Principal      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   

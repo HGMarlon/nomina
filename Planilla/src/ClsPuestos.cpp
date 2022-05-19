@@ -486,6 +486,35 @@ void ClsPuestos::mbuscarPuestos(fstream &archivoPuestos)
 
 ClsPuestos::mmenuPuestos()
 {
+    string accion="";
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    string codigo;
+    fstream abrir;
+    int found=0;
+    abrir.open("Usuario.txt", ios::in);
+    if (!abrir)
+    {
+        cerr << "Archivo Usuario no Encontrado" << endl;
+        exit ( 3 );
+    }
+    else
+    {
+        abrir>>codigo;
+    }
+
+    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
     int iseleccionMenuPuestos;
     do
     {
@@ -520,6 +549,14 @@ ClsPuestos::mmenuPuestos()
         {
         case 1:
             {
+                accion = "Ingreso a Agre. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mnuevoPuestos(archivoPuestos);
                 getch();
@@ -527,6 +564,14 @@ ClsPuestos::mmenuPuestos()
             break;
         case 2:
             {
+                accion = "Ingreso a Cons. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mconsultarRegistroPuestos(archivoPuestos);
                 cout << "Fin del archivo.";
@@ -535,6 +580,14 @@ ClsPuestos::mmenuPuestos()
             break;
         case 3:
             {
+                accion = "Ingreso a Mod. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mmodificarRegistroPuestos(archivoPuestos);
                 getch();
@@ -542,6 +595,14 @@ ClsPuestos::mmenuPuestos()
             break;
         case 4:
             {
+                accion = "Ingreso a Impri. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mimprimirRegistroPuestos(archivoPuestos);
                 getch();
@@ -549,17 +610,42 @@ ClsPuestos::mmenuPuestos()
             break;
         case 5:
             {
+                accion = "Ingreso a Elim. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 meliminarRegistroPuestos(archivoPuestos);
             }
             break;
         case 6:
             {
+                accion = "Ingreso a Bus. Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mbuscarPuestos(archivoPuestos);
             }
             break;
         case 0:
+            {
+                accion = "Salio de Gestion Puestos";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+            }
             break;
         default:
             cout<<"Opción invalida, intenta de nuevo";

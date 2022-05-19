@@ -1,4 +1,3 @@
 Clave     Nombre    Nombres             Apellido  Apellidos           Edad Direccion           Telefono  Correo                        Sexo      Nacionalidad   Fecha de nacimiento
 1         Josue     Ernesto             Rivas     De_Leon             18   10av87z5Mixco       30405060  josue@gmail.com               Masculino Guatemalteco   12/06/2003     
-2         Pablo     Bueno               Orellana  Algo                22   3cl15-9z6guatemala  12131415  pablo@gmail.com               Masculino Salvadore¤o    01/01/2000     
 3         Mar¡a     Alejandra           Osorio    Algo                17   4av5-10Jutiapa      80805050  male@gmail.com                Femenino  Colombiana     09/08/2004     
