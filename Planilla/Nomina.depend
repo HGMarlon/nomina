@@ -933,3 +933,195 @@
 	<ctime>
 	<string.h>
 
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	<ctime>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+	"ClsConceptos.h"
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsconceptos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsnomina.h
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652927210 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	<math.h>
+	"ClsmenuMantenimientos.h"
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clsnomina.cpp
+	"Clsnomina.h"
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1652927210 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
