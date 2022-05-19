@@ -345,6 +345,20 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados)
         nomina.mestablecerNombreNomina( m_snombreNomina );
         nomina.mestablecerClaveEnomina( m_iclaveEmpleado );
         nomina.mestablecerNombreENomina(m_snombreEmpleado);
+//Karla Gómez 9959-21-1896
+        nomina.mestablecerCargoNomina(m_scargoNomina);
+        nomina.mestablecerSalarioNomina(m_fsalarioNomina);
+        nomina.mestablecerDiasTrabNomina(m_fdiasTrabNomina);
+        nomina.mestablecerSueldoOrNomina(m_fsueldoOrNomina);
+        nomina.mestablecerHoraExtras(m_fhoraExtraNomina);
+        nomina.mestablecersueldoExtraNomina(m_fsueldoExtraNomina);
+        nomina.mestablecerbonificacionincNomina(m_fbonificacionincNomina);
+        nomina.mestablecertotaldevenNomina(m_ftotaldevenNomina);
+        nomina.mestablecerIGGNomina(m_fIGGNomina);
+        nomina.mestablecerISRNomina(m_fISRNomina);
+        nomina.mestableceranticipoNomina(m_fanticipoNomina);
+        nomina.mestablecertotaldescuentNomina(m_ftotaldescuentNomina);
+        nomina.mestablecerliquidoNomina(m_fliquidoNomina);
         // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
         archivoNomina.seekp( ( m_iclaveNominas - 1 ) *
         sizeof( Clsnomina ) );
