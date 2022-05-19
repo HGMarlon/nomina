@@ -11,13 +11,27 @@
 #include<ctime>
 #include<string.h>
 
-Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado, string snombreEmpelado)
+Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado, string snombreEmpelado, string scargoNomina, float fsalarioNomina, float fdiasTrabNomina, float fsueldoOrNomina, float fhoraExtraNomina, float fsueldoExtraNomina, float fbonificacionincNomina, float ftotaldevenNomina, float fIGGNomina, float fISRNomina, float fanticipoNomina, float ftotaldescuentNomina, float fliquidoNomina)
 {
     //ctor
     mestablecerIdNomina(iclaveNomina);
     mestablecerNombreNomina(snombreNomina);
     mestablecerClaveEnomina(iclaveEmpleado);
     mestablecerNombreENomina(snombreEmpelado);
+//Karla Gómez 9959-21-1896
+    mestablecerCargoNomina(scargoNomina);
+    mestablecerSalarioNomina(fsalarioNomina);
+    mestablecerDiasTrabNomina(fdiasTrabNomina);
+    mestablecerSueldoOrNomina(fsueldoOrNomina);
+    mestablecerHoraExtras(fhoraExtraNomina);
+    mestablecersueldoExtraNomina(fsueldoExtraNomina);
+    mestablecerbonificacionincNomina(fbonificacionincNomina);
+    mestablecertotaldevenNomina(ftotaldevenNomina);
+    mestablecerIGGNomina(fIGGNomina);
+    mestablecerISRNomina(fISRNomina);
+    mestableceranticipoNomina(fanticipoNomina);
+    mestablecertotaldescuentNomina(ftotaldescuentNomina);
+    mestablecerliquidoNomina(fliquidoNomina);
 }
 
 //Metodos del atributo clase nominas
