@@ -11,13 +11,27 @@
 #include<ctime>
 #include<string.h>
 
-Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado, string snombreEmpelado)
+Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado, string snombreEmpelado, string scargoNomina, float fsalarioNomina, float fdiasTrabNomina, float fsueldoOrNomina, float fhoraExtraNomina, float fsueldoExtraNomina, float fbonificacionincNomina, float ftotaldevenNomina, float fIGGNomina, float fISRNomina, float fanticipoNomina, float ftotaldescuentNomina, float fliquidoNomina)
 {
     //ctor
     mestablecerIdNomina(iclaveNomina);
     mestablecerNombreNomina(snombreNomina);
     mestablecerClaveEnomina(iclaveEmpleado);
     mestablecerNombreENomina(snombreEmpelado);
+//Karla Gómez 9959-21-1896
+    mestablecerCargoNomina(scargoNomina);
+    mestablecerSalarioNomina(fsalarioNomina);
+    mestablecerDiasTrabNomina(fdiasTrabNomina);
+    mestablecerSueldoOrNomina(fsueldoOrNomina);
+    mestablecerHoraExtras(fhoraExtraNomina);
+    mestablecersueldoExtraNomina(fsueldoExtraNomina);
+    mestablecerbonificacionincNomina(fbonificacionincNomina);
+    mestablecertotaldevenNomina(ftotaldevenNomina);
+    mestablecerIGGNomina(fIGGNomina);
+    mestablecerISRNomina(fISRNomina);
+    mestableceranticipoNomina(fanticipoNomina);
+    mestablecertotaldescuentNomina(ftotaldescuentNomina);
+    mestablecerliquidoNomina(fliquidoNomina);
 }
 
 //Metodos del atributo clase nominas
@@ -76,6 +90,154 @@ void Clsnomina::mestablecerNombreENomina( string scadenaNombre )
    m_snombreEmpleadoNomina[ ilongitud ] = '\0';
 }
 
+//Karla gómez 9959-21-1896
+string Clsnomina::mobtenerCargoNomina() const
+{
+    return m_scargoNomina;
+}
+
+void Clsnomina::mestablecerCargoNomina( string scadenaCargo )
+{
+   // copiar a lo más 20 caracteres de la cadena
+   const char *svalorCargo = scadenaCargo.data();
+   int ilongitud = strlen( svalorCargo );
+   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
+   strncpy( m_scargoNomina, svalorCargo, ilongitud );
+   // anexar caracter nulo al final de la cadena
+   m_scargoNomina[ ilongitud ] = '\0';
+}
+
+float Clsnomina::mobtenerSalarioNomina() const
+{
+    return m_fsalarioNomina;
+}
+
+void Clsnomina::mestablecerSalarioNomina (float fdecimalSalario)
+{
+    m_fsalarioNomina = fdecimalSalario;
+}
+
+
+float Clsnomina::mobtenerDiasTrabNomina() const
+{
+    return m_fdiasTrabNomina;
+}
+
+void Clsnomina::mestablecerDiasTrabNomina (float fdecimaldias)
+{
+    m_fdiasTrabNomina = fdecimaldias;
+}
+
+
+float Clsnomina::mobtenerSueldoOrNomina() const
+{
+    return m_fsueldoOrNomina;
+}
+
+void Clsnomina::mestablecerSueldoOrNomina (float fdecimalSueldoOrd)
+{
+    m_fsueldoOrNomina = fdecimalSueldoOrd;
+}
+
+
+float Clsnomina::mobtenerHoraExtra() const
+{
+    return m_fhoraExtraNomina;
+}
+
+void Clsnomina::mestablecerHoraExtras (float fdecimalhotasEx)
+{
+    m_fhoraExtraNomina = fdecimalhotasEx;
+}
+
+
+float Clsnomina::mobtenersueldoExtraNomina() const
+{
+    return m_fsueldoExtraNomina;
+}
+
+void Clsnomina::mestablecersueldoExtraNomina (float fdecimalsueldoExtrao)
+{
+    m_fsueldoExtraNomina = fdecimalsueldoExtrao;
+}
+
+
+float Clsnomina::mobtenerbonificacionincNomina() const
+{
+    return m_fbonificacionincNomina;
+}
+
+void Clsnomina::mestablecerbonificacionincNomina (float fdecimalboniincent)
+{
+    m_fbonificacionincNomina = fdecimalboniincent;
+}
+
+
+float Clsnomina::mobtenertotaldevenNomina() const
+{
+    return m_ftotaldevenNomina;
+}
+
+void Clsnomina::mestablecertotaldevenNomina (float fdecimaltotaldeven)
+{
+    m_ftotaldevenNomina = fdecimaltotaldeven;
+}
+
+
+float Clsnomina::mobtenerIGGNomina() const
+{
+    return m_fIGGNomina;
+}
+
+void Clsnomina::mestablecerIGGNomina (float fdecimalIGSS)
+{
+    m_fIGGNomina = fdecimalIGSS;
+}
+
+float Clsnomina::mobtenerISRNomina() const
+{
+    return m_fISRNomina;
+}
+
+void Clsnomina::mestablecerISRNomina (float fdecimalISR)
+{
+    m_fISRNomina = fdecimalISR;
+}
+
+
+float Clsnomina::mobteneranticipoNomina() const
+{
+    return m_fanticipoNomina;
+}
+
+void Clsnomina::mestableceranticipoNomina (float fdecimalanticipo)
+{
+    m_fanticipoNomina = fdecimalanticipo;
+}
+
+
+float Clsnomina::mobtenertotaldescuentNomina() const
+{
+    return m_ftotaldescuentNomina;
+}
+
+void Clsnomina::mestablecertotaldescuentNomina (float fdecimalAnticipo)
+{
+    m_ftotaldescuentNomina = fdecimalAnticipo;
+}
+
+
+float Clsnomina::mobtenerliquidoNomina() const
+{
+    return m_fliquidoNomina;
+}
+
+void Clsnomina::mestablecerliquidoNomina (float fdecimalLiquido)
+{
+    m_fliquidoNomina = fdecimalLiquido;
+}
+
+
 //Metodos del CRUD de Nominas
 Clsnomina::mcrearNominas()
 {
@@ -121,9 +283,43 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados)
         char m_snombreNomina[10];
         int m_iclaveEmpleado = 0;
         string m_snombreEmpleado = "";
+//karla Gómez 9959-21-1896
+        char m_scargoNomina[10];
+        float m_fsalarioNomina = 0;
+        float m_fdiasTrabNomina = 0;
+        float m_fsueldoOrNomina = 0;
+        float m_fhoraExtraNomina = 0;
+        float m_fsueldoExtraNomina = 0;
+        float m_fbonificacionincNomina = 0;
+        float m_ftotaldevenNomina = 0;
+        float m_fIGGNomina = 0;
+        float m_fISRNomina = 0;
+        float m_fanticipoNomina = 0;
+        float m_ftotaldescuentNomina = 0;
+        float m_fliquidoNomina = 0;
         //Solicitud al usuario de llenar los atributos
         cout << "Escriba el nombre de la nomina: " << endl;
         cin >> setw( 10 ) >> m_snombreNomina;
+
+        cout << "Escriba el nombre del cargo: " << endl;
+        cin >> setw( 10 ) >> m_scargoNomina;
+
+        cout << "Escriba el monto del salario: " << endl;
+        cin >> setw( 10 ) >> m_fsalarioNomina;
+
+        cout << "Escriba el numero de dias trabajados: " << endl;
+        cin >> setw( 10 ) >> m_fdiasTrabNomina;
+
+        cout << "Escriba las horas extra trabajadas: " << endl;
+        cin >> setw( 10 ) >> m_fhoraExtraNomina;
+
+        cout << "Escriba el monto de bono incentivo: " << endl;
+        cin >> setw( 10 ) >> m_fbonificacionincNomina;
+
+        cout << "Escriba el monto del anticipo: " << endl;
+        cin >> setw( 10 ) >> m_fanticipoNomina;
+
+
         //leer empleado
         Clsempleados empleado;
         m_iclaveEmpleado = mobtenerIndicador("Ingrese la clave del empleado a agregar");
@@ -149,6 +345,20 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados)
         nomina.mestablecerNombreNomina( m_snombreNomina );
         nomina.mestablecerClaveEnomina( m_iclaveEmpleado );
         nomina.mestablecerNombreENomina(m_snombreEmpleado);
+//Karla Gómez 9959-21-1896
+        nomina.mestablecerCargoNomina(m_scargoNomina);
+        nomina.mestablecerSalarioNomina(m_fsalarioNomina);
+        nomina.mestablecerDiasTrabNomina(m_fdiasTrabNomina);
+        nomina.mestablecerSueldoOrNomina(m_fsueldoOrNomina);
+        nomina.mestablecerHoraExtras(m_fhoraExtraNomina);
+        nomina.mestablecersueldoExtraNomina(m_fsueldoExtraNomina);
+        nomina.mestablecerbonificacionincNomina(m_fbonificacionincNomina);
+        nomina.mestablecertotaldevenNomina(m_ftotaldevenNomina);
+        nomina.mestablecerIGGNomina(m_fIGGNomina);
+        nomina.mestablecerISRNomina(m_fISRNomina);
+        nomina.mestableceranticipoNomina(m_fanticipoNomina);
+        nomina.mestablecertotaldescuentNomina(m_ftotaldescuentNomina);
+        nomina.mestablecerliquidoNomina(m_fliquidoNomina);
         // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
         archivoNomina.seekp( ( m_iclaveNominas - 1 ) *
         sizeof( Clsnomina ) );
@@ -172,6 +382,20 @@ void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
           << setw( 10 ) << registro.mobtenerNombreNomina().data()
           << setw( 10 ) << registro.mobtenerClaveEnomina()
           << setw( 10 ) << registro.mobtenerNombreENomina().data()
+    //Karla Gomez 9959-21-1896
+          << setw( 10 ) << registro.mobtenerCargoNomina().data()
+          << setw( 10 ) << registro.mobtenerSalarioNomina()
+          << setw( 10 ) << registro.mobtenerDiasTrabNomina()
+          << setw( 10 ) << registro.mobtenerSueldoOrNomina()
+          << setw( 10 ) << registro.mobtenerHoraExtra()
+          << setw( 10 ) << registro.mobtenersueldoExtraNomina()
+          << setw( 10 ) << registro.mobtenerbonificacionincNomina()
+          << setw( 10 ) << registro.mobtenertotaldevenNomina()
+          << setw( 10 ) << registro.mobtenerIGGNomina()
+          << setw( 10 ) << registro.mobtenerISRNomina()
+          << setw( 10 ) << registro.mobteneranticipoNomina()
+          << setw( 10 ) << registro.mobtenertotaldescuentNomina()
+          << setw( 10 ) << registro.mobtenerliquidoNomina()
           << endl;
 }
 
@@ -182,6 +406,20 @@ void Clsnomina::mconsultarRegistroNomina(fstream &archivoNomina)
     << setw( 10 ) << "Nombre nomina"
     << setw( 10 ) << "Clave empleado"
     << setw( 10 ) << "Nombre empleado"
+//Karla Gómez 9959-21-1896
+    << setw( 10 ) << "Nombre Cargo"
+    << setw( 10 ) << "Monto Sueldo Asignado"
+    << setw( 10 ) << "Numero Dias Laborados"
+    << setw( 10 ) << "Monto Sueldo Ordinario"
+    << setw( 10 ) << "Numero Horas Extra"
+    << setw( 10 ) << "Monto Sueldo Extraordinario"
+    << setw( 10 ) << "Monto Bonificacion Incentivo"
+    << setw( 10 ) << "Monto Total Devengado"
+    << setw( 10 ) << "Monto IGSS"
+    << setw( 10 ) << "Monto ISR"
+    << setw( 10 ) << "Monto anticipos"
+    << setw( 10 ) << "Monto Total Descuentos"
+    << setw( 10 ) << "Monto Liquido a Recibir"
     << endl;
     // colocar el apuntador de posición de archivo al principio del archivo de registros
     archivoNomina.seekg( 0 );
