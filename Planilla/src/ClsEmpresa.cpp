@@ -479,6 +479,36 @@ void ClsEmpresa::mbuscarEmpresa(fstream &archivoEmpresa)
 
 ClsEmpresa::mmenuEmpresa()
 {
+    string accion="";
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    string codigo;
+    fstream abrir;
+    int found=0;
+    abrir.open("Usuario.txt", ios::in);
+    if (!abrir)
+    {
+        cerr << "Archivo Usuario no Encontrado" << endl;
+        exit ( 3 );
+    }
+    else
+    {
+        abrir>>codigo;
+    }
+
+    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
+
     int iseleccionMenuEmpresa;
     do
     {
@@ -495,7 +525,7 @@ ClsEmpresa::mmenuEmpresa()
 
             }
         cout<<"-------------------------------"<<endl;
-        cout<<"|   SISTEMA GESTION EMPLEADOS  |"<<endl;
+        cout<<"|   SISTEMA GESTION EMPRESA  |"<<endl;
         cout<<"-------------------------------"<<endl;
         cout<<"1. Ingreso Empresa"<<endl;
         cout<<"2. Despliegue Empresa"<<endl;
@@ -513,6 +543,14 @@ ClsEmpresa::mmenuEmpresa()
         {
         case 1:
             {
+                accion = "Ingreso a Agre. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mnuevaEmpresa(archivoEmpresa);
                 getch();
@@ -520,6 +558,14 @@ ClsEmpresa::mmenuEmpresa()
             break;
         case 2:
             {
+                accion = "Ingreso a Cons. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mconsultarRegistroEmpresa(archivoEmpresa);
                 cout << "Fin del archivo.";
@@ -528,6 +574,14 @@ ClsEmpresa::mmenuEmpresa()
             break;
         case 3:
             {
+                accion = "Ingreso a Mod. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mmodificarRegistroEmpresa(archivoEmpresa);
                 getch();
@@ -535,6 +589,14 @@ ClsEmpresa::mmenuEmpresa()
             break;
         case 4:
             {
+                accion = "Ingreso a Impri. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mimprimirRegistroEmpresa(archivoEmpresa);
                 getch();
@@ -542,17 +604,42 @@ ClsEmpresa::mmenuEmpresa()
             break;
         case 5:
             {
+                accion = "Ingreso a Elim. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 meliminarRegistroEmpresa(archivoEmpresa);
             }
             break;
         case 6:
             {
+                accion = "Ingreso a Buscar. Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mbuscarEmpresa(archivoEmpresa);
             }
             break;
         case 0:
+            {
+                accion = "Salio de Gestion Empresa";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+            }
             break;
         default:
             cout<<"Opción invalida, intenta de nuevo";

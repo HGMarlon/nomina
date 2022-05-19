@@ -1,4 +1,3 @@
 Numero    Cargo               Departamento        Salario             Nivel academico     Hora de entrada     Hora de salida      
-Gerente   Gerente             Direccion           10000.00            Diversificado       9:00am              6:00pm              
-RepartidorRepartidor          Mensajeria          3500                B sico              6:00am              7:45pm              
-Contador  Contador            Contabilidad        20000.00            Universitario       7:00am              5:00pm              
+1         Gerente             Direccion           10000.00            Diversificado       9:00am              6:00pm              
+2         Repartidor          Mensajeria          3500                B sico              6:00am              7:45pm              

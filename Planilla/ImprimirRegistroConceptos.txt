@@ -1,0 +1,5 @@
+Codigo   Nombre:             Concepto:           Porcentaje:         
+1        Angel               IGSS                500%
+2        Angel               IGSS                15%
+3        Roberto             Bono14              1500%
+4        Roberto             Bono14              25%

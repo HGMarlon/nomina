@@ -395,6 +395,35 @@ void Clsempleados::mbuscarEmpleados(fstream &archivoEmpleados)
 
 Clsnomina::mmenuNominas()
 {
+    string accion="";
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    string codigo;
+    fstream abrir;
+    int found=0;
+    abrir.open("Usuario.txt", ios::in);
+    if (!abrir)
+    {
+        cerr << "Archivo Usuario no Encontrado" << endl;
+        exit ( 3 );
+    }
+    else
+    {
+        abrir>>codigo;
+    }
+
+    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
     Clsempleados empleado;
     int iseleccionMenuNomina;
     do
@@ -421,7 +450,7 @@ Clsnomina::mmenuNominas()
                 exit ( 1 );
             }
         cout<<"-------------------------------"<<endl;
-        cout<<"|   SISTEMA GESTION Nomina  |"<<endl;
+        cout<<"|   SISTEMA GESTION NOMINA  |"<<endl;
         cout<<"-------------------------------"<<endl;
         cout<<"1. Ingreso Empleados"<<endl;
         cout<<"2. Despliegue Empleados"<<endl;
@@ -439,6 +468,14 @@ Clsnomina::mmenuNominas()
         {
         case 1:
             {
+                accion = "Ingreso a Agre. Empleado";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mnuevaNomina(archivoNomina, archivoEmpleados);
                 getch();
@@ -446,6 +483,14 @@ Clsnomina::mmenuNominas()
             break;
         case 2:
             {
+                accion = "Ingreso a Cons. Empleado";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
                 system("cls");
                 mconsultarRegistroNomina(archivoNomina);
                 cout << "Fin del archivo.";
@@ -479,6 +524,15 @@ Clsnomina::mmenuNominas()
             }
             break;*/
         case 0:
+            {
+                accion = "Salio de Gestion Nomina";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+            }
             break;
         default:
             cout<<"Opción invalida, intenta de nuevo";

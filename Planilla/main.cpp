@@ -74,7 +74,19 @@ void listado(){
     fclose(arch);
 }
 
+
+
 void login(){
+
+    //Bitacora
+    string codigo="";
+    string accion="";
+
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
 
     FILE *arch;
     arch=fopen("login.dat","rb");
@@ -144,7 +156,39 @@ void login(){
 
     if((usuarioExiste)&&(passwordCorrecto)){
         cout<<endl<<endl<<"Realizo login exitoso"<<endl;
+        getch();
         int imenuPrincipal=0;
+
+        //Bitacora
+        codigo = pusuario;
+        accion = "Ingreso al sistema";
+        //escribirBitacora(codigo, accion);
+
+        ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+        if (!bitacora)
+        {
+            cerr << "No se pudo abrir el archivo." << endl;
+            cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+            exit ( 3 );
+        }
+
+        bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+        <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+        <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+        <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+        bitacora.close();
+
+        //////////////////////////////////////////////////////////////////////
+        ofstream usuario("Usuario.txt", ios::out);
+        if (!usuario)
+        {
+            cerr << "No se pudo abrir el archivo." << endl;
+            cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+            exit ( 3 );
+        }
+
+        usuario<<left<<setw(10)<< codigo;
+        usuario.close();
     //Menu principal
 	do
     {
@@ -170,12 +214,42 @@ void login(){
         {
         case 1:
             {
+                accion = "Ingreso a Mantenimiento";
+                ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
+
                 ClsmenuMantenimientos menuMantenimientos;
                 menuMantenimientos.mmenuMantimientos();
             }
             break;
         case 2:
             {
+                accion = "Ingreso a Gen. Nomina";
+                ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
+
                 cout<<"Usted esta en el apartado Generación nomina";
                 Clsnomina nomina;
                 nomina.mmenuNominas();
@@ -184,6 +258,21 @@ void login(){
             break;
         case 3:
             {
+                accion = "Ingreso a Info. Nomina";
+                ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
+
                 cout<<"Usted esta en el apartado informes nomina";
                 getch();
             }
@@ -206,6 +295,22 @@ void login(){
             }
             break;
         case 0:
+            {
+                accion = "Salio del Menu Principal";
+                ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+                if (!bitacora)
+                {
+                    cerr << "No se pudo abrir el archivo." << endl;
+                    cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                    exit ( 3 );
+                }
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                bitacora.close();
+            }
             break;
         default:
             cout<<"Valor ingresado no vádido, intente de nuevo";
@@ -233,7 +338,7 @@ int main(){
         cout << "\t1 .- REGISTRAR USUARIOS" << endl;
         cout << "\t2 .- LISTAR USUARIOS" << endl;
         cout << "\t3 .- LOGIN" << endl;
-        cout << "\t4 .- SALIR" << endl << endl;
+        cout << "\t0 .- SALIR" << endl << endl;
         cout << "Elije una opcion: ";
 
         cin >> tecla;
@@ -258,7 +363,7 @@ int main(){
 				pausa();
 				break;
 
-			case '4':
+			case '0':
 				bandera=true;
 				break;
 

@@ -662,3 +662,117 @@
 	<cstdlib>
 	<cstring>
 
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	"ClsBancos.h"
+	"Clslogin.h"
+	"Clsbitacora.h"
+	"ClsEmpresa.h"
+	"ClsConceptos.h"
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clsempleados.h
+	<string>
+	<iostream>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clspuestos.h
+	<string>
+	<iostream>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clsbancos.h
+	<string>
+	<iostream>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clslogin.h
+	<string>
+	<iostream>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clsbitacora.h
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clsempresa.h
+	<string>
+	<iostream>
+
+1652659229 c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\include\clsconceptos.h
+	<string>
+	<iostream>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsbitacora.cpp
+	"Clsbitacora.h"
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsconceptos.cpp
+	"ClsConceptos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsempleados.cpp
+	"ClsEmpleados.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clslogin.cpp
+	"Clslogin.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clsmenus.cpp
+	"ClsEmpleados.h"
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+
+1652659229 source:c:\users\arcangel\desktop\clases\semestre3\programacioni\git\nomina\loginterminado\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iomanip>
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	<cstring>
+
