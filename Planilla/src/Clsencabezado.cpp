@@ -146,6 +146,8 @@ Clsencabezado::mcrearEncabezado()
     }
 }
 
+
+
 Clsencabezado::~Clsencabezado()
 {
     //dtor

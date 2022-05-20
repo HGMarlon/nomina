@@ -458,7 +458,7 @@
 	<iomanip>
 	<cstdlib>
 
-1653012908 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\main.cpp
+1653063417 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -535,7 +535,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1653012976 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsnomina.h
+1653063386 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsnomina.h
 	"Clsempleados.h"
 	"Clsnomina.h"
 	"ClsConceptos.h"
@@ -549,7 +549,7 @@
 	<iomanip>
 	<cstdlib>
 
-1653012908 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsnomina.cpp
+1653063403 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsnomina.cpp
 	"Clsnomina.h"
 	"Clsempleados.h"
 	"Clsempleados.h"
@@ -1142,7 +1142,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1653013338 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsconceptos.h
+1653062779 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsconceptos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -1150,7 +1150,7 @@
 	<iomanip>
 	<cstdlib>
 
-1653013406 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsconceptos.cpp
+1653062779 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsconceptos.cpp
 	"ClsConceptos.h"
 	<conio.h>
 	<iostream>
@@ -1163,7 +1163,7 @@
 	<math.h>
 	"ClsmenuMantenimientos.h"
 
-1653012908 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsencabezado.h
+1653062779 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsencabezado.h
 	"Clsnomina.h"
 	"ClsEmpresa.h"
 	<conio.h>
@@ -1173,7 +1173,7 @@
 	<iomanip>
 	<cstdlib>
 
-1653013131 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsencabezado.cpp
+1653063386 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsencabezado.cpp
 	"Clsencabezado.h"
 	"Clsempleados.h"
 	"Clsnomina.h"
