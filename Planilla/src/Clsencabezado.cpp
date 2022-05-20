@@ -146,7 +146,16 @@ Clsencabezado::mcrearEncabezado()
     }
 }
 
-
+void Clsencabezado::mmostrarEncabezado( const Clsencabezado &registro )
+{
+       cout << left << setw( 10 ) << registro.mobtenerClaveEncabezado()
+          << setw( 20 ) << registro.mobtenerNombreEncabezado().data()
+          << setw( 20 ) << registro.mobtenerEncabezadoEmpresa().data()
+          << setw( 15 ) << registro.mobtenerFechaEncabezado().data()
+          << setw( 20 ) << registro.mobtenerMonedaEncabezado().data()
+          << setw( 30 ) << registro.mobtenerNota().data()
+          << endl;
+}
 
 Clsencabezado::~Clsencabezado()
 {

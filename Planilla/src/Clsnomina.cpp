@@ -465,12 +465,10 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
             reinterpret_cast< const char * >( &encabezado ),
             sizeof( Clsencabezado ) );
 }
-/*
+//Alyson Rodriguez 9959-21-829
 void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
 {
-       cout << left << setw( 10 ) << registro.mobtenerIdNomina()
-          << setw( 10 ) << registro.mobtenerNombreNomina().data()
-          << setw( 10 ) << registro.mobtenerClaveEnomina()
+       cout << left << setw( 10 ) << registro.mobtenerClaveEnomina()
           << setw( 10 ) << registro.mobtenerNombreENomina().data()
     //Karla Gomez 9959-21-1896
           << setw( 10 ) << registro.mobtenerCargoNomina().data()
@@ -489,239 +487,70 @@ void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
           << endl;
 }
 
-void Clsnomina::mleerNomina(fstream &archivoNomina)
+void Clsnomina::mleerNomina(fstream &archivoNomina, fstream &archivoEncabezado)
 {
     //Creando encabezado de la tabla
-    cout << left << setw( 10 ) << "Clave Nomina"
-    << setw( 10 ) << "Nombre nomina"
-    << setw( 10 ) << "Clave empleado"
-    << setw( 10 ) << "Nombre empleado"
-//Karla Gómez 9959-21-1896
-    << setw( 10 ) << "Nombre Cargo"
-    << setw( 10 ) << "Monto Sueldo Asignado"
-    << setw( 10 ) << "Numero Dias Laborados"
-    << setw( 10 ) << "Monto Sueldo Ordinario"
-    << setw( 10 ) << "Numero Horas Extra"
-    << setw( 10 ) << "Monto Sueldo Extraordinario"
-    << setw( 10 ) << "Monto Bonificacion Incentivo"
-    << setw( 10 ) << "Monto Total Devengado"
-    << setw( 10 ) << "Monto IGSS"
-    << setw( 10 ) << "Monto ISR"
-    << setw( 10 ) << "Monto anticipos"
-    << setw( 10 ) << "Monto Total Descuentos"
-    << setw( 10 ) << "Monto Liquido a Recibir"
+    cout << left << setw( 10 ) << "Clave N.:"
+    << setw( 20 ) << "Nombre nomina:"
+    << setw( 20 ) << "Nombre Empresa:"
+    << setw( 15 ) << "Fecha:"
+    << setw( 20 ) << "Moneda:"
+    << setw( 30 ) << "Nota:"
     << endl;
+    Clsencabezado encabezado;
     // colocar el apuntador de posición de archivo al principio del archivo de registros
-    archivoNomina.seekg( 0 );
+    archivoEncabezado.seekg( 0 );
     // leer el primer registro del archivo de registros
-    Clsnomina nomina;
-    archivoNomina.read( reinterpret_cast< char * >( &nomina ),
-    sizeof( Clsnomina ) );
+    archivoEncabezado.read( reinterpret_cast< char * >( &encabezado ),
+    sizeof( Clsencabezado ) );
     // copiar todos los registros del archivo de registros en el archivo de texto
-    while ( !archivoNomina.eof() )
+    while ( !archivoEncabezado.eof() )
     {
-        // escribir un registro individual en el archivo de texto
-        if ( nomina.mobtenerIdNomina() != 0 )
-        mostrarLineaNomina(nomina);
+        if ( encabezado.mobtenerClaveEncabezado() != 0 )
+        encabezado.mmostrarEncabezado(encabezado);
         // leer siguiente registro del archivo de registros
+        archivoEncabezado.read( reinterpret_cast< char * >( &encabezado ),
+        sizeof( Clsencabezado ) );
+    }
+    cout << left << setw( 10 ) << "clave:"
+    << setw( 10 ) << "Nombre:"
+//Karla Gómez 9959-21-1896
+    << setw( 10 ) << "Cargo"
+    << setw( 10 ) << "Salario"
+    << setw( 10 ) << "Dias"
+    << setw( 10 ) << "Ordinario"
+    << setw( 10 ) << "H.E."
+    << setw( 10 ) << "S. Extra."
+    << setw( 10 ) << "Bon.In."
+    << setw( 10 ) << "Devengado"
+    << setw( 10 ) << "Impuesto"
+    << setw( 10 ) << "Impuesto"
+    << setw( 10 ) << "Anticipo"
+    << setw( 10 ) << "T. Desc."
+    << setw( 10 ) << "T. Liq."
+    << endl;
+//Alyson Rodriguez 9959-21-829
+        int m_iclaveNominas = 1;
+        // colocar el apuntador de posición de archivo al principio del archivo de registros
+        archivoNomina.seekg(
+        ( m_iclaveNominas - 1 ) * sizeof( Clsnomina ) );
+        // leer el primer registro del archivo de registros
+        Clsnomina nomina;
         archivoNomina.read( reinterpret_cast< char * >( &nomina ),
         sizeof( Clsnomina ) );
-    }
-}*/
-/*
-void Clsempleados::mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro )
-{
-       salida << left << setw( 10 ) << registro.mobtenerClave()
-          << setw( 10 ) << registro.mobtenerNombre().data()
-          << setw( 20 ) << registro.mobtenerNombres().data()
-          << setw( 10 ) << registro.mobtenerApellido().data()
-          << setw( 20 ) << registro.mobtenerApellidos().data()
-          << setw( 5 ) << registro.mobtenerEdad().data()
-          << setw( 20 ) << registro.mobtenerDireccion().data()
-          << setw( 10 ) << registro.mobtenerTelefono().data()
-          << setw( 30 ) << registro.mobtenerCorreo().data()
-          << setw( 10 ) << registro.mobtenerSexo().data()
-          << setw( 15 ) << registro.mobtenerNacionalidad().data()
-          << setw( 15 ) << registro.mobtenerNacimiento().data()
-          << endl;
-}
-
-void Clsempleados::mmodificarRegistroEmpleados( fstream &archivoEmpleados )
-{
-    Clsempleados empleado;
-    int m_iclaveEmpleado = mobtenerIndicador("Ingrese la clave del empleado");
-    archivoEmpleados.seekg(
-    ( m_iclaveEmpleado - 1 ) * sizeof( Clsempleados ) );
-    // leer el primer registro del archivo
-    archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
-    sizeof( Clsempleados ) );
-    // actualizar el registro
-    if ( empleado.mobtenerClave() != 0 )
-    {
-        mmostrarLineaRegistroEmpleados( cout, empleado );
-        cout << endl    ;
-        //Atributos a ingresar
-        char m_snombreEmpleado[10];
-        char m_snombresEmpleado[20];
-        char m_sapellidoEmpleado[10];
-        char m_sapellidosEmpleado[20];
-        char m_sedadEmpleado[5];
-        char m_sdireccionEmpleado[20];
-        char m_stelefonoEmpleado[10];
-        char m_scorreoEmpleado[30];
-        char m_ssexoEmpleado[10];
-        char m_snacionalidadEmpleado[15];
-        char m_snacimientoEmpleado[15];
-        //Solicitud al usuario de llenar los atributos
-        cout << "Escriba el primer nombre del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snombreEmpleado;
-        cout << "Escriba segundo y/o tercer nombre del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snombresEmpleado;
-        cout << "Escriba el primer apellido del empleado: " << endl;
-        cin >> setw( 20 ) >> m_sapellidoEmpleado;
-        cout << "Escriba segundo y/o tercer apellido del empleado: " << endl;
-        cin >> setw( 20 ) >> m_sapellidosEmpleado;
-        cout << "Escriba la edad del empleado: " << endl;
-        cin >> setw( 5 ) >> m_sedadEmpleado;
-        cout << "Escriba la direccion del empleado: " << endl;
-        cin >> setw( 20 ) >> m_sdireccionEmpleado;
-        cout << "Escriba el telefono del empleado: " << endl;
-        cin >> setw( 20 ) >> m_stelefonoEmpleado;
-        cout << "Escriba el correo del empleado: " << endl;
-        cin >> setw( 20 ) >> m_scorreoEmpleado;
-        cout << "Escriba el sexo del empleado: " << endl;
-        cin >> setw( 10 ) >> m_ssexoEmpleado;
-        cout << "Escriba la nacionalidad del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snacionalidadEmpleado;
-        cout << "Escriba la fecha de nacimiento del empleado: " << endl;
-        cin >> setw( 20 ) >> m_snacimientoEmpleado;
-        // usar valores para llenar los valores de la clave
-        empleado.mestablecerClave( m_iclaveEmpleado );
-        empleado.mestablecerNombre( m_snombreEmpleado );
-        empleado.mestablecerNombres(m_snombresEmpleado);
-        empleado.mestablecerApellido(m_sapellidoEmpleado);
-        empleado.mestablecerApellidos(m_sapellidosEmpleado);
-        empleado.mestablecerEdad(m_sedadEmpleado);
-        empleado.mestablecerDireccion(m_sdireccionEmpleado);
-        empleado.mestablecerTelefono(m_stelefonoEmpleado);
-        empleado.mestablecerCorreo(m_scorreoEmpleado);
-        empleado.mestablecerSexo(m_ssexoEmpleado);
-        empleado.mestablecerNacionalidad(m_snacionalidadEmpleado);
-        empleado.mestablecerNacimiento(m_snacimientoEmpleado);
-        mmostrarLineaRegistroEmpleados( cout, empleado );
-        // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
-        archivoEmpleados.seekp(
-        ( m_iclaveEmpleado - 1 ) * sizeof( Clsempleados ) );
-        // escribir el registro actualizado sobre el registro anterior en el archivo
-        archivoEmpleados.write(
-        reinterpret_cast< const char * >( &empleado ),
-        sizeof( Clsempleados ) );
-        cout << "Empleado modificado con éxito.";
-    }
-    // mostrar error si la clave no contiene informacion
-    else
-    cerr << "La la clave #" << m_iclaveEmpleado
-         << " no tiene informacion." << endl;
-}
-
-void Clsempleados::mimprimirRegistroEmpleados(fstream &archivoEmpleado)
-{
-    Clsempleados empleado;
-    ofstream imprimir("registrodeempleados.txt", ios::out);
-    // salir del programa si ofstream no puede crear el archivo
-    if ( !imprimir )
-    {
-        cerr << "No se pudo crear el archivo." << endl;
-        exit( 1 );
-
-    }
-    imprimir << left << setw( 10 ) << "Clave"
-    << setw( 10 ) << "Nombre"
-    << setw( 20 ) << "Nombres"
-    << setw( 10 ) << "Apellido"
-    << setw( 20 ) << "Apellidos"
-    << setw( 5 ) << "Edad"
-    << setw( 20 ) << "Direccion"
-    << setw( 10 ) << "Telefono"
-    << setw( 30 ) << "Correo"
-    << setw( 10 ) << "Sexo"
-    << setw( 15 ) << "Nacionalidad"
-    << setw( 15 ) << "Fecha de nacimiento"
-    << endl;
-    // colocar el apuntador de posición de archivo al principio del archivo de registros
-    archivoEmpleado.seekg( 0 );
-    // leer el primer registro del archivo de registros
-    archivoEmpleado.read( reinterpret_cast< char * >( &empleado ),
-    sizeof( Clsempleados ) );
-    // copiar todos los registros del archivo de registros en el archivo de texto
-    while ( !archivoEmpleado.eof() )
-    {
-        // escribir un registro individual en el archivo de texto
-        if ( empleado.mobtenerClave() != 0 )
-        mmostrarLineaRegistroEmpleados( imprimir, empleado );
-        // leer siguiente registro del archivo de registros
-        archivoEmpleado.read( reinterpret_cast< char * >( &empleado ),
-        sizeof( Clsempleados ) );
-   }
-   cout << "archivo creado con éxito con el nombre de: registrodeempleados.txt";
-}
-
-void Clsempleados::meliminarRegistroEmpleados(fstream &archivoEmpleados)
-{
-    int iindicador= mobtenerIndicador( "Escriba la clave a eliminar" );
-    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
-    archivoEmpleados.seekg(
-    ( iindicador - 1 ) * sizeof( Clsempleados ) );
-    // leer el registro del archivo
-    Clsempleados empleado;
-    archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
-    sizeof( Clsempleados ) );
-    // eliminar el registro, si es que existe en el archivo
-    if ( empleado.mobtenerClave() != 0 )
-    {
-        Clsempleados empleadoEnBlanco;
-        // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
-        archivoEmpleados.seekp( ( iindicador - 1 ) *
-        sizeof( Clsempleados ) );
-        // reemplazar el registro existente con un registro en blanco
-        archivoEmpleados.write(
-        reinterpret_cast< const char * >( &empleadoEnBlanco ),
-        sizeof( Clsempleados ) );
-        cout << "Empleado clave #" << iindicador << " eliminado correctamente.\n";
-   }
-   // mostrar error si el registro esta vacio
-   else
-   {
-       cerr << "Empleado clave #" << iindicador << " esta vacia.\n";
-   }
-   getch();
-}
-
-void Clsempleados::mbuscarEmpleados(fstream &archivoEmpleados)
-{
-    int iindicador = mobtenerIndicador( "Escriba la clave que desea buscar" );
-    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
-    archivoEmpleados.seekg(
-    ( iindicador - 1 ) * sizeof( Clsempleados ) );
-    // leer el primer registro del archivo
-    Clsempleados empleado;
-    archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
-    sizeof( Clsempleados ) );
-    if ( empleado.mobtenerClave() != 0 )
-    {
-        mmostrarLineaRegistroEmpleados( cout, empleado );
-    }
-    // mostrar error si la clave esta vacia
-    else
-    {
-        cerr << "La clave #" << iindicador
-        << " no tiene informacion." << endl;
-    }
+        // copiar todos los registros del archivo de registros en el archivo de texto
+        while ( !archivoNomina.eof() )
+        {
+            // escribir un registro individual en el archivo de texto
+            if ( nomina.mobtenerClaveEnomina() != 0 )
+            mostrarLineaNomina(nomina);
+            // leer siguiente registro del archivo de registros
+            archivoNomina.read( reinterpret_cast< char * >( &nomina ),
+            sizeof( Clsnomina ) );
+        }
+    /*}while(ciclo>0)*/
     getch();
 }
-*/
-
-
 Clsnomina::~Clsnomina()
 {
     //dtor
