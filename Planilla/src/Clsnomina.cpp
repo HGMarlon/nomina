@@ -1,6 +1,15 @@
 #include "Clsnomina.h"
 #include "Clsempleados.h"
 
+/*Josué Rivas - 9491-21-3133
+Clases*/
+#include "Clsempleados.h"
+#include "Clsnomina.h"
+#include "ClsConceptos.h"
+#include "ClsPuestos.h"
+#include "ClsEmpresa.h"
+#include "Clsencabezado.h"
+
 //Librerias
 #include<conio.h>
 #include<iostream>
@@ -11,13 +20,15 @@
 #include<ctime>
 #include<string.h>
 
-Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado, string snombreEmpelado, string scargoNomina, float fsalarioNomina, float fdiasTrabNomina, float fsueldoOrNomina, float fhoraExtraNomina, float fsueldoExtraNomina, float fbonificacionincNomina, float ftotaldevenNomina, float fIGGNomina, float fISRNomina, float fanticipoNomina, float ftotaldescuentNomina, float fliquidoNomina)
+Clsnomina::Clsnomina(int iclaveNomina, int iclaveEmpleado, string snombreEmpelado, int iclaveCantidad, string scargoNomina, float fsalarioNomina,
+                     float fdiasTrabNomina, float fsueldoOrNomina, float fhoraExtraNomina, float fsueldoExtraNomina, float fbonificacionincNomina, float ftotaldevenNomina,
+                     float fIGGNomina, float fISRNomina, float fanticipoNomina, float ftotaldescuentNomina, float fliquidoNomina)
 {
     //ctor
-    mestablecerIdNomina(iclaveNomina);
-    mestablecerNombreNomina(snombreNomina);
+    /*mestablecerIdNomina(iclaveNomina);*/
     mestablecerClaveEnomina(iclaveEmpleado);
     mestablecerNombreENomina(snombreEmpelado);
+    mestablecerCantidadNomina(iclaveCantidad);
 //Karla Gómez 9959-21-1896
     mestablecerCargoNomina(scargoNomina);
     mestablecerSalarioNomina(fsalarioNomina);
@@ -33,8 +44,8 @@ Clsnomina::Clsnomina(int iclaveNomina, string snombreNomina, int iclaveEmpleado,
     mestablecertotaldescuentNomina(ftotaldescuentNomina);
     mestablecerliquidoNomina(fliquidoNomina);
 }
-
-//Metodos del atributo clase nominas
+/*Josué Rivas - 9491-21-3133
+Metodos del atributo clave nomina*/
 int Clsnomina::mobtenerIdNomina() const
 {
     return m_iclaveNominas;
@@ -45,24 +56,7 @@ void Clsnomina::mestablecerIdNomina (int ienteroClave)
     m_iclaveNominas = ienteroClave;
 }
 
-//Metodos atributo nombre de la nomina
-string Clsnomina::mobtenerNombreNomina() const
-{
-    return m_snombreNomina;
-}
-
-void Clsnomina::mestablecerNombreNomina( string scadenaNombre )
-{
-   // copiar a lo más 20 caracteres de la cadena
-   const char *svalorNombre = scadenaNombre.data();
-   int ilongitud = strlen( svalorNombre );
-   ilongitud = ( ilongitud < 10 ? ilongitud : 9 );
-   strncpy( m_snombreNomina, svalorNombre, ilongitud );
-   // anexar caracter nulo al final de la cadena
-   m_snombreNomina[ ilongitud ] = '\0';
-}
-
-//Metodos del atributo clase empelados
+//Metodos del atributo clave empleados
 int Clsnomina::mobtenerClaveEnomina() const
 {
     return m_iclaveEmpleadoNomina;
@@ -73,7 +67,7 @@ void Clsnomina::mestablecerClaveEnomina (int ienteroClave)
     m_iclaveEmpleadoNomina = ienteroClave;
 }
 
-//Metodos atributo nombre del empleado
+//Metodos del atributo nombre del empleado
 string Clsnomina::mobtenerNombreENomina() const
 {
     return m_snombreEmpleadoNomina;
@@ -88,6 +82,17 @@ void Clsnomina::mestablecerNombreENomina( string scadenaNombre )
    strncpy( m_snombreEmpleadoNomina, svalorNombre, ilongitud );
    // anexar caracter nulo al final de la cadena
    m_snombreEmpleadoNomina[ ilongitud ] = '\0';
+}
+
+//Metodos del atributo cantidad nomina
+int Clsnomina::mobtenerCantidadNomina() const
+{
+    return m_icantidadNomina;
+}
+
+void Clsnomina::mestablecerCantidadNomina (int ienteroClave)
+{
+    m_icantidadNomina = ienteroClave;
 }
 
 //Karla gómez 9959-21-1896
@@ -237,8 +242,8 @@ void Clsnomina::mestablecerliquidoNomina (float fdecimalLiquido)
     m_fliquidoNomina = fdecimalLiquido;
 }
 
-
-//Metodos del CRUD de Nominas
+/*Josue Rivas - 9491-21-3133
+Metodos de Nominas*/
 Clsnomina::mcrearNominas()
 {
     ofstream archivoNomina("registronominas.dat", ios::out | ios::binary);
@@ -254,7 +259,7 @@ Clsnomina::mcrearNominas()
     }
 }
 
-int Clsnomina::mobtenerIndicador(const char * const iindicador)
+int Clsnomina::mobtenerNomina(const char * const iindicador)
 {
     int m_iclaveNominas;
    // obtener el valor de la clave
@@ -266,116 +271,201 @@ int Clsnomina::mobtenerIndicador(const char * const iindicador)
    return m_iclaveNominas;
 }
 
-void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados)
+void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, fstream &archivoPuestos, fstream &archivoEmpresa, fstream &archivoEncabezado, fstream &archivoConcepto)
 {
-   Clsnomina nomina;
-   int m_iclaveNominas = mobtenerIndicador( "Escriba el numero de nomina" );
-   // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
-   archivoNomina.seekg(
-      ( m_iclaveNominas - 1 ) * sizeof( Clsnomina ) );
-   // leer el registro del archivo
-   archivoNomina.read( reinterpret_cast< char * >( &nomina ),
-      sizeof( Clsnomina ) );
-   // crear el registro, si éste no existe ya
-   if ( nomina.mobtenerIdNomina() == 0 )
-   {
+    Clsnomina nomina;
+    Clsempleados empleado;
+    ClsPuestos puesto;
+    ClsConceptos concepto;
+    ClsEmpresa empresa;
+    Clsencabezado encabezado;
+    int m_iclaveNominas = 1;
+    // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
+    archivoNomina.seekg(
+    ( m_iclaveNominas - 1 ) * sizeof( Clsnomina ) );
+    // leer el registro del archivo
+    archivoNomina.read( reinterpret_cast< char * >( &nomina ),
+    sizeof( Clsnomina ) );
+    /* crear el registro, si éste no existe ya
+    if ( nomina.mobtenerIdNomina() == 0 )
+    {*/
+        m_iclaveNominas =0;
         //Atributos a ingresar
-        char m_snombreNomina[10];
         int m_iclaveEmpleado = 0;
         string m_snombreEmpleado = "";
+        int m_iclaveEncabezado=0;
+        int m_iclaveCantidad = 0;
+        string m_snombreEncabezado = "";
+        string m_sencabezadoEmpresa= "";
+        string m_sfechaEncabezado= "";
+        string m_smonedaEncabezado= "";
+        string m_snota= "";
+        int ciclo=0;
+        int iempleado=1;
+        m_iclaveEncabezado=m_iclaveNominas;
 //karla Gómez 9959-21-1896
-        char m_scargoNomina[10];
+        string m_scargoNomina= "";
         float m_fsalarioNomina = 0;
         float m_fdiasTrabNomina = 0;
         float m_fsueldoOrNomina = 0;
         float m_fhoraExtraNomina = 0;
         float m_fsueldoExtraNomina = 0;
         float m_fbonificacionincNomina = 0;
+        float m_fanticipoNomina = 0;
         float m_ftotaldevenNomina = 0;
         float m_fIGGNomina = 0;
         float m_fISRNomina = 0;
-        float m_fanticipoNomina = 0;
         float m_ftotaldescuentNomina = 0;
         float m_fliquidoNomina = 0;
-        //Solicitud al usuario de llenar los atributos
-        cout << "Escriba el nombre de la nomina: " << endl;
-        cin >> setw( 10 ) >> m_snombreNomina;
-
-        cout << "Escriba el nombre del cargo: " << endl;
-        cin >> setw( 10 ) >> m_scargoNomina;
-
-        cout << "Escriba el monto del salario: " << endl;
-        cin >> setw( 10 ) >> m_fsalarioNomina;
-
-        cout << "Escriba el numero de dias trabajados: " << endl;
-        cin >> setw( 10 ) >> m_fdiasTrabNomina;
-
-        cout << "Escriba las horas extra trabajadas: " << endl;
-        cin >> setw( 10 ) >> m_fhoraExtraNomina;
-
-        cout << "Escriba el monto de bono incentivo: " << endl;
-        cin >> setw( 10 ) >> m_fbonificacionincNomina;
-
-        cout << "Escriba el monto del anticipo: " << endl;
-        cin >> setw( 10 ) >> m_fanticipoNomina;
-
-
-        //leer empleado
-        Clsempleados empleado;
-        m_iclaveEmpleado = mobtenerIndicador("Ingrese la clave del empleado a agregar");
-        archivoEmpleados.seekg(
-        ( m_iclaveEmpleado - 1 ) * sizeof( Clsempleados ) );
-        // leer el primer registro del archivo
-        archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
-        sizeof( Clsempleados ) );
-        // actualizar el registro
-        if ( empleado.mobtenerClave() != 0 )
+/* Josué Rivas 9491-21-3133
+        Solicitud al usuario de llenar los atributos*/
+        cout << "Ingrese el nombre de la nomina: " << endl;
+        cin >> setw(20) >> m_snombreEncabezado;
+        cout << "Ingrese la cantidad de empleados a ingresar: " << endl;
+        cin >> m_iclaveCantidad;
+        ciclo=m_iclaveCantidad;
+        cout << "Ingrese la fecha de la nomina: " << endl;
+        cin >> setw(15) >> m_sfechaEncabezado;
+        cout << "Ingrese la moneda a utilizar: " << endl;
+        cin >> setw(20) >> m_smonedaEncabezado;
+        cout << "Ingrese el nombre de la empresa: " << endl;
+        cin >> setw(20) >> m_sencabezadoEmpresa;
+        cout << "Ingrese una nota (f-omitir): " << endl;
+        cin >> setw(30) >> m_snota;
+        //Guardar nominas
+        while (ciclo>0)
         {
-            m_iclaveEmpleado = empleado.mobtenerClave();
-            m_snombreEmpleado = empleado.mobtenerNombre();
-            cout << endl;
-        }
-        // mostrar error si la clave no contiene informacion
-        else
-        {
-            cerr << "La la clave #" << m_iclaveEmpleado
-            << " no tiene informacion." << endl;
-        }
-        // usar valores para llenar los valores de la clave
-        nomina.mestablecerNombreNomina( m_snombreNomina );
-        nomina.mestablecerClaveEnomina( m_iclaveEmpleado );
-        nomina.mestablecerNombreENomina(m_snombreEmpleado);
+            ++m_iclaveNominas;
+            --ciclo;
+            //leer empleado
+            m_iclaveEmpleado = empleado.mobtenerIndicador("Ingrese la clave del empleado a agregar");
+            archivoEmpleados.seekg(
+            ( m_iclaveEmpleado - 1 ) * sizeof( Clsempleados ) );
+            // leer el primer registro del archivo
+            archivoEmpleados.read( reinterpret_cast< char * >( &empleado ),
+            sizeof( Clsempleados ) );
+            // actualizar el registro
+            if ( empleado.mobtenerClave() != 0 )
+            {
+                m_iclaveEmpleado = empleado.mobtenerClave();
+                m_snombreEmpleado = empleado.mobtenerNombre();
+                cout << endl;
+            }
+            // mostrar error si la clave no contiene informacion
+            else
+            {
+                cerr << "La la clave #" << m_iclaveEmpleado
+                << " no tiene informacion." << endl;
+            }
+//karla Gómez 9959-21-1896
+            cout << "Escriba el nombre del cargo: " << endl;
+            cin >> setw( 10 ) >> m_scargoNomina;
+            cout << "Escriba el monto del salario: " << endl;
+            cin >> setw( 10 ) >> m_fsalarioNomina;
+            cout << "Escriba el numero de dias trabajados: " << endl;
+            cin >> setw( 10 ) >> m_fdiasTrabNomina;
+            cout << "Escriba las horas extra trabajadas: " << endl;
+            cin >> setw( 10 ) >> m_fhoraExtraNomina;
+            cout << "Escriba el monto de bono incentivo: " << endl;
+            cin >> setw( 10 ) >> m_fbonificacionincNomina;
+            cout << "Escriba el monto del anticipo: " << endl;
+            cin >> setw( 10 ) >> m_fanticipoNomina;
+//Alyson Rodriguez 9959-21-829
+            m_ftotaldevenNomina=m_fsalarioNomina+m_fbonificacionincNomina+m_fanticipoNomina;
+            int m_icodigoEmpleadoConcepto = 1;
+            double descuentoA=0;
+            archivoConcepto.seekg(
+            ( m_icodigoEmpleadoConcepto - 1 ) * sizeof( ClsConceptos ) );
+            // leer el primer registro del archivo
+            archivoConcepto.read( reinterpret_cast< char * >( &concepto ),
+            sizeof( ClsConceptos ) );
+            // actualizar el registro
+            if ( concepto.mobtenerCodigo() != 0 )
+            {
+                descuentoA = concepto.mdescuento();
+                cout << endl;
+            }
+            // mostrar error si la clave no contiene informacion
+            else
+            {
+                cerr << "El descuento #" << m_icodigoEmpleadoConcepto
+                << " no tiene informacion." << endl;
+            }
+            m_icodigoEmpleadoConcepto = 2;
+            double descuentoB=0;
+            archivoConcepto.seekg(
+            ( m_icodigoEmpleadoConcepto - 1 ) * sizeof( ClsConceptos ) );
+            // leer el primer registro del archivo
+            archivoConcepto.read( reinterpret_cast< char * >( &concepto ),
+            sizeof( ClsConceptos ) );
+            // actualizar el registro
+            if ( concepto.mobtenerCodigo() != 0 )
+            {
+                descuentoB = concepto.mdescuento();
+                cout << endl;
+            }
+            // mostrar error si la clave no contiene informacion
+            else
+            {
+                cerr << "El descuento #" << m_icodigoEmpleadoConcepto
+                << " no tiene informacion." << endl;
+            }
+            m_fIGGNomina=m_ftotaldevenNomina*descuentoA;
+            m_fISRNomina=m_ftotaldevenNomina*descuentoB;
+            m_ftotaldescuentNomina=m_fIGGNomina+m_fISRNomina;
+            m_fliquidoNomina=m_ftotaldescuentNomina-m_ftotaldescuentNomina;
+            // usar valores para llenar los valores de la clave
+            nomina.mestablecerIdNomina(m_iclaveNominas);
+            nomina.mestablecerClaveEnomina(m_iclaveEmpleado);
+            nomina.mestablecerNombreENomina(m_snombreEmpleado);
+            nomina.mestablecerCantidadNomina(m_iclaveCantidad);
 //Karla Gómez 9959-21-1896
-        nomina.mestablecerCargoNomina(m_scargoNomina);
-        nomina.mestablecerSalarioNomina(m_fsalarioNomina);
-        nomina.mestablecerDiasTrabNomina(m_fdiasTrabNomina);
-        nomina.mestablecerSueldoOrNomina(m_fsueldoOrNomina);
-        nomina.mestablecerHoraExtras(m_fhoraExtraNomina);
-        nomina.mestablecersueldoExtraNomina(m_fsueldoExtraNomina);
-        nomina.mestablecerbonificacionincNomina(m_fbonificacionincNomina);
-        nomina.mestablecertotaldevenNomina(m_ftotaldevenNomina);
-        nomina.mestablecerIGGNomina(m_fIGGNomina);
-        nomina.mestablecerISRNomina(m_fISRNomina);
-        nomina.mestableceranticipoNomina(m_fanticipoNomina);
-        nomina.mestablecertotaldescuentNomina(m_ftotaldescuentNomina);
-        nomina.mestablecerliquidoNomina(m_fliquidoNomina);
-        // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
-        archivoNomina.seekp( ( m_iclaveNominas - 1 ) *
-        sizeof( Clsnomina ) );
-        // insertar el registro en el archivo
-        archivoNomina.write(
-         reinterpret_cast< const char * >( &nomina ),
-         sizeof( Clsnomina ) );
-        cout << "Empleado agregado con exito.";
-   }
-   // mostrar error si la clave ya esta ocupada
-   else
-   {
-       cerr << "La clave #" << m_iclaveNominas << " ya contiene informacion." << endl;
-       getch();
-   }
+            nomina.mestablecerCargoNomina(m_scargoNomina);
+            nomina.mestablecerSalarioNomina(m_fsalarioNomina);
+            nomina.mestablecerDiasTrabNomina(m_fdiasTrabNomina);
+            nomina.mestablecerSueldoOrNomina(m_fsueldoOrNomina);
+            nomina.mestablecerHoraExtras(m_fhoraExtraNomina);
+            nomina.mestablecersueldoExtraNomina(m_fsueldoExtraNomina);
+            nomina.mestablecerbonificacionincNomina(m_fbonificacionincNomina);
+            nomina.mestablecertotaldevenNomina(m_ftotaldevenNomina);
+            nomina.mestablecerIGGNomina(m_fIGGNomina);
+            nomina.mestablecerISRNomina(m_fISRNomina);
+            nomina.mestableceranticipoNomina(m_fanticipoNomina);
+            nomina.mestablecertotaldescuentNomina(m_ftotaldescuentNomina);
+            nomina.mestablecerliquidoNomina(m_fliquidoNomina);
+//Josue Rivas 9491-21-3133
+            // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+            archivoNomina.seekp( ( m_iclaveNominas - 1 ) *
+            sizeof( Clsnomina ) );
+            // insertar el registro en el archivo
+            archivoNomina.write(
+            reinterpret_cast< const char * >( &nomina ),
+            sizeof( Clsnomina ) );
+            cout << "Empleado agregado con exito.";
+            /*}
+            // mostrar error si la clave ya esta ocupada
+            else
+            {
+                cerr << "La clave #" << m_iclaveNominas << " ya contiene informacion." << endl;
+                getch();
+            }*/
+            encabezado.mestablecerClaveEncabezado(m_iclaveEncabezado);
+            encabezado.mestablecerClaveCantidad(m_iclaveCantidad);
+            encabezado.mestablecerNombreEncabezado(m_snombreEncabezado);
+            encabezado.mestablecerEncabezadoEmpresa(m_sencabezadoEmpresa);
+            encabezado.mestablecerFechaEncabezado(m_sfechaEncabezado);
+            encabezado.mestablecerMonedaEncabezado(m_smonedaEncabezado);
+            encabezado.mestableceNota(m_snota);
+            // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+            archivoEncabezado.seekp( ( m_iclaveEncabezado - 1 ) *
+            sizeof( Clsencabezado ) );
+            // insertar el registro en el archivo
+            archivoEncabezado.write(
+            reinterpret_cast< const char * >( &encabezado ),
+            sizeof( Clsencabezado ) );
+        }
 }
-
+/*
 void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
 {
        cout << left << setw( 10 ) << registro.mobtenerIdNomina()
@@ -437,7 +527,7 @@ void Clsnomina::mconsultarRegistroNomina(fstream &archivoNomina)
         archivoNomina.read( reinterpret_cast< char * >( &nomina ),
         sizeof( Clsnomina ) );
     }
-}
+}*/
 /*
 void Clsempleados::mmostrarLineaRegistroEmpleados( ostream &salida, const Clsempleados &registro )
 {
@@ -631,154 +721,6 @@ void Clsempleados::mbuscarEmpleados(fstream &archivoEmpleados)
 }
 */
 
-Clsnomina::mmenuNominas()
-{
-    string accion="";
-    //tiempo
-    time_t t;
-    t = time(NULL);
-    struct tm *fecha;
-    fecha = localtime(&t);
-
-    string codigo;
-    fstream abrir;
-    int found=0;
-    abrir.open("Usuario.txt", ios::in);
-    if (!abrir)
-    {
-        cerr << "Archivo Usuario no Encontrado" << endl;
-        exit ( 3 );
-    }
-    else
-    {
-        abrir>>codigo;
-    }
-
-    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
-    if (!bitacora)
-    {
-        cerr << "No se pudo abrir el archivo." << endl;
-        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
-        exit ( 3 );
-    }
-
-    Clsempleados empleado;
-    int iseleccionMenuNomina;
-    do
-    {
-        system("cls");
-        // abrir el archivo en modo de lectura y escritura
-        fstream archivoNomina("registronominas.dat", ios::in | ios::out | ios::binary);
-        // salir del programa si fstream no puede abrir el archivo
-        if ( !archivoNomina )
-            {
-                cerr << "No se pudo abrir el archivo." << endl;
-                mcrearNominas();
-                cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
-                exit ( 1 );
-            }
-        // abrir el archivo en modo de lectura y escritura
-        fstream archivoEmpleados("registrosempleados.dat", ios::in | ios::out | ios::binary);
-        // salir del programa si fstream no puede abrir el archivo
-        if ( !archivoEmpleados )
-            {
-                cerr << "No se pudo abrir el archivo." << endl;
-                empleado.mcrearEmpleados();
-                cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
-                exit ( 1 );
-            }
-        cout<<"-------------------------------"<<endl;
-        cout<<"|   SISTEMA GESTION NOMINA  |"<<endl;
-        cout<<"-------------------------------"<<endl;
-        cout<<"1. Ingreso Empleados"<<endl;
-        cout<<"2. Despliegue Empleados"<<endl;
-        cout<<"3. Modifica Empleados"<<endl;
-        cout<<"4. Imprimir Regisro de Empleados"<<endl;
-        cout<<"5. Borra Empleados"<<endl;
-        cout<<"6. Buscar Empleados"<<endl;
-        cout<<"0. Volver al menu superior"<<endl;
-        cout<<"-------------------------------"<<endl;
-        cout<<"Opcion a escoger:[1/2/3/4/5/6/0]"<<endl;
-        cout<<"------------------------------"<<endl;
-        cout<<"Ingresa tu Opcion: ";
-        cin>>iseleccionMenuNomina;
-        switch(iseleccionMenuNomina)
-        {
-        case 1:
-            {
-                accion = "Ingreso a Agre. Empleado";
-
-                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
-                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
-                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
-                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
-                /*bitacora.close();*/
-
-                system("cls");
-                mnuevaNomina(archivoNomina, archivoEmpleados);
-                getch();
-            }
-            break;
-        case 2:
-            {
-                accion = "Ingreso a Cons. Empleado";
-
-                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
-                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
-                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
-                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
-                /*bitacora.close();*/
-
-                system("cls");
-                mconsultarRegistroNomina(archivoNomina);
-                cout << "Fin del archivo.";
-                getch();
-            }
-            break;
-        /*case 3:
-            {
-                system("cls");
-                mmodificarRegistroEmpleados(archivoEmpleados);
-                getch();
-            }
-            break;
-        case 4:
-            {
-                system("cls");
-                mimprimirRegistroEmpleados(archivoEmpleados);
-                getch();
-            }
-            break;
-        case 5:
-            {
-                system("cls");
-                meliminarRegistroEmpleados(archivoEmpleados);
-            }
-            break;
-        case 6:
-            {
-                system("cls");
-                mbuscarEmpleados(archivoEmpleados);
-            }
-            break;*/
-        case 0:
-            {
-                accion = "Salio de Gestion Nomina";
-
-                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
-                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
-                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
-                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
-                /*bitacora.close();*/
-            }
-            break;
-        default:
-            cout<<"Opción invalida, intenta de nuevo";
-            getch();
-            break;
-        }
-    }while(iseleccionMenuNomina!=0);
-}
 
 Clsnomina::~Clsnomina()
 {

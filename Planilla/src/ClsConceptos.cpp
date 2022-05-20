@@ -103,26 +103,28 @@ float ClsConceptos::mobtenerPorcentaje() const
     }
 }
 
+float ClsConceptos::mdescuento() const
+{
+    return m_sPorcentaje;
+}
+
 void ClsConceptos::mestablecerPorcentaje (float fFloatPorcentaje)
 {
     m_sPorcentaje = fFloatPorcentaje;
 }
 
-////////////////////////////////////////////CREAR/INGRESAR CONCEPTO
-int obtenerConcepto( const char * const indicador )
+int ClsConceptos::mobtenerIndicador(const char * const iindicador)
 {
-   int m_icodigoEmpleadoConcepto;
-
-   // obtener el valor del número de cuenta
-   do {
-      cout << indicador << " (1 - 100): ";
+    int m_icodigoEmpleadoConcepto;
+   // obtener el valor de la clave
+   do
+    {
+      cout << iindicador << " (1 - 100): ";
       cin >> m_icodigoEmpleadoConcepto;
-
-   } while ( m_icodigoEmpleadoConcepto < 1 || m_icodigoEmpleadoConcepto > 100 );
-
+    } while ( m_icodigoEmpleadoConcepto < 1 || m_icodigoEmpleadoConcepto > 100 );
    return m_icodigoEmpleadoConcepto;
-
 }
+
 void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
 {
     int m_iBonoDescuento;
@@ -131,7 +133,7 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
     if( m_iBonoDescuento == 1)
     {
         // obtener el número de cuenta a crear
-       int m_icodigoEmpleadoConcepto = obtenerConcepto( "Escriba el nuevo numero de cuenta" );
+       int m_icodigoEmpleadoConcepto = mobtenerIndicador( "Escriba el nuevo numero de cuenta" );
 
        // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
        insertarEnArchivoConcepto.seekg(
@@ -205,7 +207,7 @@ void ClsConceptos::nuevoConcepto( fstream &insertarEnArchivoConcepto )
     if(m_iBonoDescuento == 0)
     {
         // obtener el número de cuenta a crear
-       int m_icodigoEmpleadoConcepto = obtenerConcepto( "Escriba el nuevo numero de cuenta" );
+       int m_icodigoEmpleadoConcepto = mobtenerIndicador( "Escriba el nuevo numero de cuenta" );
 
        // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
        insertarEnArchivoConcepto.seekg(
@@ -334,7 +336,7 @@ void ClsConceptos::mostrarLineaConcepto( ostream &salidaConcepto, const ClsConce
 void ClsConceptos::actualizarRegistroConcepto( fstream &actualizarArchivoConcepto )
 {
    // obtener el número de cuenta a actualizar
-   int numeroConcepto = obtenerConcepto( "Escriba la cuenta que desea actualizar" );
+   int numeroConcepto = mobtenerIndicador( "Escriba la cuenta que desea actualizar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
    actualizarArchivoConcepto.seekg(
@@ -430,7 +432,7 @@ void ClsConceptos::imprimirRegistroConcepto( fstream &leerDeArchivoConceptos )
 void ClsConceptos::eliminarRegistroConcepto( fstream &eliminarDeArchivoConcepto )
 {
    // obtener número de cuenta a eliminar
-   int numeroConcepto= obtenerConcepto( "Escriba la cuenta a eliminar" );
+   int numeroConcepto= mobtenerIndicador( "Escriba la cuenta a eliminar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
    eliminarDeArchivoConcepto.seekg(
@@ -472,7 +474,7 @@ void ClsConceptos::buscarEmpleadoConcepto( fstream &leerDeArchivoConcepto)
 {
 
    // obtener el número de cuenta a buscar
-   int numeroConcepto = obtenerConcepto( "Escriba la cuenta que desea actualizar" );
+   int numeroConcepto = mobtenerIndicador( "Escriba la cuenta que desea actualizar" );
 
    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
    leerDeArchivoConcepto.seekg(
