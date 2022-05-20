@@ -410,7 +410,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
                 cerr << "El descuento #" << m_icodigoEmpleadoConcepto
                 << " no tiene informacion." << endl;
             }
-            m_fIGGNomina=m_ftotaldevenNomina*descuentoA;
+            m_fIGGNomina=m_fsalarioNomina*descuentoA;
             m_fISRNomina=m_ftotaldevenNomina*descuentoB;
             m_ftotaldescuentNomina=m_fIGGNomina+m_fISRNomina;
             m_fliquidoNomina=m_ftotaldescuentNomina-m_ftotaldescuentNomina;

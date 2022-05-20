@@ -80,3 +80,61 @@ Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 19   Mes: 5    Año
 Usuario: Josue     Accion: Ingreso al sistema            Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   
 Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   
 Usuario: Josue     Accion: Salio del Menu Principal      Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 38   Segundo: 45   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 38   Segundo: 45   
+Usuario: Josue     Accion: Ingreso a CRUD Empleados      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 38   Segundo: 59   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 39   Segundo: 5    
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 39   Segundo: 5    
+Usuario: Josue     Accion: Ingreso a CRUD Empleados      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 39   Segundo: 12   
+Usuario: Josue     Accion: Ingreso a Agregar Empleado    Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 39   Segundo: 13   
+Usuario: Josue     Accion: Ingreso a Agregar Empleado    Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 39   Segundo: 13   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 51   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 51   
+Usuario: Josue     Accion: Ingreso a CRUD Empleados      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 56   
+Usuario: Josue     Accion: Ingreso a Des. Empleado       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 59   
+Usuario: Josue     Accion: Ingreso a Agregar Empleado    Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 59   
+Usuario: Josue     Accion: Ingreso a Agregar Empleado    Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 40   Segundo: 59   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 22   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 22   
+Usuario: Josue     Accion: Ingreso a CRUD Empleados      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 44   
+Usuario: Josue     Accion: Ingreso a Agregar Empleado    Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 45   
+Usuario: Josue     Accion: Ingreso a Des. Empleado       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 45   
+Usuario: Josue     Accion: Salio de Gestion Empleado     Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 45   
+Usuario: Josue     Accion: Ingreso a CRUD Empresa        Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 45   Segundo: 45   
+Usuario: Josue     Accion: Salio de Gestion Empresa      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 39   
+Usuario: Josue     Accion: Ingreso a CRUD Puestos        Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 39   
+Usuario: Josue     Accion: Salio de Gestion Puestos      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 41   
+Usuario: Josue     Accion: Ingreso a CRUD Departamento   Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 41   
+Usuario: Josue     Accion: Salio de Gestion Departa.     Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 44   
+Usuario: Josue     Accion: Ingreso a CRUD Banco          Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 44   
+Usuario: Josue     Accion: Salio de Gestion Banco        Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a CRUD Concepto       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 48   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 56   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 47   Segundo: 56   
+Usuario: Josue     Accion: Ingreso a CRUD Concepto       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 46   
+Usuario: Josue     Accion: Ingreso a Agre. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Elim. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Agre. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Mod. Concepto       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Agre. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 48   Segundo: 48   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 27   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 27   
+Usuario: Josue     Accion: Ingreso a CRUD Concepto       Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 32   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Elim. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Agre. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Agre. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso a Cons. Concepto      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Salio de Gestion Concepto     Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 53   Segundo: 38   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 20   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 20   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
