@@ -340,7 +340,7 @@ void login(){
                 <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
                 <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
                 bitacora.close();
-                /*//Creando objetos
+                //Creando objetos
                 Clsnomina nomina;
                 Clsencabezado encabezado;
                 // abrir el archivo en modo de lectura y escritura
@@ -364,7 +364,7 @@ void login(){
                     }
                 nomina.mleerNomina(archivoNomina, archivoEncabezado);
                 archivoNomina.close();
-                archivoEncabezado.close();*/
+                archivoEncabezado.close();
             }
             break;
         case 4:
