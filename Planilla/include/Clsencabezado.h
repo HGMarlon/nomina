@@ -22,7 +22,7 @@ class Clsencabezado
         int mobtenerEncabezado( const char * const );
         void mnuevoEncabezado(fstream &archivoEncabezado);
         void mleerEncabezado(fstream &archivoEncabezado);
-        void mostrarLineaEncabezado( const Clsencabezado &registro );
+        void mmostrarEncabezado const Clsencabezado &registro );
         /*void mmodificarRegistroNomina( fstream &archivoNomina );
         void mmostrarLineaRegistroNomina( ostream &salida, const Clsempleados &registro );
         void mimprimirRegistroNomina(fstream &archivoEmpleado);
