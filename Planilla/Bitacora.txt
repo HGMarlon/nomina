@@ -75,3 +75,8 @@ Usuario: Marlon    Accion: Ingreso a Cons. Banco         Dia: 18   Mes: 5    Año
 Usuario: Marlon    Accion: Salio de Gestion Banco        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
 Usuario: Marlon    Accion: Salio de Mantenimiento        Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
 Usuario: Marlon    Accion: Salio del Menu Principal      Dia: 18   Mes: 5    Año: 2022  Hora: 18   Minuto: 15   Segundo: 23   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 37   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 37   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 19   Mes: 5    Año: 2022  Hora: 20   Minuto: 23   Segundo: 53   

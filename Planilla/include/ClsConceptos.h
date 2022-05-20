@@ -32,6 +32,8 @@ class ClsConceptos
         void mestablecerPorcentaje( float );
         float mobtenerPorcentaje() const;
 
+        float mdescuento() const;
+
         mmenuConceptos();
         mcrearConceptos();
 
@@ -43,6 +45,8 @@ class ClsConceptos
         void imprimirRegistroConcepto( fstream& );
         void eliminarRegistroConcepto( fstream& );
         void buscarEmpleadoConcepto( fstream& );
+        int mobtenerIndicador( const char * const );
+
 
         virtual ~ClsConceptos();
 
