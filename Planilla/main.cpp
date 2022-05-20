@@ -340,8 +340,7 @@ void login(){
                 <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
                 <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
                 bitacora.close();
-                /*
-                //Creando objetos
+                /*//Creando objetos
                 Clsnomina nomina;
                 Clsencabezado encabezado;
                 // abrir el archivo en modo de lectura y escritura
@@ -354,19 +353,18 @@ void login(){
                         cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
                         exit ( 1 );
                     }
-                fstream archivoEncebezado("registroEncabezado.dat", ios::in | ios::out | ios::binary);
+                fstream archivoEncabezado("registroEncabezado.dat", ios::in | ios::out | ios::binary);
                 // salir del programa si fstream no puede abrir el archivo
-                if ( !archivoEncebezado )
+                if ( !archivoEncabezado )
                     {
                         cerr << "No se pudo abrir el archivo." << endl;
                         encabezado.mcrearEncabezado();
                         cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
                         exit ( 1 );
                     }
-                nomina.mleerNomina(archivoNomina, archivoEncebezado);
+                nomina.mleerNomina(archivoNomina, archivoEncabezado);
                 archivoNomina.close();
-                archivoEncebezado.close();
-                */
+                archivoEncabezado.close();*/
             }
             break;
         case 4:

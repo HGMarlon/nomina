@@ -289,7 +289,6 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
     /* crear el registro, si éste no existe ya
     if ( nomina.mobtenerIdNomina() == 0 )
     {*/
-        m_iclaveNominas =0;
         //Atributos a ingresar
         int m_iclaveEmpleado = 0;
         string m_snombreEmpleado = "";
@@ -333,6 +332,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
         cout << "Ingrese una nota (f-omitir): " << endl;
         cin >> setw(30) >> m_snota;
         //Guardar nominas
+        m_iclaveNominas =0;
         while (ciclo>0)
         {
             ++m_iclaveNominas;
@@ -449,7 +449,8 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
                 cerr << "La clave #" << m_iclaveNominas << " ya contiene informacion." << endl;
                 getch();
             }*/
-            encabezado.mestablecerClaveEncabezado(m_iclaveEncabezado);
+        }
+        encabezado.mestablecerClaveEncabezado(m_iclaveEncabezado);
             encabezado.mestablecerClaveCantidad(m_iclaveCantidad);
             encabezado.mestablecerNombreEncabezado(m_snombreEncabezado);
             encabezado.mestablecerEncabezadoEmpresa(m_sencabezadoEmpresa);
@@ -463,7 +464,6 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
             archivoEncabezado.write(
             reinterpret_cast< const char * >( &encabezado ),
             sizeof( Clsencabezado ) );
-        }
 }
 /*
 void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
@@ -489,7 +489,7 @@ void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
           << endl;
 }
 
-void Clsnomina::mconsultarRegistroNomina(fstream &archivoNomina)
+void Clsnomina::mleerNomina(fstream &archivoNomina)
 {
     //Creando encabezado de la tabla
     cout << left << setw( 10 ) << "Clave Nomina"

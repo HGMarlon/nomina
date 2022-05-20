@@ -138,3 +138,10 @@ Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año
 Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
 Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
 Usuario: Josue     Accion: Salio del Menu Principal      Dia: 20   Mes: 5    Año: 2022  Hora: 9    Minuto: 57   Segundo: 58   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 2    
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 2    
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 18   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 18   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 40   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 40   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 20   Mes: 5    Año: 2022  Hora: 10   Minuto: 17   Segundo: 40   
