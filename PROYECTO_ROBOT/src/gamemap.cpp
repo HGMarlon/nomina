@@ -224,7 +224,7 @@ void gamemap::drawVictoria()
     }
 }*/
  //Alyson Vannesa Rodriguez Quezada 9959-21-829
-/*void gamemap::drawCreditos()
+void gamemap::drawCreditos()
 {
     string line;
     char userInput = ' ';
@@ -243,7 +243,7 @@ void gamemap::drawVictoria()
     {
         cout << "Error FATAL: el archivo de creditos no pudo ser cargado" << endl;
     }
-}*/
+}
 //Marlon Estuardo Hernandez Giron 9491-21-7312
 void gamemap::drawInstrucciones()
 {
