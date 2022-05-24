@@ -24,7 +24,7 @@ gamemap::gamemap()
     }
 }*/
 //Karla Sofia Gomez Tobar 9959-21-1896
-/*bool gamemap::setPlayerCell(int playerX, int playerY)
+bool gamemap::setPlayerCell(int playerX, int playerY)
 {
     if (cell[playerX][playerY].isBlockedCell() == false)
     {
@@ -63,7 +63,7 @@ gamemap::gamemap()
         return false;
     }
 
-}*/
+}
 //Josue Ernesto Rivas De León 9491-21-3133
 /*void gamemap::loadMapFromFile()
 {
