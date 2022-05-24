@@ -40,7 +40,7 @@ int main()
     cout<<"-------------------------------"<<endl;
     cout<<"w=ARRIBA, s=ABAJO, a=IZQUIERDA, d=DERECHA"<<endl;
     cout<<"PRESIONE CUALQUIER TECLA PARA COMENZAR"<<endl;
-      /*hero.callInput();
+      hero.callInput();
       if(map.setPlayerCell(hero.getValueX(), hero.getValueY()))
       {
         map.draw();
@@ -51,7 +51,7 @@ int main()
       }
     }
         }
-        break;*/
+        break;
 
         case 2:
             {
@@ -59,7 +59,6 @@ int main()
                map.drawInstrucciones();//Marlon Estuardo Hernández Girón 9491-21-7312
             }
             break;
-/*
             case 3:
             {
                   system("cls");//Josue Ernesto Rivas De León 9491-21-3133
@@ -70,6 +69,6 @@ int main()
                  {
                  }
                  break;
-    }*/
+    }
     return 0;
 }

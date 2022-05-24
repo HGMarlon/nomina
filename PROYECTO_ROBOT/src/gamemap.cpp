@@ -13,7 +13,7 @@ gamemap::gamemap()
     isGameOver = false;
 }
 //Josue Ernesto Rivas De León 9491-21-3133
-/*void gamemap::draw(){
+void gamemap::draw(){
     for (int i = 0; i < 15; i++)
     {
         for (int j = 0; j < 10; j++)
@@ -22,7 +22,7 @@ gamemap::gamemap()
         }
         cout << endl;
     }
-}*/
+}
 //Karla Sofia Gomez Tobar 9959-21-1896
 bool gamemap::setPlayerCell(int playerX, int playerY)
 {
@@ -65,7 +65,7 @@ bool gamemap::setPlayerCell(int playerX, int playerY)
 
 }
 //Josue Ernesto Rivas De León 9491-21-3133
-/*void gamemap::loadMapFromFile()
+void gamemap::loadMapFromFile()
 {
     string line;
     int row = 0;
@@ -103,9 +103,9 @@ bool gamemap::setPlayerCell(int playerX, int playerY)
         }
     }
 
-}*/
+}
 //Josue Ernesto Rivas De León 9491-21-3133
-/*void gamemap::createMapToFile()
+void gamemap::createMapToFile()
 {
     ofstream myFile("map.txt");
     if (myFile.is_open())
@@ -136,7 +136,7 @@ bool gamemap::setPlayerCell(int playerX, int playerY)
     {
         cout << "Error FATAL: archivo no pudo ser creado" << endl;
     }
-}*/
+}
 
 //Marlon Estuardo Hernandez Giron 9491-21-7312
 void gamemap::drawPortada()
