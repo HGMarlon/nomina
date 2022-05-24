@@ -161,7 +161,7 @@ void gamemap::drawPortada()
     }
 }
 //Alyson Vannesa Rodriguez Quezada 9959-21-829
-/*void gamemap::drawVictoria()
+void gamemap::drawVictoria()
 {
     string line;
     char userInput = ' ';
@@ -180,7 +180,7 @@ void gamemap::drawPortada()
     {
         cout << "Error FATAL: el archivo de ganador no pudo ser cargado" << endl;
     }
-}*/
+}
 //Angel Roberto Agustin de Leon Hernandez 9491-21-7527
 /*void gamemap::drawBromita()
 {
