@@ -34,7 +34,7 @@ void player::setValueY(int valueY){
 }
 
 //Karla Sofia Gomez Tobar 9959-21-1896
-/*void player::callInput()
+void player::callInput()
 {
     char userInput = ' ';
     cin >> userInput;
@@ -67,7 +67,7 @@ void player::resetToSafePosition()
 {
     x = lastX;
     y = lastY;
-}*/
+}
 
 //Marlon Estuardo Hernandez Giron 9491-21-7312
 void player::drawCreditos()
