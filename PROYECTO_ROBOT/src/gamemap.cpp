@@ -182,7 +182,7 @@ void gamemap::drawPortada()
     }
 }*/
 //Angel Roberto Agustin de Leon Hernandez 9491-21-7527
-/*void gamemap::drawBromita()
+void gamemap::drawBromita()
 {
     string line;
     char userInput = ' ';
@@ -201,7 +201,7 @@ void gamemap::drawPortada()
     {
         cout << "Error FATAL: el archivo de bromita no pudo ser cargado" << endl;
     }
-}*/
+}
 //Karla Sofia Gomez Tobar 9959-21-1896
 /*void gamemap::drawTrampa()
 {
