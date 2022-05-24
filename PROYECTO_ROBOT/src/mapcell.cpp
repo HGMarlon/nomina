@@ -10,7 +10,7 @@ mapcell::mapcell()
 
 }
 //Josue Ernesto Rivas De León 9491-21-3133
-/*bool mapcell::isBlockedCell()
+bool mapcell::isBlockedCell()
 {
     if( id == '1')
     {
@@ -19,7 +19,7 @@ mapcell::mapcell()
     {
         return false;
     }
-}*/
+}
 mapcell::~mapcell()
 {
     //dtor
