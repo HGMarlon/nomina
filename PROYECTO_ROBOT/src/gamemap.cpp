@@ -203,7 +203,7 @@ void gamemap::drawBromita()
     }
 }
 //Karla Sofia Gomez Tobar 9959-21-1896
-/*void gamemap::drawTrampa()
+void gamemap::drawTrampa()
 {
     string line;
     char userInput = ' ';
@@ -222,7 +222,7 @@ void gamemap::drawBromita()
     {
         cout << "Error FATAL: el archivo de trampa no pudo ser cargado" << endl;
     }
-}*/
+}
  //Alyson Vannesa Rodriguez Quezada 9959-21-829
 void gamemap::drawCreditos()
 {
