@@ -1,0 +1,19 @@
+  ___   _  _   _____   ___    ___   ___     _     _  _   _____   ___   ___   _ 
+ |_ _| | \| | |_   _| | __|  / __| | _ \   /_\   | \| | |_   _| | __| / __| (_)
+  | |  | .` |   | |   | _|  | (_ | |   /  / _ \  | .` |   | |   | _|  \__ \  _ 
+ |___| |_|\_|   |_|   |___|  \___| |_|_\ /_/ \_\ |_|\_|   |_|   |___| |___/ (_)
+ 
+Equipo -----> G1
+Integrante 1: Marlon Estuardo Hernandez Giron 9491-21-7312 - Main (menu), Prueba de musica mientras se juega, cambio de colores en el main, cambio personaje.
+
+Integrante 2: Alyson Vannesa Rodriguez Quezada 9959-21-829 - Premio escondido, reescribir mapa, cambio de color en el mapa, agregar nuevo premio.
+
+Integrante 3: Karla Sofia Gomez Tobar 9959-21-1896 - Trampa escondida, cambio de color en trampa, mensaje de trampa, agregar en el mapa la trampa.
+
+Integrante 4: Angel Roberto Agustin de Leon Hernandez 9491-21-7527 - Bromita, ASCII, color en bromita, agregarlo al mapa.
+
+Integrante 5: Josue Ernesto Rivas De León 9491-21-3133 - Premio, creacion de mapa, ASCII premio, cambio de color en su apartado, agregar nuevo personaje al mapa.
+
+
+
+    
