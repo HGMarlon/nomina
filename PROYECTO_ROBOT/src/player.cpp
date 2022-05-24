@@ -5,7 +5,7 @@
 using namespace std;
 
 //Angel Roberto Agustin de Leon Hernandez 9491-21-7527
-/*player::player()
+player::player()
 {
     //ctor
     x = 1;
@@ -31,7 +31,7 @@ void player::setValueX(int valueX){
 }
 void player::setValueY(int valueY){
     y = valueY;
-}*/
+}
 
 //Karla Sofia Gomez Tobar 9959-21-1896
 /*void player::callInput()
