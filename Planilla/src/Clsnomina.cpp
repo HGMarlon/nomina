@@ -289,6 +289,8 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
     /* crear el registro, si éste no existe ya
     if ( nomina.mobtenerIdNomina() == 0 )
     {*/
+        mcrearNominas();
+        encabezado.mcrearEncabezado();
         //Atributos a ingresar
         int m_iclaveEmpleado = 0;
         string m_snombreEmpleado = "";
@@ -371,7 +373,6 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
             cout << "Escriba el monto del anticipo: " << endl;
             cin >> setw( 10 ) >> m_fanticipoNomina;
 //Alyson Rodriguez 9959-21-829
-            m_ftotaldevenNomina=m_fsalarioNomina+m_fbonificacionincNomina+m_fanticipoNomina;
             int m_icodigoEmpleadoConcepto = 1;
             double descuentoA=0;
             archivoConcepto.seekg(
@@ -410,10 +411,13 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
                 cerr << "El descuento #" << m_icodigoEmpleadoConcepto
                 << " no tiene informacion." << endl;
             }
-            m_fIGGNomina=m_fsalarioNomina*descuentoA;
-            m_fISRNomina=m_ftotaldevenNomina*descuentoB;
-            m_ftotaldescuentNomina=m_fIGGNomina+m_fISRNomina;
-            m_fliquidoNomina=m_ftotaldescuentNomina-m_ftotaldescuentNomina;
+            m_fsueldoOrNomina=(m_fsalarioNomina/30)*m_fdiasTrabNomina;
+            m_fIGGNomina=m_fsueldoOrNomina*descuentoA;
+            m_fISRNomina=m_fsueldoOrNomina*descuentoB;
+            m_ftotaldescuentNomina=m_fIGGNomina+m_fISRNomina+m_fanticipoNomina;
+            m_fsueldoExtraNomina= (m_fsalarioNomina/144)*m_fhoraExtraNomina;
+            m_ftotaldevenNomina=m_fsueldoOrNomina+m_fbonificacionincNomina+m_fsueldoExtraNomina;
+            m_fliquidoNomina=m_ftotaldevenNomina-m_ftotaldescuentNomina;
             // usar valores para llenar los valores de la clave
             nomina.mestablecerIdNomina(m_iclaveNominas);
             nomina.mestablecerClaveEnomina(m_iclaveEmpleado);
@@ -450,7 +454,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
                 getch();
             }*/
         }
-        encabezado.mestablecerClaveEncabezado(m_iclaveEncabezado);
+            encabezado.mestablecerClaveEncabezado(m_iclaveEncabezado);
             encabezado.mestablecerClaveCantidad(m_iclaveCantidad);
             encabezado.mestablecerNombreEncabezado(m_snombreEncabezado);
             encabezado.mestablecerEncabezadoEmpresa(m_sencabezadoEmpresa);
