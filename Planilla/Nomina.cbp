@@ -42,6 +42,7 @@
 		<Unit filename="include/ClsConceptos.h" />
 		<Unit filename="include/ClsEmpresa.h" />
 		<Unit filename="include/ClsPuestos.h" />
+		<Unit filename="include/ClsReporte.h" />
 		<Unit filename="include/Clsdepartamentos.h" />
 		<Unit filename="include/Clsempleados.h" />
 		<Unit filename="include/Clsencabezado.h" />
@@ -51,6 +52,7 @@
 		<Unit filename="src/ClsConceptos.cpp" />
 		<Unit filename="src/ClsEmpresa.cpp" />
 		<Unit filename="src/ClsPuestos.cpp" />
+		<Unit filename="src/ClsReporte.cpp" />
 		<Unit filename="src/Clsdepartamentos.cpp" />
 		<Unit filename="src/Clsempleados.cpp" />
 		<Unit filename="src/Clsencabezado.cpp" />
