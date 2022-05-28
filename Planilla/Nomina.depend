@@ -418,7 +418,7 @@
 	<ctime>
 	<string.h>
 
-1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsempleados.h
+1653693317 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsempleados.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -499,7 +499,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsempleados.cpp
+1653693998 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsempleados.cpp
 	"Clsempleados.h"
 	<conio.h>
 	<iostream>
@@ -523,7 +523,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clspuestos.cpp
+1653694372 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clspuestos.cpp
 	"ClsPuestos.h"
 	<conio.h>
 	<iostream>
@@ -549,7 +549,7 @@
 	<iomanip>
 	<cstdlib>
 
-1653577722 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsnomina.cpp
+1653696974 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\src\clsnomina.cpp
 	"Clsnomina.h"
 	"Clsempleados.h"
 	"Clsempleados.h"
@@ -1163,7 +1163,7 @@
 	<math.h>
 	"ClsmenuMantenimientos.h"
 
-1653576479 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsencabezado.h
+1653578923 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\planilla\include\clsencabezado.h
 	"Clsnomina.h"
 	"ClsEmpresa.h"
 	<conio.h>

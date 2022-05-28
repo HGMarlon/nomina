@@ -1,0 +1,641 @@
+commit c0334d2e54fbe4b289851e3d8c6f6413edbda786
+Merge: 5f9e64a 3ce9b45
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 26 09:27:59 2022 -0600
+
+    Merge pull request #33 from HGMarlon/betaJosue
+    
+    Corrigiendo errores Josue
+
+commit 3ce9b45aff8d5e6301deb879dab9c3c800fd9ca7
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 26 09:26:31 2022 -0600
+
+    Corrigiendo errores Josue
+
+commit 5f9e64adf573bd72ae690ca65bf9b51700facb88
+Merge: e219b33 008511e
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Tue May 24 08:41:28 2022 -0600
+
+    Merge pull request #32 from HGMarlon/robotJosue
+    
+    agregando mapa robotJosue
+
+commit 008511ec7386ffac8a0ed618d67965cef9c1d334
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Tue May 24 08:40:12 2022 -0600
+
+    agregando mapa robotJosue
+
+commit e219b337870b4acd8ea894d0aa9523455213c185
+Merge: bc55895 21d2dd5
+Author: vesania-sofia-tobar <97969064+vesania-sofia@users.noreply.github.com>
+Date:   Mon May 23 21:53:33 2022 -0600
+
+    Merge pull request #31 from HGMarlon/Robot_Sofia
+    
+    Robot sofia
+
+commit 21d2dd563426c0d1e023d645af194698b2363691
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 23 21:52:25 2022 -0600
+
+    trampa agregada
+
+commit bad8bc4ff03e85092c8a8d9020201aa14c19521d
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 23 21:51:17 2022 -0600
+
+    acciones de jugador agregados
+
+commit cd081d4cd89fb9da5b558a9e347b5421d11e2aac
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 23 21:47:29 2022 -0600
+
+    controles de movimiento agregados
+
+commit bc55895236451983a35639ce1e0cf1155593442c
+Merge: a23585f e211030
+Author: VANNE <98073480+567ALYSON-RODRIGUEZ@users.noreply.github.com>
+Date:   Mon May 23 21:14:23 2022 -0600
+
+    Merge pull request #30 from HGMarlon/Robot_Alyson
+    
+    Robot Alyson
+
+commit e211030381f778bb9d2b4e4ddc2c723f8bc12418
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Mon May 23 21:13:04 2022 -0600
+
+    creditos robot
+
+commit fa37b05ba16935ae9a905c98a07b73b497cb5316
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Mon May 23 21:12:05 2022 -0600
+
+    portada robot
+
+commit a23585f3ba2e80d0f747a226b9765ef670f5a174
+Merge: 847290b 5dbdf27
+Author: Arcangel <97969145+AngelArcangel@users.noreply.github.com>
+Date:   Mon May 23 21:01:25 2022 -0600
+
+    Merge pull request #29 from HGMarlon/Robot_Angel
+    
+    Parte Robot Angel
+
+commit 5dbdf2785a028da85198bdad2eea2876a4015315
+Author: Arcangel <agustinhernandezleo@gmail.com>
+Date:   Mon May 23 20:58:41 2022 -0600
+
+    Parte Robot Angel
+
+commit 847290b31d37a79eb264d583da7700f62ee6af31
+Merge: 8e92994 39727e7
+Author: HG_Marlon <97968910+HGMarlon@users.noreply.github.com>
+Date:   Mon May 23 21:46:28 2022 -0500
+
+    Merge pull request #28 from HGMarlon/Robot_Marlon
+    
+    Agregando parte Marlon Hernández
+
+commit 39727e7846a017301a5282fb62ea099a754dbaae
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Mon May 23 20:43:01 2022 -0600
+
+    Agregando parte Marlon Hernández
+
+commit 8e92994574e6bcae506607f284c70aeac7b74330
+Merge: e43f259 c03bfaf
+Author: VANNE <98073480+567ALYSON-RODRIGUEZ@users.noreply.github.com>
+Date:   Fri May 20 17:17:32 2022 -0600
+
+    Merge pull request #27 from HGMarlon/desplieguenominaAlyson
+    
+    DesplieguenominaAlyson
+
+commit c03bfaf31b0116557ca0a4c6217dd4e89ec1b6c9
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 20 17:13:17 2022 -0600
+
+    cambio de variable
+
+commit 2915cc4eeef09a2ea14210200832822cf7a28a3f
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 20 17:11:48 2022 -0600
+
+    funcion despliegue nomina
+
+commit 75769a125552e233cfb28564bc7a7b89994209ef
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 20 17:10:39 2022 -0600
+
+    lectura y despliegue nomina
+
+commit 8dd4039cee3a27324925dd9cbfa021ddb30a7cd1
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 20 17:08:11 2022 -0600
+
+    despliegue nomina menu
+
+commit e43f25915ff32a8be0d3b7a100a1c9dea1533653
+Merge: b635d88 b17cba4
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Fri May 20 10:24:26 2022 -0600
+
+    Merge pull request #26 from HGMarlon/a
+    
+    correcion de error en el archivo encabezado
+
+commit b17cba424413991def32e5256d1836a6ae55a6c7
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Fri May 20 10:23:12 2022 -0600
+
+    correcion de error en el archivo encabezado
+
+commit b635d88f52e8fa5629d5fe8eb1f17dab6cc8c0ca
+Merge: 1a8d249 36f24a9
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Fri May 20 10:03:06 2022 -0600
+
+    Merge pull request #25 from HGMarlon/cicloJosue
+    
+    Completando Generacion Nomina
+
+commit 36f24a9a0c61dfaf462a8158d9edf14651da7bbb
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Fri May 20 10:02:19 2022 -0600
+
+    Completando Generacion Nomina
+
+commit 1a8d24972cdbf487449fa6cd7967afbc0c95f10b
+Merge: 54324ee 9554cbf
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 19 20:32:31 2022 -0600
+
+    Merge pull request #24 from HGMarlon/cicloJosue
+    
+    guardando info
+
+commit 9554cbf7b3b0158e74e6de31d24f6f7508cd4e42
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 19 20:31:50 2022 -0600
+
+    guardando info
+
+commit 54324ee821c722f8df9d639e1aa3e150173a8efb
+Merge: 8cfdca0 14a5bc7
+Author: vesania-sofia-tobar <97969064+vesania-sofia@users.noreply.github.com>
+Date:   Wed May 18 22:46:32 2022 -0600
+
+    Merge pull request #23 from HGMarlon/AtributosNominaPlanillaSofia
+    
+    Atributos nomina planilla sofia
+
+commit 14a5bc75faf1e6749d05b37d6447f44e29fcb194
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:45:17 2022 -0600
+
+    encabezados añadidos
+
+commit e0890ab5b3162ebedbcb10b92295d59aef3a694f
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:43:46 2022 -0600
+
+    atributos en mostrar linea añadidos
+
+commit 0dc1d8796f34b4bcc12afc66e7398d0cbcff8699
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:42:08 2022 -0600
+
+    valores para llenar clave añadidos
+
+commit 708f7802e2fe1cb25292000799a7e5f48d12cd8f
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:40:12 2022 -0600
+
+    atributios para ser ingresados añadidos
+
+commit 79d42d8d687b8a6dbaad6e2f88ed729b45e05640
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:38:23 2022 -0600
+
+    funcion de atributos agregado
+
+commit 5b89a69ccbbe93ad79c21eae9a1e3ebd0f64830c
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:37:07 2022 -0600
+
+    metodo atributos en cpp agregados
+
+commit e396aa47923e61dfe1c4ff14da739e779955db37
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:34:18 2022 -0600
+
+    atributos privados agregados
+
+commit ac6c829cef64f14bb1012b6960d3c76283cd36b2
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 18 22:30:57 2022 -0600
+
+    metodos de los atributos
+
+commit 8cfdca027e17527a4493e46f0f03c9579589ee18
+Merge: 483947f c060595
+Author: VANNE <98073480+567ALYSON-RODRIGUEZ@users.noreply.github.com>
+Date:   Wed May 18 20:15:53 2022 -0600
+
+    Merge pull request #22 from HGMarlon/puestosAlyson
+    
+    Puestos alyson
+
+commit c06059565d0fa79af096584a9544da4392bb8b4e
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:15:10 2022 -0600
+
+    cambios
+
+commit e69afb4fcd2655425579f051184601be49850e7f
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:13:22 2022 -0600
+
+    cambio de tamaño en void imprimir puestos
+
+commit d2bb2d8aa3752c4ca94db30fbcb29bfbbf1733e3
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:12:22 2022 -0600
+
+    cambio de variable  en actualizar saldo
+
+commit f2dd79294896035bfd04a2ee55515a8302040953
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:10:07 2022 -0600
+
+    cambio de tamaño de salario
+
+commit a315cd9f7465a94c7ef311772403272684d824d1
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:05:31 2022 -0600
+
+    cambio del valor salario
+
+commit 2837c74eafdaf03c23a5006eaf0e16ac0d67bf57
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:03:15 2022 -0600
+
+    cambio de la funcion obtener salario
+
+commit 11b0aa6a66784329ec54861fa902848891217c73
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 20:00:35 2022 -0600
+
+    cambio del constructor en la clase Puestos.cpp
+
+commit b2bebf3e16e69e6443a2469267d700f12404f670
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Wed May 18 19:58:15 2022 -0600
+
+    cambio a float en clase Puestos.h
+
+commit 483947f9049348dc9e2d4b0b16d887d61d056760
+Merge: ba09c11 55e95c5
+Author: Arcangel <97969145+AngelArcangel@users.noreply.github.com>
+Date:   Wed May 18 18:19:43 2022 -0600
+
+    Merge pull request #21 from HGMarlon/BitacoraPlanillaAngel
+    
+    Agreagar Bitacora Angel
+
+commit 55e95c5e746c378dc900c1044c917f7f97182308
+Author: Arcangel <agustinhernandezleo@gmail.com>
+Date:   Wed May 18 18:18:04 2022 -0600
+
+    Agreagar Bitacora Angel
+
+commit ba09c110ec55cdd4c973a659e31022ad5ee2f9fd
+Merge: 8d75b61 6c4547b
+Author: Arcangel <97969145+AngelArcangel@users.noreply.github.com>
+Date:   Tue May 17 17:39:33 2022 -0600
+
+    Merge pull request #20 from HGMarlon/ConceptoPlanillaAngel
+    
+    Concepto planilla angel
+
+commit 6c4547bb0470c2766b3c74e1ed464fddcbea3869
+Author: Arcangel <agustinhernandezleo@gmail.com>
+Date:   Tue May 17 17:36:22 2022 -0600
+
+    Concepto100%Angel
+
+commit 4d44c70c5ff2cc0db13267b7b4bf2a4661b88577
+Author: Arcangel <agustinhernandezleo@gmail.com>
+Date:   Tue May 17 16:41:31 2022 -0600
+
+    Concepto50%Angel
+
+commit 8d75b6191dbcca4feabad48ce52e12ea1f16d76d
+Merge: 1efd473 cd26f2b
+Author: Arcangel <97969145+AngelArcangel@users.noreply.github.com>
+Date:   Tue May 17 16:31:43 2022 -0600
+
+    Merge pull request #19 from HGMarlon/DepartamentoNominaAngel
+    
+    Departamento
+
+commit cd26f2b15813ee8b09d62c5f5c629acfe2e8c944
+Author: Arcangel <agustinhernandezleo@gmail.com>
+Date:   Tue May 17 16:30:26 2022 -0600
+
+    Departamento
+
+commit 1efd473a890ebdbd580b82eb4c7a3e4a4edc986b
+Merge: f53f986 fd62c81
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Tue May 17 09:29:29 2022 -0600
+
+    Merge pull request #17 from HGMarlon/generacionNominaJosue
+    
+    cosulta a archivos de otras clases
+
+commit fd62c81eed5a19aa9075545ca91af4daeeaddbd7
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Tue May 17 09:28:01 2022 -0600
+
+    cosulta a archivos de otras clases
+
+commit f53f98644cd05af7ababf1245c72cb192c3695dd
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Mon May 16 16:04:01 2022 -0600
+
+    AgregandoPlanilla
+
+commit 10ce8fdcb2e36b2f04abee5d1a78f49baa1c455e
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Mon May 16 15:10:47 2022 -0600
+
+    A
+
+commit b93dc3558fb56751fbb3b912b537385900ced866
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Fri May 13 12:51:37 2022 -0600
+
+    BancosArreglado
+
+commit 047601b03ad5f72429c8c63f4212369d50d4a8c4
+Merge: 0e18649 f1d15fc
+Author: VANNE <98073480+567ALYSON-RODRIGUEZ@users.noreply.github.com>
+Date:   Fri May 13 02:24:05 2022 -0600
+
+    Merge pull request #15 from HGMarlon/EmpresaAlyson
+    
+    Empresa Alyson
+
+commit f1d15fcd94d4b71d9bc791430eafca2c7cd39610
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 13 02:14:02 2022 -0600
+
+    funcionamiento clase Empresa
+
+commit d691f2d89e1b44bacd9e691c2ad43cedbc3eadc3
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 13 02:08:03 2022 -0600
+
+    agregando Empresa a menu mantenimientos
+
+commit f793fb02b051f9a10fa01dca4dd9418738943e1b
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 13 02:05:38 2022 -0600
+
+    funciones clase Empresa
+
+commit e1f3b65310965aad072244604eeb6beed1668798
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 13 02:04:43 2022 -0600
+
+    menu clase Empresa
+
+commit 38daf089c40dfe0890af467740450b854c87f121
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Fri May 13 02:02:57 2022 -0600
+
+    modificando empresa.h
+
+commit 0e18649cf7efcfc14a85ca914fcd8d4e2663d91f
+Merge: db2a06d 00d6c4b
+Author: vesania-sofia-tobar <97969064+vesania-sofia@users.noreply.github.com>
+Date:   Thu May 12 19:51:52 2022 -0600
+
+    Merge pull request #14 from HGMarlon/puestoKarla
+    
+    correccion de puesto
+
+commit 00d6c4b977933f67758e6e8156ef9fd0652849cb
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Thu May 12 19:51:02 2022 -0600
+
+    correccion de puesto
+
+commit db2a06d3a9606cd8d3c9761d543ea686d002b51f
+Merge: f1db7cd a46cbd0
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 12 18:51:23 2022 -0600
+
+    Merge pull request #13 from HGMarlon/menuMantenimientosJosue
+    
+    Agregando funciones al menu mantenimientos parte 1
+
+commit a46cbd068720f779723220968154bf718453dc5e
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 12 18:50:22 2022 -0600
+
+    Agregando funciones al menu mantenimientos parte 1
+
+commit f1db7cda6cb46b8e62c9ee421e6158cc2cfd529f
+Merge: 99f3d3e d7b249e
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 12 17:43:48 2022 -0600
+
+    Merge pull request #12 from HGMarlon/bdepartamentosAngel
+    
+    departamentos
+
+commit d7b249e97f745e307454ffcdcbe334cc93de5959
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 12 17:43:19 2022 -0600
+
+    departamentos
+
+commit 99f3d3e2dcda41c99c9c78c59d482b2f2b7b51a9
+Merge: fe3055e a93ed60
+Author: VANNE <98073480+567ALYSON-RODRIGUEZ@users.noreply.github.com>
+Date:   Thu May 12 12:47:13 2022 -0600
+
+    Merge pull request #11 from HGMarlon/EmpresaAlyson
+    
+    Empresa alyson
+
+commit a93ed606bce0832106c2286e8e5adbdd2eaee863
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Thu May 12 12:45:55 2022 -0600
+
+    funciones de la clase empresa
+
+commit b015f6d0026297609d7c5d0a961c0841ca545e25
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Thu May 12 12:44:31 2022 -0600
+
+    creación menu empresa
+
+commit 18f3911c632776d9db82a4f54ff086a2003e94ce
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Thu May 12 12:42:25 2022 -0600
+
+    modificando Empresa.h creación de atributos y métodos
+
+commit 319ba6169c181ee700b7d140263cc90da08ed03d
+Author: Alyson Rodríguez <arodriguezq3@miumg.edu.gt>
+Date:   Thu May 12 12:40:44 2022 -0600
+
+    creando clase empresa
+
+commit fe3055e26489b055980911a9bb3be45716b60513
+Merge: 10fea12 86677a1
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 12 12:27:26 2022 -0600
+
+    Merge pull request #8 from HGMarlon/empleadosJosue
+    
+    completando clase empleados
+
+commit 86677a1906051a98c2923df54ab16bfeb4c196df
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 12 12:26:47 2022 -0600
+
+    completando clase empleados
+
+commit 10fea12a68cc148f2fb821ecef0db5a5da66468e
+Merge: b7b64fa 2edfff2
+Author: vesania-sofia-tobar <97969064+vesania-sofia@users.noreply.github.com>
+Date:   Thu May 12 12:16:05 2022 -0600
+
+    Merge pull request #6 from HGMarlon/PuestoSofia
+    
+    Puesto sofia
+
+commit b7b64faaf29924ffa4b71481e9e79644d3847e3a
+Merge: d28c8e6 0cf2896
+Author: HG_Marlon <97968910+HGMarlon@users.noreply.github.com>
+Date:   Thu May 12 13:14:22 2022 -0500
+
+    Merge pull request #3 from HGMarlon/BancosMarlon
+    
+    AgregandoBancos
+
+commit 2edfff2c4edf193f563e697121b86f3d693f6c27
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 9 21:10:30 2022 -0600
+
+    menu puestos agregado
+
+commit d1e883446d3b192192fa414780d541077fd5d848
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 9 21:03:31 2022 -0600
+
+    agegando funciones puesto.cpp
+
+commit 7a1b4a003d0a82bbb8c04d1e77fee73898b6bca9
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 9 21:02:49 2022 -0600
+
+    actualizando puesto.h
+
+commit 9471dbd43d58f853e73decb94636ee18f85b41e8
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Mon May 9 20:55:20 2022 -0600
+
+    creado puesto.h
+
+commit 0cf289611071c606207121928bec59447b8b4569
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Mon May 9 19:11:35 2022 -0600
+
+    AgregandoBancos
+
+commit d28c8e6f2dd20d0a61205e88fb94a53b59a3bb93
+Merge: d975b0b aa639b4
+Author: JosueERivas <98064866+JosueERivas@users.noreply.github.com>
+Date:   Thu May 5 12:50:04 2022 -0600
+
+    Merge pull request #2 from HGMarlon/a
+    
+    Estructurando el proyecto
+
+commit aa639b42644c8b12f3d172cc79dd2244d7322ed3
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 5 12:48:43 2022 -0600
+
+    arreglando menu de mantenimientos
+
+commit 15520fb094fcf4332e9b25d9758d17f17301a744
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 5 12:03:12 2022 -0600
+
+    terminando base de clase empleados y complementando menus
+
+commit 830c4a3aaedec5cef582056e4dcb371ce85d3719
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Thu May 5 08:50:43 2022 -0600
+
+    agregando funciones de empleado
+
+commit a5009a7b149da3aa4c7d7076dc350810e4c829e7
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Wed May 4 20:08:35 2022 -0600
+
+    agregando menus, y crear, buscar y modificar en la clase empleados
+
+commit 974353874bba420be8cfa0ee67dfc196fbeb9844
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Wed May 4 18:45:36 2022 -0600
+
+    a
+
+commit a93af0776e73f9589113fc3b77f9e118cf08eb7c
+Author: Josué Rivas <jrivasd@miumg.edu.gt>
+Date:   Wed May 4 18:43:08 2022 -0600
+
+    menu principal
+
+commit 368f429d7063eb563f3ffdef9cd8a8e218369a14
+Author: sofia Tobar <kgomezt2@miumg.edu.gt>
+Date:   Wed May 4 17:48:41 2022 -0600
+
+    pro
+
+commit d975b0b563d3163933defaf3b0a83fbc5a15671d
+Merge: 07b9cef 616c327
+Author: HG_Marlon <97968910+HGMarlon@users.noreply.github.com>
+Date:   Wed May 4 17:32:24 2022 -0500
+
+    Merge pull request #1 from HGMarlon/ActualizandoErrores
+    
+    Actualizando
+
+commit 616c32748d71cee2c10eacb7f3f0a9995ffafeed
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Wed May 4 16:23:29 2022 -0600
+
+    Actualizando
+
+commit 07b9cefb2a12d282cb64699607dc2488d7fe5023
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Wed May 4 15:23:09 2022 -0600
+
+    Agregando
+
+commit 2f4ae035804453053b83b03477b23a8f95cbf794
+Author: HGMarlon <mhernandezg59@miumg.edu.gt>
+Date:   Wed May 4 15:18:40 2022 -0600
+
+    first commit

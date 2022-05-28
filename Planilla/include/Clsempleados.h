@@ -15,7 +15,7 @@ class Clsempleados
 {
     public:
         //Constructor clase
-        Clsempleados(int=0, string = "", string = "", string = "", string = "", string = "", string = "", string = "", string = "", string = "", string = "", string = "");
+        Clsempleados(int=0, string = "", string = "", string = "", string = "", int = 0, string = "", string = "", string = "", string = "", string = "", string = "");
 
         //Menu de los empleados
         mmenuEmpleados();
@@ -63,8 +63,8 @@ class Clsempleados
         string mobtenerApellidos() const;
 
         //Metodos atributo edad del empleado
-        void mestablecerEdad( string );
-        string mobtenerEdad() const;
+        void mestablecerCPuesto( int ) ;
+        int mobtenerCPuesto() const;
 
         //Metodos atributo direccion del empleado
         void mestablecerDireccion( string );
@@ -101,7 +101,7 @@ class Clsempleados
         char m_snombresEmpleado[20];
         char m_sapellidoEmpleado[10];
         char m_sapellidosEmpleado[20];
-        char m_sedadEmpleado[5];
+        int m_iCPuesto;
         char m_sdireccionEmpleado[20];
         char m_stelefonoEmpleado[10];
         char m_scorreoEmpleado[30];
