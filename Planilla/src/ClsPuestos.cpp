@@ -1,3 +1,4 @@
+// puesto general Karla Sofia Gómez Tobar 9959-21-1896 y Alyson Rodríguez 9959-21-829 en floats
 #include "ClsPuestos.h"
 
 #include<conio.h>
@@ -81,7 +82,7 @@ void ClsPuestos::mestablecerSalario (float fflotanteNumero)
 {
     m_fSalario = fflotanteNumero;
 }
-
+//Karla Sofia Gómez Tobar 9959-21-1896
 string ClsPuestos::mobtenerNivelAc() const
 {
     return m_sNivelAcademico;
@@ -211,7 +212,7 @@ void ClsPuestos::mnuevoPuestos(fstream &archivoPuestos)
 
       cout << "Escriba la hora de salida: " << endl;
       cin >> setw( 20 ) >> m_sHoraSalida;
-
+//Karla Sofia Gómez Tobar 9959-21-1896
       // usar valores para llenar los valores de la clave
       puesto.mestablecerCargo( m_snombreCargo );
       puesto.mestablecerNumero( m_inumeroPuesto );
@@ -339,7 +340,7 @@ void ClsPuestos::mmodificarRegistroPuestos( fstream &archivoPuestos )
       cout << "\nEscriba la hora de salida: ";
       char m_sHoraSalida [ 20 ];
       cin >> m_sHoraSalida;
-
+//Karla Sofia Gómez Tobar 9959-21-1896
       // actualizar el saldo del registro
       puesto.mestablecerCargo( m_snombreCargo );
       puesto.mestablecerNumero( m_inumeroPuesto );
