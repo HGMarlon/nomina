@@ -1,3 +1,4 @@
+//Karla Sofia Gómez Tobar 9959-21-1896
 #ifndef CLSREPORTE_H
 #define CLSREPORTE_H
 
@@ -48,7 +49,7 @@ class ClsReporte
         void mestablecerBonificacion( float );
         float mobtenerBonificacion() const;
 
-        void mestablecerBonificacion( float );
+        void mestablecerAnticipo( float );
         float mobtenerAnticipo() const;
 
 
