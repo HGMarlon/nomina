@@ -1,3 +1,0 @@
-Numero    Cargo               Departamento        Salario             Nivel academico     Hora de entrada     Hora de salida      
-1         Gerente             Direccion           10000.00            Diversificado       9:00am              6:00pm              
-2         Repartidor          Mensajeria          3500                B sico              6:00am              7:45pm              

@@ -192,10 +192,10 @@ void ClsPuestos::mnuevoPuestos(fstream &archivoPuestos)
       cout << "Escriba el departamento al que pertenece: " << endl;
       cin >> setw( 20 ) >> m_sDepartamento;
 
-      char m_sSalario[ 20 ];
+      float m_fSalario=0;
 
       cout << "Escriba el monto total del salario: " << endl;
-      cin >> setw( 20 ) >> m_sSalario;
+      cin >> setw( 20 ) >> m_fSalario;
 
       char m_sNivelAcademico[ 20 ];
 
@@ -325,8 +325,8 @@ void ClsPuestos::mmodificarRegistroPuestos( fstream &archivoPuestos )
       cin >> m_sDepartamento;
 
       cout << "\nEscriba el monto total del salario: ";
-      char m_sSalario [ 20 ];
-      cin >> m_sSalario;
+      float m_fSalario=0;
+      cin >> m_fSalario;
 
       cout << "\nEscriba el nivel academico requerido: ";
       char m_sNivelAcademico [ 20 ];

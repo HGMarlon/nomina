@@ -1,3 +1,0 @@
-Clave     Nombre    Nombres             Apellido  Apellidos           Edad Direccion           Telefono  Correo                        Sexo      Nacionalidad   Fecha de nacimiento
-1         Josue     Ernesto             Rivas     De_Leon             18   10av87z5Mixco       30405060  josue@gmail.com               Masculino Guatemalteco   12/06/2003     
-3         Mar¡a     Alejandra           Osorio    Algo                17   4av5-10Jutiapa      80805050  male@gmail.com                Femenino  Colombiana     09/08/2004     
