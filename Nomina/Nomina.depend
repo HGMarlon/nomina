@@ -526,3 +526,139 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\clsmenumantenimientos.cpp
+	"ClsmenuMantenimientos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<cstring>
+	"Clsempleados.h"
+	"ClsBancos.h"
+	"ClsEmpresa.h"
+	"ClsPuestos.h"
+	"Clsdepartamentos.h"
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\clsmenumantenimientos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\include\clsempleados.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\include\clsbancos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\include\clsempresa.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\include\clspuestos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653579666 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\include\clsdepartamentos.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\main.cpp
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	"ClsmenuMantenimientos.h"
+	"Clsempleados.h"
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\src\clsbancos.cpp
+	"ClsBancos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\src\clsdepartamentos.cpp
+	"Clsdepartamentos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\src\clsempleados.cpp
+	"Clsempleados.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\src\clsempresa.cpp
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653579666 source:c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\nomina\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+

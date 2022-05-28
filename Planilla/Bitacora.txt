@@ -165,3 +165,17 @@ Usuario: Josue     Accion: Ingreso al sistema            Dia: 26   Mes: 5    Año
 Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 26   Mes: 5    Año: 2022  Hora: 9    Minuto: 23   Segundo: 4    
 Usuario: Josue     Accion: Ingreso a Info. Nomina        Dia: 26   Mes: 5    Año: 2022  Hora: 9    Minuto: 23   Segundo: 4    
 Usuario: Josue     Accion: Salio del Menu Principal      Dia: 26   Mes: 5    Año: 2022  Hora: 9    Minuto: 23   Segundo: 4    
+Usuario: sofia     Accion: Ingreso al sistema            Dia: 26   Mes: 5    Año: 2022  Hora: 9    Minuto: 46   Segundo: 3    
+Usuario: sofia     Accion: Ingreso a Info. Nomina        Dia: 26   Mes: 5    Año: 2022  Hora: 9    Minuto: 46   Segundo: 3    
+Usuario: sofia     Accion: Ingreso al sistema            Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 40   
+Usuario: sofia     Accion: Ingreso a Mantenimiento       Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 40   
+Usuario: sofia     Accion: Ingreso a CRUD Concepto       Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 50   
+Usuario: sofia     Accion: Ingreso a Cons. Concepto      Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 53   
+Usuario: sofia     Accion: Salio de Gestion Concepto     Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 53   
+Usuario: sofia     Accion: Ingreso a CRUD Empresa        Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 50   Segundo: 53   
+Usuario: sofia     Accion: Salio de Gestion Empresa      Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 42   
+Usuario: sofia     Accion: Ingreso a CRUD Concepto       Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 42   
+Usuario: sofia     Accion: Ingreso a Cons. Concepto      Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 48   
+Usuario: sofia     Accion: Salio de Gestion Concepto     Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 48   
+Usuario: sofia     Accion: Ingreso a CRUD Puestos        Dia: 27   Mes: 5    Año: 2022  Hora: 9    Minuto: 55   Segundo: 48   
+Usuario: sofia     Accion: Ingreso a Cons. Puestos       Dia: 27   Mes: 5    Año: 2022  Hora: 10   Minuto: 2    Segundo: 10   
