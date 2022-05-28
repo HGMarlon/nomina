@@ -9,9 +9,17 @@
 #include<ctime>
 #include<string.h>
 
-ClsReporte::ClsReporte()
+
+using namespace std;
+
+ClsReporte::ClsReporte(int iClaveReporte, int iDiasTrabajados, int iHorasExtra, float fBonificacion, float fAnticipo )
 {
     //ctor
+    mestablecerClaveRepo(iClaveReporte);
+    mestablecerDiasTrab(iDiasTrabajados);
+    mestablecerHorasExtra(iHorasExtra);
+    mestablecerBonificacion(fBonificacion);
+    mestablecerBonificacion(fAnticipo);
 }
 
 ClsReporte::~ClsReporte()

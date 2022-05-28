@@ -13,7 +13,7 @@ using namespace std;
 class ClsReporte
 {
     public:
-        ClsPuestos(int=0, int=0, int=0, float=0, float=0 );
+        ClsReporte(int=0, int=0, int=0, float=0, float=0 );
 
         mmenuReporte();
         mcrearReporte();
@@ -48,7 +48,7 @@ class ClsReporte
         void mestablecerBonificacion( float );
         float mobtenerBonificacion() const;
 
-        void mestablecerAnticipo( float );
+        void mestablecerBonificacion( float );
         float mobtenerAnticipo() const;
 
 
