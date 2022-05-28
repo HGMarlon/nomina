@@ -1,3 +1,4 @@
+//todo lo trabajo Karla Sofia Gómez Tobar 9959-21-1896
 #ifndef CLSPUESTOS_H
 #define CLSPUESTOS_H
 
