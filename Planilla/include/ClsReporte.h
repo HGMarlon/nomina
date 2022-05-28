@@ -58,6 +58,11 @@ class ClsReporte
     protected:
 
     private:
+        int m_iClaveReporte;
+        int m_iDiasTrabajados;
+        int m_iHorasExtra;
+        float m_fBonificacion;
+        float m_fAnticipo;
 };
 
 #endif // CLSREPORTE_H
