@@ -37,7 +37,20 @@ class ClsReporte
 
         void mbuscarReporte(fstream &archivoReporte);
 
+        void mestablecerClaveRepo( int ) ;
+        int mobtenerClaveRepo() const;
 
+        void mestablecerDiasTrab( int ) ;
+        int mobtenerDiasTrab() const;
+
+        void mestablecerHorasExtra( int ) ;
+        int mobtenerHorasExtra() const;
+
+        void mestablecerBonificacion( float );
+        float mobtenerBonificacion() const;
+
+        void mestablecerAnticipo( float );
+        float mobtenerAnticipo() const;
 
         ClsReporte();
         virtual ~ClsReporte();
