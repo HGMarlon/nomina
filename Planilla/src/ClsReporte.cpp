@@ -163,6 +163,15 @@ void ClsReporte::mnuevoReporte(fstream &archivoReporte)
 
 }
 
+void ClsReporte::mostrarLineaReporte( const ClsReporte &registro )
+{
+       cout << left << setw( 5 ) << registro.mobtenerClaveRepo()
+          << setw( 5 ) << registro.mobtenerDiasTrab()
+          << setw( 10 ) << registro.mobtenerHorasExtra()
+          << setw( 10 ) << registro.mobtenerBonificacion()
+          << setw( 10 ) << registro.mobtenerAnticipo()
+          << endl;
+}
 
 ClsReporte::~ClsReporte()
 {
