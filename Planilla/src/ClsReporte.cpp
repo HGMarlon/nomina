@@ -104,6 +104,65 @@ int ClsReporte::mobtenerIndicadorRep(const char * const iindicador)
    return m_iClaveReporte;
 }
 
+void ClsReporte::mnuevoReporte(fstream &archivoReporte)
+{
+   ClsReporte reporte;
+   int m_iClaveReporte = mobtenerIndicadorRep( "Escriba el numero de reporte" );
+
+   // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
+   archivoReporte.seekg(
+      ( m_iClaveReporte - 1 ) * sizeof( ClsReporte ) );
+
+   // leer el registro del archivo
+   archivoReporte.read( reinterpret_cast< char * >( &reporte ),
+      sizeof( ClsReporte ) );
+
+    // crear el registro, si éste no existe ya
+   if ( reporte.mobtenerClaveRepo() == 0 )
+    {
+      //Atributos a ingresar
+      int m_iDiasTrabajados=0;
+      int m_iHorasExtra=0;
+      float m_fBonificacion=0;
+      float m_fAnticipo=0;
+
+      // el usuario introduce el nombre
+      cout << "Escriba la cantidad de dias trabajados: " << endl;
+      cin >> setw( 5 ) >> m_iDiasTrabajados;
+      cout << "Escriba las horas extras:" << endl;
+      cin >> setw( 5 ) >> m_iHorasExtra;
+      cout << "Escriba la cantidad de bonificacion a percibir:" << endl;
+      cin >> setw( 10 ) >>m_fBonificacion ;
+      cout << "Escriba la cantidad de anticipo a percibir:" << endl;
+      cin >> setw( 10 ) >>m_fAnticipo;
+
+      // usar valores para llenar los valores de la clave
+        reporte.mestablecerDiasTrab( m_iDiasTrabajados );
+        reporte.mestablecerHorasExtra(m_iHorasExtra);
+        reporte.mestablecerBonificacion(m_fBonificacion);
+        reporte.mestablecerAnticipo(m_fAnticipo);
+
+      // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+      archivoReporte.seekp( ( m_iClaveReporte - 1 ) *
+         sizeof( ClsReporte ) );
+
+     // insertar el registro en el archivo
+        archivoReporte.write(
+           reinterpret_cast< const char * >( &reporte ),
+           sizeof( ClsReporte ) );
+
+           cout << "Reporte agregado con exito.";
+   }
+
+   // mostrar error si la clave ya esta ocupada
+   else
+   {
+       cerr << "La clave #" << m_iClaveReporte << " ya contiene informacion." << endl;
+       getch();
+   }
+
+}
+
 
 ClsReporte::~ClsReporte()
 {
