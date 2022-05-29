@@ -75,6 +75,35 @@ void ClsReporte::mestablecerAnticipo (float fflotanteAnticipo)
     m_fAnticipo = fflotanteAnticipo;
 }
 
+ClsReporte::mcrearReporte()
+{
+    ofstream archivoReporte("registrosreporte.dat", ios::out | ios::binary);
+    if(!archivoReporte)
+    {
+        cerr<<"No se pudo abrir el archivo"<<endl;
+        exit(1);
+    }
+    ClsReporte reporteEnBlanco;
+    for(int i=0; i<100; i++)
+    {
+        archivoReporte.write(reinterpret_cast<const char * > (&reporteEnBlanco), sizeof(ClsReporte));
+    }
+}
+
+int ClsReporte::mobtenerIndicadorRep(const char * const iindicador)
+{
+    int m_iClaveReporte;
+
+   // obtener el valor del número de reporte
+   do {
+      cout << iindicador << " (1 - 100): ";
+      cin >> m_iClaveReporte;
+
+   } while ( m_iClaveReporte < 1 || m_iClaveReporte > 100 );
+
+   return m_iClaveReporte;
+}
+
 
 ClsReporte::~ClsReporte()
 {

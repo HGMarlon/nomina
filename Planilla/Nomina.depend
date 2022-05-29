@@ -218,7 +218,7 @@
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\nomina\clsmenumantenimientos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\nomina\clsmenumantenimientos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -780,7 +780,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.cpp
 	"ClsmenuMantenimientos.h"
 	<conio.h>
 	<iostream>
@@ -797,7 +797,7 @@
 	"Clsdepartamentos.h"
 	"ClsConceptos.h"
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\clsmenumantenimientos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -807,7 +807,7 @@
 	<ctime>
 	<string.h>
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempleados.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempleados.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -815,7 +815,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsbancos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsbancos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -823,7 +823,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempresa.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsempresa.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -831,7 +831,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652925430 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clspuestos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clspuestos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -839,7 +839,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsdepartamentos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsdepartamentos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -847,7 +847,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsconceptos.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsconceptos.h
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -855,7 +855,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\main.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\main.cpp
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -867,9 +867,18 @@
 	"ClsmenuMantenimientos.h"
 	"Clsempleados.h"
 	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
 
-1652920871 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsnomina.h
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsnomina.h
 	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -877,7 +886,7 @@
 	<iomanip>
 	<cstdlib>
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsbancos.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsbancos.cpp
 	"ClsBancos.h"
 	<conio.h>
 	<iostream>
@@ -889,7 +898,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsconceptos.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsconceptos.cpp
 	"ClsConceptos.h"
 	<conio.h>
 	<iostream>
@@ -902,7 +911,7 @@
 	<math.h>
 	"ClsmenuMantenimientos.h"
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsdepartamentos.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsdepartamentos.cpp
 	"Clsdepartamentos.h"
 	<conio.h>
 	<iostream>
@@ -914,7 +923,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempleados.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempleados.cpp
 	"Clsempleados.h"
 	<conio.h>
 	<iostream>
@@ -926,7 +935,7 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempresa.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsempresa.cpp
 	"ClsEmpresa.h"
 	<conio.h>
 	<iostream>
@@ -938,9 +947,15 @@
 	<string.h>
 	"ClsmenuMantenimientos.h"
 
-1652920871 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsnomina.cpp
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsnomina.cpp
 	"Clsnomina.h"
 	"Clsempleados.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	"Clsencabezado.h"
 	<conio.h>
 	<iostream>
 	<fstream>
@@ -1242,6 +1257,63 @@
 	<string.h>
 
 1653794038 c:\users\sofia\progra1\proyectos\proyecto\colaborador\nomina\planilla\include\clsreporte.h
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsencabezado.h
+	"Clsnomina.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsencabezado.cpp
+	"Clsencabezado.h"
+	"Clsempleados.h"
+	"Clsnomina.h"
+	"ClsConceptos.h"
+	"ClsPuestos.h"
+	"ClsEmpresa.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clspuestos.cpp
+	"ClsPuestos.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+	"ClsmenuMantenimientos.h"
+
+1653794909 source:c:\users\dell\progra\proyectofinal\nomina\planilla\src\clsreporte.cpp
+	"ClsReporte.h"
+	<conio.h>
+	<iostream>
+	<fstream>
+	<string>
+	<iomanip>
+	<cstdlib>
+	<ctime>
+	<string.h>
+
+1653794909 c:\users\dell\progra\proyectofinal\nomina\planilla\include\clsreporte.h
 	<conio.h>
 	<iostream>
 	<fstream>
