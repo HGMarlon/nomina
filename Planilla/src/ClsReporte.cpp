@@ -204,6 +204,16 @@ void ClsReporte::mconsultarRegistroReporte(fstream &archivoReporte)
     }
 }
 
+void ClsReporte::mmostrarLineaRegistroReporte( ostream &salida, const ClsReporte &registro )
+{
+       salida << left << setw( 5 ) << registro.mobtenerClaveRepo()
+          << setw( 5 ) << registro.mobtenerDiasTrab()
+          << setw( 5 ) << registro.mobtenerHorasExtra()
+          << setw( 10 ) << registro.mobtenerBonificacion()
+          << setw( 10 ) << registro.mobtenerAnticipo()
+          << endl;
+}
+
 ClsReporte::~ClsReporte()
 {
     //dtor
