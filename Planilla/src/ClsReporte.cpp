@@ -214,6 +214,62 @@ void ClsReporte::mmostrarLineaRegistroReporte( ostream &salida, const ClsReporte
           << endl;
 }
 
+void ClsReporte::mmodificarRegistroReporte( fstream &archivoReporte )
+{
+    ClsReporte reporte;
+    int m_iClaveReporte = mobtenerIndicadorRep("Ingrese la clave del reporte");
+
+    archivoReporte.seekg(
+    ( m_iClaveReporte - 1 ) * sizeof( ClsReporte ) );
+
+    // leer el primer registro del archivo
+    archivoReporte.read( reinterpret_cast< char * >( &reporte ),
+    sizeof( ClsReporte ) );
+
+   // actualizar el registro
+   if ( reporte.mobtenerClaveRepo() != 0 ) {
+      mmostrarLineaRegistroReporte( cout, reporte );
+
+      cout << "Escriba la cantidad de dias trabajados: ";
+      int m_iDiasTrabajados;
+      cin >> m_iDiasTrabajados;
+
+      cout << "Escriba la cantidad de horas extras:";
+      int m_iHorasExtra;
+      cin >> m_iHorasExtra;
+
+      cout << "Escriba la cantidad de bonificacion a percibir:";
+      float m_fBonificacion;
+      cin >> m_fBonificacion;
+
+      cout << "Escriba la cantidad de anticipos a percibir:";
+      float m_fAnticipo;
+      cin >> m_fAnticipo;
+
+      // actualizar el saldo del registro
+      reporte.mestablecerClaveRepo( m_iClaveReporte);
+      mmostrarLineaRegistroReporte( cout, reporte );
+
+       // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+        archivoReporte.seekp(
+        ( m_iClaveReporte - 1 ) * sizeof( ClsReporte ) );
+
+        // escribir el registro actualizado sobre el registro anterior en el archivo
+        archivoReporte.write(
+        reinterpret_cast< const char * >( &reporte ),
+        sizeof( ClsReporte ) );
+
+        cout << "Reporte modificado con éxito.";
+
+    } // fin de instrucción if
+
+   // mostrar error si la clave no contiene informacion
+    else
+        cerr << "La la clave #" << m_iClaveReporte
+         << " no tiene informacion." << endl;
+}
+
+
 ClsReporte::~ClsReporte()
 {
     //dtor
