@@ -376,6 +376,178 @@ void ClsReporte::mbuscarReporte(fstream &archivoReporte)
     getch();
 }
 
+ClsReporte::mmenuReporte()
+{
+    string accion="";
+    //tiempo
+    time_t t;
+    t = time(NULL);
+    struct tm *fecha;
+    fecha = localtime(&t);
+
+    string codigo;
+    fstream abrir;
+    int found=0;
+    abrir.open("Usuario.txt", ios::in);
+    if (!abrir)
+    {
+        cerr << "Archivo Usuario no Encontrado" << endl;
+        exit ( 3 );
+    }
+    else
+    {
+        abrir>>codigo;
+    }
+
+    ofstream bitacora("Bitacora.txt", ios::app | ios::out);
+    if (!bitacora)
+    {
+        cerr << "No se pudo abrir el archivo." << endl;
+        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+        exit ( 3 );
+    }
+
+
+    int iseleccionMenuReporte;
+    do
+    {
+        system("cls");
+        // abrir el archivo en modo de lectura y escritura
+        fstream archivoReporte("registrosreporte.dat", ios::in | ios::out | ios::binary);
+        // salir del programa si fstream no puede abrir el archivo
+        if ( !archivoReporte )
+            {
+                cerr << "No se pudo abrir el archivo." << endl;
+                mcrearReporte();
+                cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                exit ( 1 );
+
+            }
+        cout<<"-------------------------------"<<endl;
+        cout<<"|   SISTEMA GESTION REPORTE  |"<<endl;
+        cout<<"-------------------------------"<<endl;
+        cout<<"1. Ingreso Reporte"<<endl;
+        cout<<"2. Despliegue Reporte"<<endl;
+        cout<<"3. Modifica Reporte"<<endl;
+        cout<<"4. Imprimir Reporte"<<endl;
+        cout<<"5. Borra Reporte"<<endl;
+        cout<<"6. Buscar Reporte"<<endl;
+        cout<<"0. Volver al menu superior"<<endl;
+        cout<<"-------------------------------"<<endl;
+        cout<<"Opcion a escoger:[1/2/3/4/5/6/0]"<<endl;
+        cout<<"------------------------------"<<endl;
+        cout<<"Ingresa tu Opcion: ";
+        cin>>iseleccionMenuReporte;
+        switch(iseleccionMenuReporte)
+        {
+        case 1:
+            {
+                accion = "Ingreso a Agre. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                mnuevoReporte(archivoReporte);
+                getch();
+            }
+            break;
+        case 2:
+            {
+                accion = "Ingreso a Cons. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                mconsultarRegistroReporte(archivoReporte);
+                cout << "Fin del archivo.";
+                getch();
+            }
+            break;
+        case 3:
+            {
+                accion = "Ingreso a Mod. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                mmodificarRegistroReporte(archivoReporte);
+                getch();
+            }
+            break;
+        case 4:
+            {
+                accion = "Ingreso a Impri. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                mimprimirRegistroReporte(archivoReporte);
+                getch();
+            }
+            break;
+        case 5:
+            {
+                accion = "Ingreso a Elim. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                meliminarRegistroReporte(archivoReporte);
+            }
+            break;
+        case 6:
+            {
+                accion = "Ingreso a Buscar. Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                system("cls");
+                mbuscarReporte(archivoReporte);
+            }
+            break;
+        case 0:
+            {
+                accion = "Salio de Gestion Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+            }
+            break;
+        default:
+            cout<<"Opción invalida, intenta de nuevo";
+            getch();
+            break;
+        }
+    }while(iseleccionMenuReporte!=0);
+}
+
 ClsReporte::~ClsReporte()
 {
     //dtor
