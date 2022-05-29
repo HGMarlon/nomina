@@ -348,6 +348,34 @@ void ClsReporte::meliminarRegistroReporte(fstream &archivoReporte)
    getch();
 }
 
+void ClsReporte::mbuscarReporte(fstream &archivoReporte)
+{
+    int iindicador = mobtenerIndicadorRep( "Escriba la clave que desea buscar" );
+
+    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+    archivoReporte.seekg(
+    ( iindicador - 1 ) * sizeof( ClsReporte) );
+
+    // leer el primer registro del archivo
+    ClsReporte reporte;
+    archivoReporte.read( reinterpret_cast< char * >( &reporte),
+    sizeof( ClsReporte) );
+
+    // actualizar el registro
+    if ( reporte.mobtenerClaveRepo() != 0 )
+    {
+        mmostrarLineaRegistroReporte( cout, reporte);
+    }
+
+    // mostrar error si la clave esta vacia
+    else
+    {
+        cerr << "La clave #" << iindicador
+        << " no tiene informacion." << endl;
+    }
+    getch();
+}
+
 ClsReporte::~ClsReporte()
 {
     //dtor
