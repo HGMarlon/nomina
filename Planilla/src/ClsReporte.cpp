@@ -173,6 +173,37 @@ void ClsReporte::mostrarLineaReporte( const ClsReporte &registro )
           << endl;
 }
 
+void ClsReporte::mconsultarRegistroReporte(fstream &archivoReporte)
+{
+    //Creando encabezado de la tabla
+    cout << left << setw( 5 ) << "Clave"
+    << setw( 5 ) << "Dias trabajados"
+    << setw( 5 ) << "Horas extra"
+    << setw( 10 ) << "Bonificacion"
+    << setw( 10 ) << "Anticipo"
+    << endl;
+
+    // colocar el apuntador de posición de archivo al principio del archivo de registros
+    archivoReporte.seekg( 0 );
+
+    // leer el primer registro del archivo de registros
+    ClsReporte reporte;
+    archivoReporte.read( reinterpret_cast< char * >( &reporte ),
+    sizeof( ClsReporte ) );
+
+    // copiar todos los registros del archivo de registros en el archivo de texto
+    while ( !archivoReporte.eof() )
+    {
+        // escribir un registro individual en el archivo de texto
+        if ( reporte.mobtenerClaveRepo() != 0 )
+        mostrarLineaReporte(reporte);
+
+        // leer siguiente registro del archivo de registros
+        archivoReporte.read( reinterpret_cast< char * >( &reporte ),
+        sizeof( ClsReporte ) );
+    }
+}
+
 ClsReporte::~ClsReporte()
 {
     //dtor
