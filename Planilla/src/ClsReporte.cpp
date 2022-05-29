@@ -310,6 +310,44 @@ void ClsReporte::mimprimirRegistroReporte(fstream &archivoReporte)
    cout << "archivo creado con éxito con el nombre de: registrodereporte.txt";
 }
 
+void ClsReporte::meliminarRegistroReporte(fstream &archivoReporte)
+{
+    int iindicador= mobtenerIndicadorRep( "Escriba la clave a eliminar" );
+
+    // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+    archivoReporte.seekg(
+    ( iindicador - 1 ) * sizeof( ClsReporte) );
+
+    // leer el registro del archivo
+    ClsReporte reporte;
+    archivoReporte.read( reinterpret_cast< char * >( &reporte),
+    sizeof( ClsReporte) );
+
+    // eliminar el registro, si es que existe en el archivo
+    if ( reporte.mobtenerClaveRepo() != 0 )
+    {
+        ClsReporte reporteEnBlanco;
+
+        // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+        archivoReporte.seekp( ( iindicador - 1 ) *
+        sizeof( ClsReporte ) );
+
+        // reemplazar el registro existente con un registro en blanco
+        archivoReporte.write(
+        reinterpret_cast< const char * >( &reporteEnBlanco ),
+        sizeof( ClsReporte) );
+
+        cout << "Registro clave #" << iindicador << " eliminado correctamente.\n";
+   }
+
+   // mostrar error si el registro esta vacio
+   else
+   {
+       cerr << "Registro clave #" << iindicador << " esta vacia.\n";
+   }
+   getch();
+}
+
 ClsReporte::~ClsReporte()
 {
     //dtor
