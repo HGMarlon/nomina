@@ -25,7 +25,7 @@ class ClsReporte
 
         void mconsultarRegistroReporte(fstream &archivoReporte);
 
-        void mostrarLineaReporte( const ClsPuestos &registroReporte );
+        void mostrarLineaReporte( const ClsReporte &registroReporte );
 
         void mmodificarRegistroReporte( fstream &archivoReporte );
 

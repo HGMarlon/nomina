@@ -65,7 +65,7 @@ void ClsReporte::mestablecerBonificacion (float fflotanteBonificacion)
     m_fBonificacion = fflotanteBonificacion;
 }
 
-loat ClsReporte::mobtenerAnticipo() const
+float ClsReporte::mobtenerAnticipo() const
 {
     return m_fAnticipo;
 }
