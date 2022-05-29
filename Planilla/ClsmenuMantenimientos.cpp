@@ -16,7 +16,7 @@
 #include "ClsPuestos.h"
 #include "Clsdepartamentos.h"
 #include "ClsConceptos.h"
-
+#include "ClsReporte.h"
 
 using namespace std;
 
@@ -70,9 +70,10 @@ ClsmenuMantenimientos::mmenuMantimientos()
         cout<<"4. CRUD departamentos"<<endl;
         cout<<"5. CRUD bancos"<<endl;
         cout<<"6. CRUD concepto"<<endl;
+        cout<<"7. CRUD reporte"<<endl;
         cout<<"0. Volver al menu principal"<<endl;
         cout<<"-------------------------------"<<endl;
-        cout<<"Opcion a escoger:[1/2/3/4/5/0]"<<endl;
+        cout<<"Opcion a escoger:[1/2/3/4/5/6/7/0]"<<endl;
         cout<<"-------------------------------"<<endl;
         cout<<"Ingresa tu Opcion: ";
         cin>>choice2;
@@ -161,6 +162,20 @@ ClsmenuMantenimientos::mmenuMantimientos()
 
                 ClsConceptos concepto;
                 concepto.mmenuConceptos();
+            }
+            break;
+        case 7:
+            {
+                accion = "Ingreso a CRUD Reporte";
+
+                bitacora<<left<<setw(9)<< "Usuario:" <<left<<setw(10)<< codigo <<left<<setw(8)<< "Accion:" <<left<<setw(30)<< accion
+                <<left<<setw(5)<< "Dia:" <<left<<setw(5)<< fecha->tm_mday <<left<<setw(5)<< "Mes:" <<left<<setw(5)<< fecha->tm_mon+1
+                <<left<<setw(5)<< "Año:" <<left<<setw(6)<< fecha->tm_year+1900 <<left<<setw(6)<< "Hora:" <<left<<setw(5)<< fecha->tm_hour
+                <<left<<setw(8)<< "Minuto:" <<left<<setw(5)<< fecha->tm_min <<left<<setw(9)<< "Segundo:" <<left<<setw(5)<< fecha->tm_sec << endl;
+                /*bitacora.close();*/
+
+                ClsReporte reporte;
+                reporte.mmenuReporte();
             }
             break;
         case 0:
