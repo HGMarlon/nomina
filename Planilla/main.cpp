@@ -16,6 +16,7 @@
 #include "ClsPuestos.h"
 #include "ClsEmpresa.h"
 #include "Clsencabezado.h"
+#include "ClsReporte.h"
 
 #define ENTER 13
 #define BACKSPACE 8
@@ -260,6 +261,7 @@ void login(){
                 ClsConceptos concepto;
                 ClsEmpresa empresa;
                 Clsencabezado encabezado;
+                ClsReporte reporte;
                 // abrir el archivo en modo de lectura y escritura
                 fstream archivoNomina("registronominas.dat", ios::in | ios::out | ios::binary);
                 // salir del programa si fstream no puede abrir el archivo
@@ -316,7 +318,16 @@ void login(){
                         cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
                         exit ( 1 );
                     }
-                nomina.mnuevaNomina(archivoNomina, archivoEmpleados, archivoPuestos, archivoEmpresa, archivoEncabezado, archivoConcepto);
+                fstream archivoReporte("registrosreporte.dat", ios::in | ios::out | ios::binary);
+                // salir del programa si fstream no puede abrir el archivo
+                if ( !archivoReporte )
+                    {
+                        cerr << "No se pudo abrir el archivo." << endl;
+                        reporte.mcrearReporte();
+                        cout <<  "Archivo creado satisfactoriamente, pruebe de nuevo";
+                        exit ( 1 );
+                    }
+                nomina.mnuevaNomina(archivoNomina, archivoEmpleados, archivoPuestos, archivoEmpresa, archivoEncabezado, archivoConcepto, archivoReporte);
                 archivoNomina.close();
                 archivoEmpleados.close();
                 archivoPuestos.close();

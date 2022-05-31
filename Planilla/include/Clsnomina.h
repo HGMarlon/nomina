@@ -26,7 +26,8 @@ class Clsnomina
                      float =0, float =0, float =0, float =0, float =0);
         mcrearNominas();
         int mobtenerNomina( const char * const );
-        void mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, fstream &archivoPuestos, fstream &archivoEmpresa, fstream &archivoEncabezado, fstream &archivoConcepto);
+        void mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, fstream &archivoPuestos, fstream &archivoEmpresa, fstream &archivoEncabezado, fstream &archivoConcepto,
+                          fstream &archivoReporte);
         void mleerNomina(fstream &archivoNomina, fstream &archivoEncabezado);
         void mostrarLineaNomina( const Clsnomina &registro );
         //Metodos atributo clave nomina

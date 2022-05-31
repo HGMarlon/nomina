@@ -9,6 +9,7 @@ Clases*/
 #include "ClsPuestos.h"
 #include "ClsEmpresa.h"
 #include "Clsencabezado.h"
+#include "ClsReporte.h"
 
 //Librerias
 #include<conio.h>
@@ -271,7 +272,8 @@ int Clsnomina::mobtenerNomina(const char * const iindicador)
    return m_iclaveNominas;
 }
 
-void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, fstream &archivoPuestos, fstream &archivoEmpresa, fstream &archivoEncabezado, fstream &archivoConcepto)
+void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, fstream &archivoPuestos, fstream &archivoEmpresa, fstream &archivoEncabezado, fstream &archivoConcepto,
+                             fstream &archivoReporte)
 {
     Clsnomina nomina;
     Clsempleados empleado;
@@ -279,6 +281,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
     ClsConceptos concepto;
     ClsEmpresa empresa;
     Clsencabezado encabezado;
+    ClsReporte reporte;
     int m_iclaveNominas = 1;
     // desplazar el apuntador de posición del archivo hasta el registro correcto en el archivo
     archivoNomina.seekg(
@@ -292,6 +295,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
     encabezado.mcrearEncabezado();
     //Atributos a ingresar
     int m_iclaveEmpleado = 0;
+    int m_iClaveReporte = 0;
     string m_snombreEmpleado = "";
     int m_iclaveEncabezado=0;
     int m_iclaveCantidad = 0;
@@ -301,6 +305,7 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
     string m_smonedaEncabezado= "";
     string m_snota= "";
     int ipuesto=0;
+    int ireporte=0;
     m_iclaveEncabezado=m_iclaveNominas;
 //karla Gómez 9959-21-1896
     string m_scargoNomina= "";
@@ -342,11 +347,9 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
         if ( empleado.mobtenerClave() != 0 )
         {
             m_iclaveEmpleado = empleado.mobtenerClave();
-            //cout << "empleado: " << m_iclaveEmpleado << endl;
             m_snombreEmpleado = empleado.mobtenerNombre();
             ipuesto = empleado.mobtenerCPuesto();
-            /*cout << ipuesto;
-            getch();*/
+            ireporte = m_iclaveEmpleado;
         }
         // mostrar error si la clave no contiene informacion
         else
@@ -355,7 +358,6 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
             << " no tiene informacion." << endl;
             exit (4);
         }
-//karla Gómez 9959-21-1896
         // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
         archivoPuestos.seekg(
         ( ipuesto - 1 ) * sizeof( ClsPuestos ) );
@@ -374,11 +376,27 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
         }
         m_scargoNomina=puesto.mobtenerCargo();
         m_fsalarioNomina=puesto.mobtenerSalario();
-        m_fdiasTrabNomina=30;
-        m_fhoraExtraNomina=0;
-        m_fbonificacionincNomina=0;
-        m_fanticipoNomina=0;
-//Alyson Rodriguez 9959-21-829
+        //reportes
+        // desplazar el apuntador de posición de archivo hasta el registro correcto en el archivo
+        archivoReporte.seekg(
+        ( ireporte - 1 ) * sizeof( ClsReporte ) );
+        // leer el primer registro del archivo
+        archivoReporte.read( reinterpret_cast< char * >( &reporte ),
+        sizeof( ClsReporte ) );
+        // actualizar el registro
+        if ( reporte.mobtenerClaveRepo() != 0 ) {
+        }
+        // mostrar error si la cuenta no existe
+        else
+        {
+                cerr<< "El numero #" << ireporte
+                << " no tiene informacion." << endl;
+                exit(8);
+        }
+        m_fdiasTrabNomina=reporte.mobtenerDiasTrab();
+        m_fhoraExtraNomina=reporte.mobtenerHorasExtra();
+        m_fbonificacionincNomina=reporte.mobtenerBonificacion();
+        m_fanticipoNomina=reporte.mobtenerAnticipo();
         int m_icodigoEmpleadoConcepto = 1;
         double descuentoA=0;
         archivoConcepto.seekg(
@@ -417,13 +435,15 @@ void Clsnomina::mnuevaNomina(fstream &archivoNomina, fstream &archivoEmpleados, 
             << " no tiene informacion." << endl;
             exit(7);
         }
+//Alyson Rodriguez 9959-21-829
         m_fsueldoOrNomina=(m_fsalarioNomina/30)*m_fdiasTrabNomina;
         m_fIGGNomina=m_fsueldoOrNomina*descuentoA;
         m_fISRNomina=m_fsueldoOrNomina*descuentoB;
         m_ftotaldescuentNomina=m_fIGGNomina+m_fISRNomina+m_fanticipoNomina;
-        m_fsueldoExtraNomina= (m_fsalarioNomina/144)*m_fhoraExtraNomina;
+        m_fsueldoExtraNomina= (m_fsalarioNomina/720)*m_fhoraExtraNomina;
         m_ftotaldevenNomina=m_fsueldoOrNomina+m_fbonificacionincNomina+m_fsueldoExtraNomina;
         m_fliquidoNomina=m_ftotaldevenNomina-m_ftotaldescuentNomina;
+// Josué Rivas 9491-21-3133
         // usar valores para llenar los valores de la clave
         m_iclaveNominas=m_iclaveEmpleado;
         nomina.mestablecerIdNomina(m_iclaveNominas);
@@ -491,7 +511,7 @@ void Clsnomina::mostrarLineaNomina( const Clsnomina &registro )
           << setw( 10 ) << registro.mobtenerliquidoNomina()
           << endl;
 }
-
+//Alyson Rodriguez 9959-21-829
 void Clsnomina::mleerNomina(fstream &archivoNomina, fstream &archivoEncabezado)
 {
     //Creando encabezado de la tabla
