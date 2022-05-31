@@ -100,7 +100,7 @@
 	<iostream>
 	<fstream>
 
-1653403022 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\main.cpp
+1653576204 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\main.cpp
 	<iostream>
 	<windows.h>
 	"player.h"
@@ -114,19 +114,19 @@
 1653402801 c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\include\gamemap.h
 	"mapcell.h"
 
-1653402801 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\player.cpp
+1653707904 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\player.cpp
 	"player.h"
 	<iostream>
 	<fstream>
 
-1653402964 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\gamemap.cpp
+1653576204 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\gamemap.cpp
 	"gamemap.h"
 	<iostream>
 	<fstream>
 	<stdlib.h>
 	<windows.h>
 
-1653402964 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\mapcell.cpp
+1653576204 source:c:\users\user\onedrive\documentos\mariano\proyectosprograi\nomina\proyecto_robot\src\mapcell.cpp
 	"mapcell.h"
 	<iostream>
 

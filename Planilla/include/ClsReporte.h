@@ -52,7 +52,6 @@ class ClsReporte
         void mestablecerAnticipo( float );
         float mobtenerAnticipo() const;
 
-        ClsReporte();
         virtual ~ClsReporte();
 
     protected:

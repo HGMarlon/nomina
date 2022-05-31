@@ -137,6 +137,7 @@ void ClsReporte::mnuevoReporte(fstream &archivoReporte)
       cin >> setw( 10 ) >>m_fAnticipo;
 
       // usar valores para llenar los valores de la clave
+        reporte.mestablecerClaveRepo(m_iClaveReporte);
         reporte.mestablecerDiasTrab( m_iDiasTrabajados );
         reporte.mestablecerHorasExtra(m_iHorasExtra);
         reporte.mestablecerBonificacion(m_fBonificacion);

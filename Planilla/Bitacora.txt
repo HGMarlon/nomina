@@ -331,3 +331,59 @@ Usuario: Josue     Accion: Ingreso a Cons. Puestos       Dia: 27   Mes: 5    Año
 Usuario: Josue     Accion: Salio de Gestion Puestos      Dia: 27   Mes: 5    Año: 2022  Hora: 18   Minuto: 19   Segundo: 18   
 Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 27   Mes: 5    Año: 2022  Hora: 18   Minuto: 19   Segundo: 18   
 Usuario: Josue     Accion: Salio del Menu Principal      Dia: 27   Mes: 5    Año: 2022  Hora: 18   Minuto: 19   Segundo: 18   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 30   Segundo: 15   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 30   Segundo: 15   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 1    
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 1    
+Usuario: Josue     Accion: Ingreso a CRUD Reporte        Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 13   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 23   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 23   
+Usuario: Josue     Accion: Ingreso a CRUD Reporte        Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 46   
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 48   
+Usuario: Josue     Accion: Salio de Gestion Reporte      Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 48   
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 48   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 29   Mes: 5    Año: 2022  Hora: 14   Minuto: 39   Segundo: 48   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 12   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 12   
+Usuario: Josue     Accion: Ingreso a CRUD Empleados      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 30   
+Usuario: Josue     Accion: Ingreso a Des. Empleado       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 49   
+Usuario: Josue     Accion: Salio de Gestion Empleado     Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 49   
+Usuario: Josue     Accion: Ingreso a CRUD Reporte        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 3    Segundo: 49   
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso a Buscar. Reporte     Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Salio de Gestion Reporte      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 4    Segundo: 3    
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 33   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 33   
+Usuario: Josue     Accion: Ingreso a CRUD Reporte        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 40   
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Agre. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Cons. Reporte       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Salio de Gestion Reporte      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso a Info. Nomina        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 8    Segundo: 41   
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 13   Segundo: 8    
+Usuario: Josue     Accion: Ingreso a Info. Nomina        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 13   Segundo: 8    
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 13   Segundo: 8    
+Usuario: Josue     Accion: Ingreso al sistema            Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a Mantenimiento       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 48   
+Usuario: Josue     Accion: Ingreso a CRUD Puestos        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 53   
+Usuario: Josue     Accion: Ingreso a Mod. Puestos        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Ingreso a Mod. Puestos        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Ingreso a Cons. Puestos       Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Ingreso a Mod. Puestos        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Salio de Gestion Puestos      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Salio de Mantenimiento        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Ingreso a Gen. Nomina         Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Ingreso a Info. Nomina        Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
+Usuario: Josue     Accion: Salio del Menu Principal      Dia: 31   Mes: 5    Año: 2022  Hora: 9    Minuto: 19   Segundo: 54   
